@@ -52,15 +52,16 @@
         <!-- 2. Clean Open Art Stage -->
         <section class="art-stage"></section>
 
-        <!-- 3. Primary Main Glass Teaching Card with Half-Above Profile Avatar -->
+        <!-- 3. Primary Main Glass Teaching Card with Unclipped Floating Profile Avatar -->
         <section class="main-card-section">
+          
+          <!-- Misti Profile Avatar (Floats Half Above Box without Overflow Clipping) -->
+          <div class="misti-avatar-frame">
+            <img src="misti.jpg" alt="Misti" class="misti-avatar-img">
+          </div>
+
           <article class="glass-card primary-teaching-card shimmer-card">
             <div class="card-border-glow"></div>
-            
-            <!-- Misti Profile Avatar (Positioned Half Above the Box Top Edge) -->
-            <div class="misti-avatar-frame">
-              <img src="misti.jpg" alt="Misti" class="misti-avatar-img">
-            </div>
 
             <h2 class="greeting-title" id="cardGreeting">Good Morning, Misti</h2>
             <p class="primary-thought-text" id="primaryThought">Maan mein shanti ho toh har din ek utsav jaisa lagta hai.</p>
@@ -96,7 +97,7 @@
           </article>
         </section>
 
-        <!-- 5. Multiple Decorative Flower Accents (Positioned Background Corners) -->
+        <!-- 5. Multiple Decorative Flower Accents -->
         <div class="corner-lotus-bottom-left">
           <svg viewBox="0 0 100 100" class="corner-lotus-svg">
             <path d="M 50 10 Q 75 45 50 90 Q 25 45 50 10 Z" fill="#f43f5e" opacity="0.85"/>
