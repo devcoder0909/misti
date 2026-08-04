@@ -44,6 +44,83 @@ html, body {
   background-color: #07030c;
 }
 
+/* Full-Screen Black Luxurious Splash Transition Overlay */
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  background: #050209;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  opacity: 1;
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter;
+}
+
+.splash-screen.splash-hidden {
+  opacity: 0;
+  transform: scale(1.06);
+  filter: blur(12px);
+  pointer-events: none;
+}
+
+.splash-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.splash-emblem-frame {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  margin-bottom: 0.4rem;
+}
+
+.splash-lotus-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 25px rgba(255, 215, 0, 0.8));
+  animation: splashLotusPulse 2s ease-in-out infinite alternate;
+}
+
+.splash-pulse-ring {
+  position: absolute;
+  inset: -12px;
+  border-radius: 50%;
+  border: 1.5px stroke rgba(255, 215, 0, 0.5);
+  animation: orbPulseRing 2.5s ease-in-out infinite;
+}
+
+.splash-mantra {
+  font-family: var(--font-odia);
+  font-size: clamp(1.6rem, 6.5vw, 2.2rem);
+  font-weight: 700;
+  background: linear-gradient(135deg, #ecd3a1 0%, #ff9400 45%, #ffe094 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 25px rgba(255, 148, 0, 0.65);
+}
+
+.splash-brand {
+  font-family: var(--font-cinzel);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+@keyframes splashLotusPulse {
+  0% { transform: scale(0.95); }
+  100% { transform: scale(1.08); }
+}
+
 /* Mobile-First Frame Wrapper for Desktop Presentation */
 .mobile-frame-wrapper {
   width: 100%;

@@ -8,6 +8,25 @@ export class RenderEngine {
     this.hasTyped = false;
     this.preloadBackgrounds();
     this.initSynchronizedCarousel();
+    this.initSplashScreen();
+  }
+
+  /**
+   * Smooth Full-Screen Black Luxurious Splash Transition Overlay
+   */
+  initSplashScreen() {
+    const splash = document.getElementById('splashScreen');
+    if (!splash) return;
+
+    // Smoothly dissolve splash screen after 1.8 seconds
+    setTimeout(() => {
+      splash.classList.add('splash-hidden');
+      setTimeout(() => {
+        if (splash && splash.parentNode) {
+          splash.parentNode.removeChild(splash);
+        }
+      }, 1200);
+    }, 1800);
   }
 
   /**
@@ -31,7 +50,6 @@ export class RenderEngine {
       bg1.classList.add('bg-loaded');
       bg2.classList.add('bg-loaded');
     } catch (err) {
-      // Fallback if decode API is restricted
       if (bg1) bg1.classList.add('bg-loaded');
       if (bg2) bg2.classList.add('bg-loaded');
     }
