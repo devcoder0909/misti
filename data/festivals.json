@@ -1,0 +1,79 @@
+[
+  {
+    "name": "New Year",
+    "month": 1,
+    "day": 1,
+    "themeOverride": "festival",
+    "greetingOverride": "Happy New Year, Misti ✨"
+  },
+  {
+    "name": "Republic Day",
+    "month": 1,
+    "day": 26,
+    "themeOverride": "festival",
+    "greetingOverride": "Happy Republic Day, Misti 🇮🇳"
+  },
+  {
+    "name": "Women's Day",
+    "month": 3,
+    "day": 8,
+    "themeOverride": "festival",
+    "greetingOverride": "Happy Women's Day, Misti 🌸"
+  },
+  {
+    "name": "Hanuman Jayanti",
+    "month": 4,
+    "day": 23,
+    "themeOverride": "hanuman",
+    "greetingOverride": "Jai Bajrangbali, Misti 🚩"
+  },
+  {
+    "name": "Snana Purnima",
+    "month": 6,
+    "day": 22,
+    "themeOverride": "jagannath",
+    "greetingOverride": "Shubha Snana Purnima, Misti 🌸"
+  },
+  {
+    "name": "Rath Yatra",
+    "month": 7,
+    "day": 7,
+    "themeOverride": "jagannath",
+    "greetingOverride": "Jai Jagannath, Misti 🚩"
+  },
+  {
+    "name": "Independence Day",
+    "month": 8,
+    "day": 15,
+    "themeOverride": "festival",
+    "greetingOverride": "Happy Independence Day, Misti 🇮🇳"
+  },
+  {
+    "name": "Janmashtami",
+    "month": 8,
+    "day": 26,
+    "themeOverride": "festival",
+    "greetingOverride": "Jai Shree Krishna, Misti 🪈"
+  },
+  {
+    "name": "Teacher's Day",
+    "month": 9,
+    "day": 5,
+    "themeOverride": "festival",
+    "greetingOverride": "Happy Teacher's Day, Misti 📚"
+  },
+  {
+    "name": "Diwali",
+    "month": 11,
+    "day": 1,
+    "themeOverride": "diwali",
+    "greetingOverride": "Shubh Deepavali, Misti 🪔"
+  },
+  {
+    "name": "Christmas",
+    "month": 12,
+    "day": 25,
+    "themeOverride": "festival",
+    "greetingOverride": "Merry Christmas, Misti 🎄"
+  }
+]

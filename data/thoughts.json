@@ -1,0 +1,102 @@
+[
+  {
+    "id": "thought-1",
+    "language": "hinglish",
+    "text": "Jab dil mein sachha vishwas ho, toh mushkil se mushkil raasta bhi aasan lagne lagta hai. Choti choti baaton mein khushi dhoondna hi asli sukoon hai.",
+    "emotion": "peace",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any",
+    "animationPreset": "Divine"
+  },
+  {
+    "id": "thought-2",
+    "language": "hinglish",
+    "text": "Aapki mehanat aur niyat hamesha rang laati hai. Kuch dooriyan bas aapko aage badhne ka raasta dikhane aati hain.",
+    "emotion": "faith",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "any",
+    "animationPreset": "Golden"
+  },
+  {
+    "id": "thought-3",
+    "language": "odia",
+    "text": "ମନର ଶାନ୍ତି ହିଁ ଜୀବନର ସବୁଠାରୁ ବଡ଼ ସମ୍ପତ୍ତି। ପ୍ରତ୍ୟେକ ନୂଆ ସକାଳ ଆପଣଙ୍କ ପାଇଁ ନୂଆ ଆଶା ନେଇ ଆସିଥାଏ।",
+    "emotion": "calmness",
+    "theme": "calm",
+    "festival": "any",
+    "weekday": "any",
+    "animationPreset": "Calm"
+  },
+  {
+    "id": "thought-4",
+    "language": "english",
+    "text": "Quiet moments of faith have the power to heal what words cannot express. Trust the timing of your life.",
+    "emotion": "comfort",
+    "theme": "night",
+    "festival": "any",
+    "weekday": "any",
+    "animationPreset": "Night"
+  },
+  {
+    "id": "thought-5",
+    "language": "hinglish",
+    "text": "Maan mein shanti ho toh har din ek utsav jaisa lagta hai. Khud par bharosa rakhiye, aap har kathinai ko paar kar sakti hain.",
+    "emotion": "hope",
+    "theme": "sunrise",
+    "festival": "any",
+    "weekday": "any",
+    "animationPreset": "Sunrise"
+  },
+  {
+    "id": "thought-6",
+    "language": "hinglish",
+    "text": "Waqt hamesha sikhata hai ki sabse gehri roshni andhere ke baad hi chamakti hai. Aapka aane wala pal sundar hoga.",
+    "emotion": "warmth",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any",
+    "animationPreset": "Divine"
+  },
+  {
+    "id": "thought-7",
+    "language": "odia",
+    "text": "ହୃଦୟରେ ଦୟା ଓ ସ୍ନେହ ରଖି ଚାଲନ୍ତୁ, ପ୍ରଭୁଙ୍କ କୃପାରୁ ଆପଣଙ୍କ ପ୍ରତ୍ୟେକ ମାର୍ଗ ସୁଗମ ହୋଇଯିବ।",
+    "emotion": "love",
+    "theme": "calm",
+    "festival": "any",
+    "weekday": "any",
+    "animationPreset": "Calm"
+  },
+  {
+    "id": "thought-8",
+    "language": "hinglish",
+    "text": "Jagannath Mahaprabhu ki kripa har us shanti mein hai jo aap achanak dil mein mehsoos karti hain. Har din ek nayi shuruaat hai.",
+    "emotion": "devotion",
+    "theme": "golden",
+    "festival": "Rath Yatra",
+    "weekday": "any",
+    "animationPreset": "Festival"
+  },
+  {
+    "id": "thought-9",
+    "language": "hinglish",
+    "text": "Bhakti aur courage jab ek saath milte hain, toh koi bhi drishti asambhav nahi rehti. Hanuman ji ki kripa aapke saath hai.",
+    "emotion": "strength",
+    "theme": "divine",
+    "festival": "Hanuman Jayanti",
+    "weekday": "any",
+    "animationPreset": "Divine"
+  },
+  {
+    "id": "thought-10",
+    "language": "english",
+    "text": "Softness is not weakness; it is the quiet strength that moves mountains with grace.",
+    "emotion": "positivity",
+    "theme": "sunrise",
+    "festival": "any",
+    "weekday": "any",
+    "animationPreset": "Sunrise"
+  }
+]

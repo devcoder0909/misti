@@ -1,0 +1,76 @@
+{
+  "morning": {
+    "name": "Golden Sunrise",
+    "bgGradient": "linear-gradient(160deg, rgba(26, 15, 43, 0.78) 0%, rgba(59, 21, 54, 0.82) 50%, rgba(90, 29, 71, 0.85) 100%)",
+    "glowColor": "rgba(255, 183, 3, 0.45)",
+    "particleType": "lotus",
+    "preset": "Sunrise",
+    "accentColor": "#ffb703",
+    "glassBorder": "rgba(255, 183, 3, 0.25)"
+  },
+  "afternoon": {
+    "name": "Azure Temple Sky",
+    "bgGradient": "linear-gradient(160deg, rgba(11, 19, 43, 0.78) 0%, rgba(28, 37, 65, 0.82) 50%, rgba(58, 80, 107, 0.85) 100%)",
+    "glowColor": "rgba(56, 189, 248, 0.4)",
+    "particleType": "dust",
+    "preset": "Golden",
+    "accentColor": "#38bdf8",
+    "glassBorder": "rgba(56, 189, 248, 0.22)"
+  },
+  "evening": {
+    "name": "Twilight Aarti",
+    "bgGradient": "linear-gradient(160deg, rgba(30, 27, 75, 0.8) 0%, rgba(76, 29, 149, 0.82) 50%, rgba(112, 26, 117, 0.85) 100%)",
+    "glowColor": "rgba(251, 146, 60, 0.45)",
+    "particleType": "flowers",
+    "preset": "Divine",
+    "accentColor": "#fb923c",
+    "glassBorder": "rgba(251, 146, 60, 0.25)"
+  },
+  "night": {
+    "name": "Mystic Cosmos",
+    "bgGradient": "linear-gradient(160deg, rgba(6, 3, 13, 0.82) 0%, rgba(15, 10, 28, 0.85) 50%, rgba(30, 16, 53, 0.88) 100%)",
+    "glowColor": "rgba(168, 85, 247, 0.45)",
+    "particleType": "fireflies",
+    "preset": "Night",
+    "accentColor": "#c084fc",
+    "glassBorder": "rgba(168, 85, 247, 0.25)"
+  },
+  "overrides": {
+    "jagannath": {
+      "name": "Rath Yatra Gold & Crimson",
+      "bgGradient": "linear-gradient(160deg, rgba(42, 8, 19, 0.78) 0%, rgba(88, 18, 37, 0.82) 50%, rgba(133, 30, 62, 0.85) 100%)",
+      "glowColor": "rgba(255, 215, 0, 0.6)",
+      "particleType": "sparkles",
+      "preset": "Festival",
+      "accentColor": "#ffd700",
+      "glassBorder": "rgba(255, 215, 0, 0.38)"
+    },
+    "hanuman": {
+      "name": "Divine Saffron Aura",
+      "bgGradient": "linear-gradient(160deg, rgba(45, 11, 0, 0.78) 0%, rgba(92, 29, 4, 0.82) 50%, rgba(148, 52, 7, 0.85) 100%)",
+      "glowColor": "rgba(251, 146, 60, 0.6)",
+      "particleType": "dust",
+      "preset": "Divine",
+      "accentColor": "#fb923c",
+      "glassBorder": "rgba(251, 146, 60, 0.38)"
+    },
+    "diwali": {
+      "name": "Deepavali Radiance",
+      "bgGradient": "linear-gradient(160deg, rgba(31, 10, 0, 0.78) 0%, rgba(77, 28, 0, 0.82) 50%, rgba(128, 51, 0, 0.85) 100%)",
+      "glowColor": "rgba(255, 215, 0, 0.7)",
+      "particleType": "sparkles",
+      "preset": "Festival",
+      "accentColor": "#ffd700",
+      "glassBorder": "rgba(255, 215, 0, 0.4)"
+    },
+    "festival": {
+      "name": "Celebration Gold",
+      "bgGradient": "linear-gradient(160deg, rgba(24, 9, 41, 0.78) 0%, rgba(62, 18, 92, 0.82) 50%, rgba(104, 29, 151, 0.85) 100%)",
+      "glowColor": "rgba(244, 114, 182, 0.5)",
+      "particleType": "lotus",
+      "preset": "Festival",
+      "accentColor": "#f472b6",
+      "glassBorder": "rgba(244, 114, 182, 0.35)"
+    }
+  }
+}

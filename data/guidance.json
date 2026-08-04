@@ -1,0 +1,92 @@
+[
+  {
+    "id": "guidance-1",
+    "language": "hinglish",
+    "text": "Aaj ke din bas itna yaad rakhiye ki har sthiti mein apna dhairya mat khoiye. Jagannath ji ki tarah sabhi ke liye prem aur samanta ka bhav rakhein.",
+    "emotion": "peace",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-2",
+    "language": "hinglish",
+    "text": "Hanuman ji se preran lein: Bina kisi sandeh ke apna sabse behtar prayas karein. Natije ki chinta kiye bina apne kartavya par tika rehna hi sachi shakti hai.",
+    "emotion": "strength",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-3",
+    "language": "odia",
+    "text": "ନିଜର ପ୍ରତ୍ୟେକ କାର୍ଯ୍ୟକୁ ସଚ୍ଚୋଟତାର ସହ କରନ୍ତୁ। ନମ୍ରତା ଓ ସେବା ମନୋଭାବ ହିଁ ଆପଣଙ୍କୁ ପ୍ରକୃତ ସଫଳତା ଆଣିଦେବ।",
+    "emotion": "calmness",
+    "theme": "calm",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-4",
+    "language": "english",
+    "text": "Focus your mind on pure intentions today. When your heart is light and kind, clarity unfolds effortlessly in every decision.",
+    "emotion": "comfort",
+    "theme": "night",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-5",
+    "language": "hinglish",
+    "text": "Choti mushkilon ko apni shanti mat cheenne dijiye. Apni aantarik urja par bharosa rakhiye aur muskurate hue aage badhiye.",
+    "emotion": "hope",
+    "theme": "sunrise",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-6",
+    "language": "hinglish",
+    "text": "Prem aur karuna har rishte ko aalokit karte hain. Aaj kisi ke chehre par ek choti si muskan laane ka prayas karein.",
+    "emotion": "love",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-7",
+    "language": "odia",
+    "text": "ଧୈର୍ଯ୍ୟ ରଖନ୍ତୁ, ପ୍ରଭୁଙ୍କ ଉପରେ ବିଶ୍ୱାସ ରଖନ୍ତୁ। ଶାନ୍ତ ମନରେ ନିଆଯାଇଥିବା ନିଷ୍ପତ୍ତି ସଦାସର୍ବଦା ଉତ୍ତମ ଫଳ ପ୍ରଦାନ କରିଥାଏ।",
+    "emotion": "calmness",
+    "theme": "calm",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-8",
+    "language": "hinglish",
+    "text": "Rath Yatra ka sandesh hai ki mahaprabhu har bhakt ke paas swayam aate hain. Apne man mein shraddha aur samarpan ka bhav sajayein.",
+    "emotion": "devotion",
+    "theme": "golden",
+    "festival": "Rath Yatra",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-9",
+    "language": "hinglish",
+    "text": "Hanuman Jayanti par sankalp lein ki kisi bhi chunauti ke aage jhukna nahi hai. Apni nigahon mein aatmavishwas ka roop rakhein.",
+    "emotion": "strength",
+    "theme": "divine",
+    "festival": "Hanuman Jayanti",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-10",
+    "language": "english",
+    "text": "Cultivate gratitude for small wins today. True harmony begins inside your heart before it reflects in the world.",
+    "emotion": "positivity",
+    "theme": "sunrise",
+    "festival": "any",
+    "weekday": "any"
+  }
+]

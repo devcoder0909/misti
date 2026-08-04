@@ -1,0 +1,18 @@
+{
+  "morning": [
+    "Good Morning, Misti 🌸",
+    "Shubha Prabhat, Misti 🌅",
+    "Good Morning, Misti ✨",
+    "Good Morning, Misti 🪔"
+  ],
+  "festivalOverrides": {
+    "Rath Yatra": "Jai Jagannath, Misti 🚩",
+    "Snana Purnima": "Shubha Snana Purnima, Misti 🌸",
+    "Hanuman Jayanti": "Jai Bajrangbali, Misti 🚩",
+    "Ram Navami": "Jai Shree Ram, Misti 🌸",
+    "Diwali": "Shubh Deepavali, Misti 🪔",
+    "Janmashtami": "Jai Shree Krishna, Misti 🪈",
+    "New Year": "Happy New Year, Misti ✨",
+    "Women's Day": "Happy Women's Day, Misti 🌸"
+  }
+}

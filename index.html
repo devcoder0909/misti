@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>🌸 Misti's Divine Companion</title>
+  
+  <!-- SEO & PWA Meta -->
+  <meta name="description" content="A peaceful daily spiritual companion inspired by Lord Jagannath and Lord Hanuman.">
+  <meta name="theme-color" content="#0c061a">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Odia:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Design System -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Single Viewport App Container (100dvh) -->
+  <main class="app-viewport">
+    
+    <!-- 60 FPS Canvas Particle Background -->
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+    <!-- Single Screen Content Frame -->
+    <div class="content-frame">
+      
+      <!-- 1. Header Greeting -->
+      <header class="greeting-header">
+        <div class="header-top-bar">
+          <span class="header-dots">•••</span>
+          <span class="header-subtitle">Divine Teachings</span>
+          <span class="header-pill"></span>
+        </div>
+        <h1 class="greeting-text" id="greetingText">Good Morning, Misti 🌸</h1>
+        <p class="date-badge" id="dateBadge">Wednesday, 5 August</p>
+      </header>
+
+      <!-- 2. Divine Stage (~50% Height) -->
+      <section class="art-stage">
+        <!-- Rotating Gold Mandala Ring -->
+        <div class="mandala-ring">
+          <svg viewBox="0 0 200 200" class="mandala-svg">
+            <circle cx="100" cy="100" r="90" fill="none" stroke="rgba(255, 215, 0, 0.35)" stroke-width="1.5" stroke-dasharray="4 6"/>
+            <circle cx="100" cy="100" r="75" fill="none" stroke="rgba(217, 70, 239, 0.3)" stroke-width="1"/>
+            <path d="M 100 10 L 100 190 M 10 100 L 190 100 M 36 36 L 164 164 M 36 164 L 164 36" stroke="rgba(255, 215, 0, 0.2)" stroke-width="1"/>
+          </svg>
+        </div>
+        
+        <div class="divine-halo"></div>
+        
+        <div class="svg-container" id="svgStage">
+          <!-- RenderEngine injects multi-layered divine SVG artwork -->
+        </div>
+      </section>
+
+      <!-- 3. Cards Container -->
+      <section class="cards-container">
+        <!-- Today's Thought -->
+        <article class="glass-card thought-card shimmer-card">
+          <div class="card-border-glow"></div>
+          <span class="card-label">TODAY'S THOUGHT</span>
+          <p class="card-body" id="thoughtBody">...</p>
+          <div class="card-emblem">
+            <span class="emblem-gem">🌸</span>
+          </div>
+        </article>
+
+        <!-- Today's Guidance -->
+        <article class="glass-card guidance-card shimmer-card">
+          <div class="card-border-glow"></div>
+          <span class="card-label">DAILY GUIDANCE</span>
+          <p class="card-body" id="guidanceBody">...</p>
+          <div class="card-emblem">
+            <span class="emblem-gem">✨</span>
+          </div>
+        </article>
+      </section>
+
+      <!-- Corner Lotus Flower Ornaments -->
+      <div class="bottom-lotus-left">
+        <svg viewBox="0 0 100 100" class="corner-lotus-svg">
+          <path d="M 50 10 Q 70 50 50 90 Q 30 50 50 10 Z" fill="#f43f5e" opacity="0.85"/>
+          <path d="M 50 30 Q 80 50 70 85 Q 35 70 50 30 Z" fill="#fb7185" opacity="0.75"/>
+          <path d="M 50 30 Q 20 50 30 85 Q 65 70 50 30 Z" fill="#fb7185" opacity="0.75"/>
+        </svg>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Modular Engines Launcher -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

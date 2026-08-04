@@ -1,0 +1,69 @@
+{
+  "colors": {
+    "royalPurple": "#1e1b4b",
+    "deepIndigo": "#090514",
+    "divineGold": "#ffd700",
+    "goldGlow": "rgba(255, 215, 0, 0.4)",
+    "lotusPink": "#ff77a9",
+    "softLavender": "#e0e7ff",
+    "creamWhite": "#fcfaff",
+    "templeAmber": "#ffb703",
+    "skyMorningStart": "#1a0f2b",
+    "skyMorningEnd": "#4a1c40",
+    "skyAfternoonStart": "#0f172a",
+    "skyAfternoonEnd": "#1e1b4b",
+    "skyEveningStart": "#1e1b4b",
+    "skyEveningEnd": "#581c87",
+    "skyNightStart": "#06030d",
+    "skyNightEnd": "#130924"
+  },
+  "typography": {
+    "fontFamilyPrimary": "'Poppins', sans-serif",
+    "fontFamilyOdia": "'Noto Sans Odia', sans-serif",
+    "fontSizeGreeting": "clamp(1.35rem, 5vw, 1.85rem)",
+    "fontSizeDate": "clamp(0.75rem, 2.5vw, 0.88rem)",
+    "fontSizeLabel": "clamp(0.65rem, 2.2vw, 0.72rem)",
+    "fontSizeBody": "clamp(0.85rem, 3.2vw, 1.02rem)",
+    "fontWeightLight": 300,
+    "fontWeightRegular": 400,
+    "fontWeightMedium": 500,
+    "fontWeightSemiBold": 600,
+    "lineHeightTight": 1.25,
+    "lineHeightRelaxed": 1.55,
+    "letterSpacingWide": "0.15em",
+    "letterSpacingNormal": "0.01em"
+  },
+  "glass": {
+    "background": "rgba(255, 255, 255, 0.045)",
+    "backgroundHover": "rgba(255, 255, 255, 0.075)",
+    "blur": "24px",
+    "saturate": "180%",
+    "borderColor": "rgba(255, 215, 0, 0.18)",
+    "borderLight": "rgba(255, 255, 255, 0.12)",
+    "insetShadow": "inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.2)",
+    "dropShadow": "0 12px 40px rgba(0, 0, 0, 0.45)"
+  },
+  "spacing": {
+    "xs": "0.25rem",
+    "sm": "0.5rem",
+    "md": "0.85rem",
+    "lg": "1.25rem",
+    "xl": "1.75rem",
+    "xxl": "2.5rem"
+  },
+  "radius": {
+    "sm": "8px",
+    "md": "16px",
+    "lg": "24px",
+    "pill": "9999px"
+  },
+  "animation": {
+    "durationSlow": "1200ms",
+    "durationMedium": "600ms",
+    "durationFast": "300ms",
+    "durationPulse": "6000ms",
+    "easeApple": "cubic-bezier(0.25, 1, 0.5, 1)",
+    "easeDivine": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "easeSmooth": "cubic-bezier(0.4, 0, 0.2, 1)"
+  }
+}
