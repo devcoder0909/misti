@@ -16,7 +16,7 @@
   --accent-color: #ffd700;
   --glass-border: rgba(255, 215, 0, 0.35);
   
-  --font-primary: 'Outfit', 'Poppins', -apple-system, sans-serif;
+  --font-primary: 'Plus Jakarta Sans', 'Outfit', -apple-system, sans-serif;
   --font-odia: 'Noto Sans Odia', sans-serif;
 
   --ease-apple: cubic-bezier(0.25, 1, 0.5, 1);
@@ -28,6 +28,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-style: normal !important; /* Strictly no italics */
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -37,6 +38,7 @@ html, body {
   height: 100dvh;
   overflow: hidden;
   font-family: var(--font-primary);
+  font-style: normal;
   color: var(--cream-white);
   background-color: #000000;
 }
@@ -127,8 +129,10 @@ html, body {
 }
 
 .header-brand-title {
-  font-size: clamp(1rem, 4vw, 1.15rem);
+  font-family: 'Outfit', var(--font-primary);
+  font-size: clamp(1.02rem, 4vw, 1.18rem);
   font-weight: 700;
+  font-style: normal;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -136,8 +140,10 @@ html, body {
 }
 
 .header-date-badge {
+  font-family: var(--font-primary);
   font-size: 0.72rem;
   font-weight: 500;
+  font-style: normal;
   color: rgba(255, 215, 0, 0.88);
   letter-spacing: 0.08em;
   margin-top: 0.15rem;
@@ -153,7 +159,7 @@ html, body {
   margin: 0.1rem 0;
 }
 
-/* 3. Primary Main Glass Teaching Card Section (Clean Static Card Design) */
+/* 3. Primary Main Glass Teaching Card Section */
 .main-card-section {
   position: relative;
   margin-top: 1.4rem;
@@ -183,19 +189,20 @@ html, body {
   display: block;
 }
 
+/* Ultra-Premium Glass Message Box */
 .primary-teaching-card {
   position: relative;
-  background: linear-gradient(180deg, rgba(38, 14, 46, 0.92) 0%, rgba(18, 7, 26, 0.96) 100%);
-  backdrop-filter: blur(28px) saturate(200%);
-  -webkit-backdrop-filter: blur(28px) saturate(200%);
+  background: linear-gradient(180deg, rgba(38, 14, 46, 0.94) 0%, rgba(18, 7, 26, 0.97) 100%);
+  backdrop-filter: blur(32px) saturate(210%);
+  -webkit-backdrop-filter: blur(32px) saturate(210%);
   border: 1px solid var(--glass-border);
-  border-radius: 20px;
-  padding: 1.7rem 1.25rem 0.85rem 1.25rem;
+  border-radius: 22px;
+  padding: 1.75rem 1.3rem 0.9rem 1.3rem;
   text-align: center;
   box-shadow: 
-    0 16px 40px rgba(0, 0, 0, 0.65),
-    0 0 25px rgba(217, 70, 239, 0.22),
-    inset 0 1.5px 0 rgba(255, 255, 255, 0.22);
+    0 20px 48px rgba(0, 0, 0, 0.75),
+    0 0 30px rgba(217, 70, 239, 0.25),
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.25);
   overflow: hidden;
   animation: fadeInUp 1s var(--ease-divine);
 }
@@ -226,24 +233,30 @@ html, body {
   justify-content: center;
   align-items: center;
   gap: 0.4rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.35rem;
 }
 
-/* Greeting Title Color Specified (#ffe47a) */
+/* Premium Non-Italic Greeting Title (#ffe47a) */
 .greeting-title {
-  font-size: clamp(1.1rem, 4.4vw, 1.38rem);
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-family: 'Plus Jakarta Sans', var(--font-primary);
+  font-size: clamp(1.12rem, 4.5vw, 1.4rem);
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.015em;
   color: #ffe47a;
-  text-shadow: 0 0 14px rgba(255, 228, 122, 0.45);
+  text-shadow: 0 0 16px rgba(255, 228, 122, 0.5);
 }
 
+/* Premium Non-Italic Primary Thought Message Text */
 .primary-thought-text {
-  font-size: clamp(0.86rem, 3.2vw, 0.98rem);
-  line-height: 1.52;
-  color: rgba(255, 255, 255, 0.92);
-  margin-bottom: 0.65rem;
-  font-weight: 400;
+  font-family: 'Plus Jakarta Sans', var(--font-primary);
+  font-size: clamp(0.88rem, 3.4vw, 1rem);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.58;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 0.7rem;
 }
 
 /* Jewel Emblem Divider */
@@ -259,7 +272,7 @@ html, body {
   flex: 1;
   max-width: 70px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.5), transparent);
 }
 
 .jewel-orb-frame {
@@ -294,13 +307,14 @@ html, body {
 /* Dynamic Odia Mantra Badge (Synchronized 100% with BG Crossfade) */
 .mantra-badge-container {
   text-align: center;
-  margin-top: 0.4rem;
+  margin-top: 0.45rem;
 }
 
 .odia-mantra-text {
   font-family: var(--font-odia);
-  font-size: clamp(1.2rem, 4.8vw, 1.48rem);
+  font-size: clamp(1.22rem, 4.9vw, 1.5rem);
   font-weight: 700;
+  font-style: normal;
   background: linear-gradient(135deg, #ecd3a1 0%, #ff9400 45%, #ffe094 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -344,7 +358,7 @@ html, body {
   animation: borderGlowPulse 4s ease-in-out infinite alternate;
 }
 
-/* 4. Twin Sub-Columns (Left & Right Split) - High Readability & Contrast */
+/* 4. Twin Sub-Columns (Left & Right Split) - Ultra Premium Readability */
 .twin-columns-section {
   display: flex;
   align-items: stretch;
@@ -355,13 +369,13 @@ html, body {
 
 .sub-column {
   flex: 1;
-  background: rgba(22, 10, 32, 0.75);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 215, 0, 0.25);
+  background: rgba(22, 10, 32, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 215, 0, 0.3);
   border-radius: 14px;
   padding: 0.65rem 0.75rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
 }
 
 .column-header-row {
@@ -381,13 +395,15 @@ html, body {
 
 .column-divider {
   width: 1px;
-  background: linear-gradient(180deg, transparent, rgba(255, 215, 0, 0.3), transparent);
+  background: linear-gradient(180deg, transparent, rgba(255, 215, 0, 0.35), transparent);
 }
 
 .column-label {
   display: block;
+  font-family: 'Plus Jakarta Sans', var(--font-primary);
   font-size: 0.6rem;
   font-weight: 700;
+  font-style: normal;
   letter-spacing: 0.12em;
   color: var(--accent-color);
   text-transform: uppercase;
@@ -396,10 +412,12 @@ html, body {
 }
 
 .column-body {
+  font-family: 'Plus Jakarta Sans', var(--font-primary);
   font-size: clamp(0.74rem, 2.6vw, 0.82rem);
-  line-height: 1.45;
-  color: rgba(255, 255, 255, 0.94);
   font-weight: 400;
+  font-style: normal;
+  line-height: 1.48;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .font-odia {
