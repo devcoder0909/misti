@@ -14,7 +14,7 @@
   --cream-white: #fcfaff;
   --glow-color: rgba(217, 70, 239, 0.45);
   --accent-color: #ffd700;
-  --glass-border: rgba(255, 215, 0, 0.32);
+  --glass-border: rgba(255, 215, 0, 0.35);
   
   --font-primary: 'Outfit', 'Poppins', -apple-system, sans-serif;
   --font-odia: 'Noto Sans Odia', sans-serif;
@@ -153,12 +153,11 @@ html, body {
   margin: 0.1rem 0;
 }
 
-/* 3. Primary Main Glass Teaching Card Section with 3D Tilt */
+/* 3. Primary Main Glass Teaching Card Section (Clean Static Card Design) */
 .main-card-section {
   position: relative;
   margin-top: 1.4rem;
   margin-bottom: 0.4rem;
-  perspective: 1000px;
 }
 
 /* Misti Profile Avatar (100% Unclipped Floating Circle Half Above Top Border) */
@@ -198,8 +197,6 @@ html, body {
     0 0 25px rgba(217, 70, 239, 0.22),
     inset 0 1.5px 0 rgba(255, 255, 255, 0.22);
   overflow: hidden;
-  transform-style: preserve-3d;
-  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease;
   animation: fadeInUp 1s var(--ease-divine);
 }
 
@@ -210,7 +207,7 @@ html, body {
   height: 26px;
   pointer-events: none;
   z-index: 2;
-  opacity: 0.65;
+  opacity: 0.75;
 }
 
 .top-left-floral {
@@ -347,7 +344,7 @@ html, body {
   animation: borderGlowPulse 4s ease-in-out infinite alternate;
 }
 
-/* 4. Twin Sub-Columns (Left & Right Split) */
+/* 4. Twin Sub-Columns (Left & Right Split) - High Readability & Contrast */
 .twin-columns-section {
   display: flex;
   align-items: stretch;
@@ -358,69 +355,68 @@ html, body {
 
 .sub-column {
   flex: 1;
-  background: rgba(255, 255, 255, 0.035);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 0.55rem 0.7rem;
-  transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-.sub-column:hover {
-  transform: translateY(-2px);
-  border-color: rgba(255, 215, 0, 0.3);
+  background: rgba(22, 10, 32, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: 14px;
+  padding: 0.65rem 0.75rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 .column-header-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.3rem;
 }
 
 .subcard-gem-dot {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: var(--accent-color);
-  box-shadow: 0 0 8px var(--accent-color);
+  box-shadow: 0 0 10px var(--accent-color);
 }
 
 .column-divider {
   width: 1px;
-  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  background: linear-gradient(180deg, transparent, rgba(255, 215, 0, 0.3), transparent);
 }
 
 .column-label {
   display: block;
-  font-size: 0.58rem;
+  font-size: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   color: var(--accent-color);
   text-transform: uppercase;
-  opacity: 0.9;
+  opacity: 1;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
 }
 
 .column-body {
-  font-size: clamp(0.72rem, 2.5vw, 0.8rem);
-  line-height: 1.42;
-  color: rgba(255, 255, 255, 0.84);
+  font-size: clamp(0.74rem, 2.6vw, 0.82rem);
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.94);
+  font-weight: 400;
 }
 
 .font-odia {
   font-family: var(--font-odia);
 }
 
-/* 5. Scaled Down Flower Ornaments (NEVER OVERLAPPING TEXT) */
+/* 5. Scaled Down High Visibility Flower Ornaments */
 .corner-lotus-bottom-left {
   position: absolute;
   bottom: -20px;
   left: -20px;
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.5;
-  filter: drop-shadow(0 0 15px rgba(244, 63, 94, 0.6));
+  opacity: 0.85;
+  filter: drop-shadow(0 0 18px rgba(244, 63, 94, 0.85));
   animation: lotusFloat 6s ease-in-out infinite alternate;
 }
 
@@ -428,12 +424,12 @@ html, body {
   position: absolute;
   bottom: -20px;
   right: -20px;
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.5;
-  filter: drop-shadow(0 0 15px rgba(217, 70, 239, 0.6));
+  opacity: 0.85;
+  filter: drop-shadow(0 0 18px rgba(217, 70, 239, 0.85));
   animation: lotusFloat 7s ease-in-out infinite alternate-reverse;
 }
 
@@ -441,12 +437,12 @@ html, body {
   position: absolute;
   top: 40px;
   right: -15px;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.45;
-  filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.5));
+  opacity: 0.8;
+  filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.85));
 }
 
 .corner-lotus-svg {

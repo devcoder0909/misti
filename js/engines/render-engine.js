@@ -1,6 +1,6 @@
 /**
  * 🌸 RenderEngine
- * Renders background artwork, glassmorphism UI, 48px Misti profile, serene typewriter, and automatic date/festival fetching.
+ * Renders background artwork, glassmorphism UI, 48px Misti profile, serene typewriter, and 5s mantra sync.
  */
 export class RenderEngine {
   constructor() {
@@ -18,7 +18,7 @@ export class RenderEngine {
       document.documentElement.style.setProperty('--glass-border', activeTheme.glassBorder);
     }
 
-    // 1. Automatic Dynamic Day & Date Fetching (No Static / No Dummy)
+    // 1. Dynamic Day & Date
     const currentDate = date || new Date();
     const headerDateEl = document.getElementById('headerDate');
     if (headerDateEl) {
@@ -26,30 +26,29 @@ export class RenderEngine {
       headerDateEl.textContent = currentDate.toLocaleDateString('en-US', options);
     }
 
-    // 2. Primary Greeting Title (Clean without emoji in message box)
+    // 2. Greeting Title
     const cardGreetingEl = document.getElementById('cardGreeting');
     if (cardGreetingEl && greetingText) {
       cardGreetingEl.textContent = greetingText.replace(/[\u{1F300}-\u{1F9FF}]/gu, '').trim();
     }
 
-    // 3. Sub-columns (TODAY'S THOUGHT & DAILY GUIDANCE): Immediate Render
+    // 3. TODAY'S THOUGHT Sub-column (Renders Immediately & Reliably)
     if (selectedThought) {
       const thoughtBodyEl = document.getElementById('thoughtBody');
       if (thoughtBodyEl) {
         thoughtBodyEl.textContent = selectedThought.text;
-        thoughtBodyEl.className = `column-body font-${selectedThought.language}`;
       }
     }
 
+    // 4. DAILY GUIDANCE Sub-column (Renders Immediately & Reliably)
     if (selectedGuidance) {
       const guidanceBodyEl = document.getElementById('guidanceBody');
       if (guidanceBodyEl) {
         guidanceBodyEl.textContent = selectedGuidance.text;
-        guidanceBodyEl.className = `column-body font-${selectedGuidance.language}`;
       }
     }
 
-    // 4. Primary Message Box Thought: Serene Typewriter Animation (45ms)
+    // 5. Primary Message Box Thought: Serene Typewriter Animation (45ms)
     if (!this.hasTyped && selectedThought) {
       this.hasTyped = true;
       const primaryThoughtEl = document.getElementById('primaryThought');
@@ -60,7 +59,7 @@ export class RenderEngine {
   }
 
   /**
-   * Serene letter-by-letter typewriter animation for primary message box
+   * Serene typewriter animation for primary message box
    */
   typewriter(element, text, speed = 45) {
     if (!element || !text) return;
