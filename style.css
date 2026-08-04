@@ -1,22 +1,22 @@
 /* ==========================================================================
-   🌸 MISTI DIVINE — BILLION-DOLLAR HANDWRITTEN LETTER EXPERIENCE
-   Target: 60 FPS, Apple Design Award Quality, 100dvh Lock
+   🌸 MISTI'S DIVINE COMPANION — PIXEL-FAITHFUL REFERENCE DESIGN SYSTEM
+   Target: 60 FPS, Apple / Awwwards Quality, 100dvh Lock
    ========================================================================== */
 
 :root {
   /* Design Tokens */
   --royal-purple: #1e1b4b;
-  --deep-indigo: #06020e;
+  --deep-indigo: #0c061a;
   --divine-gold: #ffd700;
   --neon-magenta: #d946ef;
   --lotus-pink: #f43f5e;
   --soft-lavender: #e0e7ff;
   --cream-white: #fcfaff;
-  --glow-color: rgba(217, 70, 239, 0.55);
+  --glow-color: rgba(217, 70, 239, 0.45);
   --accent-color: #ffd700;
-  --glass-border: rgba(255, 215, 0, 0.35);
+  --glass-border: rgba(255, 215, 0, 0.28);
   
-  --font-primary: 'Outfit', 'Poppins', -apple-system, sans-serif;
+  --font-primary: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-odia: 'Noto Sans Odia', sans-serif;
 
   --ease-apple: cubic-bezier(0.25, 1, 0.5, 1);
@@ -39,29 +39,17 @@ html, body {
   font-family: var(--font-primary);
   color: var(--cream-white);
   background-color: var(--deep-indigo);
-  background-image: linear-gradient(180deg, rgba(6, 2, 14, 0.18) 0%, rgba(6, 2, 14, 0.72) 100%), url('./bg%20image.png');
+  background-image: linear-gradient(180deg, rgba(12, 6, 26, 0.35) 0%, rgba(12, 6, 26, 0.85) 100%), url('./bg%20image.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  animation: kenBurnsBreathing 25s ease-in-out infinite alternate;
+  transition: background 2s var(--ease-apple);
 }
 
-/* Mobile-First Frame Wrapper for Desktop Presentation */
-.mobile-frame-wrapper {
-  width: 100%;
-  height: 100%;
-  height: 100dvh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #040108;
-}
-
-/* Mobile App Viewport Lock (Max Width 430px) */
+/* Single Screen Container */
 .app-viewport {
   position: relative;
   width: 100%;
-  max-width: 430px;
   height: 100%;
   height: 100dvh;
   display: flex;
@@ -69,49 +57,10 @@ html, body {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  padding: clamp(0.5rem, 2vh, 1rem) clamp(0.85rem, 3.8vw, 1.3rem);
-  box-shadow: 0 0 100px rgba(217, 70, 239, 0.2);
+  padding: clamp(0.5rem, 2vh, 1rem) clamp(0.85rem, 3.5vw, 1.25rem);
 }
 
-/* Dynamic Aurora Mesh Gradient Overlay */
-.aurora-mesh-overlay {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 50% -20%, rgba(217, 70, 239, 0.25), transparent 70%),
-              radial-gradient(circle at 10% 80%, rgba(255, 215, 0, 0.16), transparent 60%);
-  pointer-events: none;
-  z-index: 1;
-  animation: auroraPulse 10s ease-in-out infinite alternate;
-}
-
-/* Ambient Divine Light Beams */
-.divine-beam-left {
-  position: absolute;
-  top: -100px;
-  left: -80px;
-  width: 200px;
-  height: 600px;
-  background: linear-gradient(135deg, rgba(255, 215, 0, 0.08) 0%, rgba(217, 70, 239, 0) 80%);
-  transform: rotate(-25deg);
-  pointer-events: none;
-  z-index: 1;
-  animation: beamSwayLeft 12s ease-in-out infinite alternate;
-}
-
-.divine-beam-right {
-  position: absolute;
-  top: -100px;
-  right: -80px;
-  width: 200px;
-  height: 600px;
-  background: linear-gradient(225deg, rgba(217, 70, 239, 0.12) 0%, rgba(255, 215, 0, 0) 80%);
-  transform: rotate(25deg);
-  pointer-events: none;
-  z-index: 1;
-  animation: beamSwayRight 14s ease-in-out infinite alternate;
-}
-
-/* Background Canvas & Fireworks */
+/* Background Particle Canvas */
 .particle-canvas {
   position: absolute;
   top: 0;
@@ -122,165 +71,172 @@ html, body {
   z-index: 1;
 }
 
-.sky-fireworks-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.fireworks-svg {
-  width: 100%;
-  height: 100%;
-}
-
 /* Content Frame Lock */
 .content-frame {
   position: relative;
   z-index: 2;
   width: 100%;
+  max-width: 440px;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* 1. Header Bar ("Misti Divine 🌸") */
+/* 1. Header & Top Bar */
 .greeting-header {
-  padding-top: clamp(0.1rem, 0.5vh, 0.4rem);
   text-align: center;
+  padding-top: clamp(0.1rem, 0.5vh, 0.35rem);
 }
 
-.mobile-notch-bar {
+.header-top-bar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-
-.notch-title {
-  font-size: clamp(1.05rem, 4.2vw, 1.25rem);
-  font-weight: 700;
-  color: #ffffff;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
   letter-spacing: 0.05em;
-  text-shadow: 0 0 18px rgba(255, 215, 0, 0.5);
+  margin-bottom: 0.2rem;
 }
 
-.text-shine-wave {
-  background: linear-gradient(90deg, #ffffff 0%, var(--accent-color) 45%, var(--neon-magenta) 55%, #ffffff 100%);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textShineWave 5s linear infinite;
+.header-dots {
+  letter-spacing: 0.15em;
+  opacity: 0.8;
 }
 
-/* 2. Clean Open Art Stage */
+.header-subtitle {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: capitalize;
+  letter-spacing: 0.04em;
+}
+
+.header-pill {
+  width: 22px;
+  height: 10px;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  position: relative;
+}
+.header-pill::after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 10px;
+  height: 4px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+.greeting-text {
+  display: none; /* Subtitle Header hidden in favor of card header matching screenshot */
+}
+
+.date-badge {
+  display: none;
+}
+
+/* 2. Divine Stage (~50% Height) */
 .art-stage {
   position: relative;
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-height: 46vh;
   margin: 0.2rem 0;
 }
 
-/* 3. Primary 3D Glass Teaching Card */
+.mandala-ring {
+  position: absolute;
+  width: min(290px, 70vw);
+  height: min(290px, 70vw);
+  pointer-events: none;
+  z-index: 1;
+  animation: mandalaRotate 35s linear infinite;
+}
+
+.mandala-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 16px rgba(255, 215, 0, 0.35));
+}
+
+.divine-halo {
+  position: absolute;
+  width: min(260px, 62vw);
+  height: min(260px, 62vw);
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--neon-magenta) 0%, var(--glow-color) 40%, rgba(0,0,0,0) 75%);
+  filter: blur(28px);
+  animation: haloPulse 6s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* 3. Primary Main Glass Card ("Teachings & Bhakti") */
 .main-card-section {
   margin-bottom: 0.5rem;
-  perspective: 1000px;
 }
 
 .primary-teaching-card {
   position: relative;
-  background: linear-gradient(180deg, rgba(38, 14, 46, 0.92) 0%, rgba(18, 7, 26, 0.96) 100%);
-  backdrop-filter: blur(32px) saturate(220%);
-  -webkit-backdrop-filter: blur(32px) saturate(220%);
+  background: linear-gradient(180deg, rgba(38, 14, 46, 0.88) 0%, rgba(18, 7, 26, 0.92) 100%);
+  backdrop-filter: blur(28px) saturate(200%);
+  -webkit-backdrop-filter: blur(28px) saturate(200%);
   border: 1px solid var(--glass-border);
-  border-radius: 22px;
-  padding: 1.15rem 1.3rem 0.9rem 1.3rem;
+  border-radius: 20px;
+  padding: 1.1rem 1.25rem 0.85rem 1.25rem;
   text-align: center;
   box-shadow: 
-    0 20px 50px rgba(0, 0, 0, 0.7),
-    0 0 35px rgba(217, 70, 239, 0.32),
-    inset 0 1.5px 0 rgba(255, 255, 255, 0.25);
+    0 16px 40px rgba(0, 0, 0, 0.65),
+    0 0 25px rgba(217, 70, 239, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
   overflow: hidden;
-  transform-style: preserve-3d;
-  transition: transform 0.2s var(--ease-apple), box-shadow 0.4s ease;
   animation: fadeInUp 1s var(--ease-divine);
-  z-index: 5;
 }
 
-.glowing-text-flow {
-  font-size: clamp(1.25rem, 5vw, 1.6rem);
-  font-weight: 700;
+.greeting-title {
+  font-size: clamp(1.2rem, 4.8vw, 1.55rem);
+  font-weight: 600;
   letter-spacing: -0.01em;
-  background: linear-gradient(135deg, #ffffff 0%, #fef08a 50%, var(--accent-color) 100%);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
   margin-bottom: 0.35rem;
-  animation: textGradientFlow 6s ease infinite;
+  text-shadow: 0 0 14px rgba(255, 255, 255, 0.3);
 }
 
 .primary-thought-text {
-  font-size: clamp(0.8rem, 2.9vw, 0.9rem);
-  line-height: 1.48;
-  color: rgba(255, 255, 255, 0.94);
+  font-size: clamp(0.78rem, 2.8vw, 0.88rem);
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.75);
   margin-bottom: 0.75rem;
-  font-weight: 400;
-  min-height: 2.6em;
 }
 
-/* Jewel Emblem 3D Orb Divider */
+/* Jewel Emblem Divider (—— 🔵 ——) */
 .jewel-emblem-divider {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.6rem;
   margin-top: 0.25rem;
 }
 
 .divider-line {
   flex: 1;
-  max-width: 75px;
+  max-width: 70px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.5), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.4), transparent);
 }
 
-.jewel-orb-3d {
-  position: relative;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #f43f5e 0%, #8b5cf6 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 16px var(--neon-magenta);
+.jewel-orb {
+  font-size: 0.75rem;
+  filter: drop-shadow(0 0 8px #38bdf8);
+  animation: emblemPulse 3s ease-in-out infinite alternate;
 }
 
-.orb-core {
-  font-size: 0.68rem;
-  filter: drop-shadow(0 0 4px #ffffff);
-}
-
-.orb-ring {
-  position: absolute;
-  inset: -4px;
-  border-radius: 50%;
-  border: 1px stroke rgba(255, 215, 0, 0.7);
-  animation: orbRotate 3s linear infinite;
-}
-
-.orb-sparkle {
-  position: absolute;
-  inset: -6px;
-  border-radius: 50%;
-  border: 1px dashed rgba(217, 70, 239, 0.5);
-  animation: orbRotate 6s linear infinite reverse;
-}
-
-/* Specular Shimmer */
+/* Specular Light Sweep Shimmer */
 .shimmer-card::after {
   content: '';
   position: absolute;
@@ -291,9 +247,9 @@ html, body {
   background: linear-gradient(
     60deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.12) 45%,
-    rgba(255, 215, 0, 0.35) 50%,
-    rgba(255, 255, 255, 0.12) 55%,
+    rgba(255, 255, 255, 0.08) 45%,
+    rgba(255, 215, 0, 0.25) 50%,
+    rgba(255, 255, 255, 0.08) 55%,
     transparent 100%
   );
   transform: rotate(25deg);
@@ -301,17 +257,17 @@ html, body {
   pointer-events: none;
 }
 
-.animated-border-gradient {
+.card-border-glow {
   position: absolute;
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(255, 215, 0, 0.7), rgba(217, 70, 239, 0.8), rgba(255, 215, 0, 0.3));
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.5), rgba(217, 70, 239, 0.6), rgba(255, 215, 0, 0.2));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
-  animation: borderGlowPulse 3.5s ease-in-out infinite alternate;
+  animation: borderGlowPulse 4s ease-in-out infinite alternate;
 }
 
 /* 4. Twin Sub-Columns (Left & Right Split) */
@@ -321,78 +277,52 @@ html, body {
   gap: 0.75rem;
   padding-bottom: 1.25rem;
   animation: fadeInUp 1.2s var(--ease-divine);
-  z-index: 5;
 }
 
-.glow-subcard {
+.sub-column {
   flex: 1;
-  background: rgba(255, 255, 255, 0.045);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 14px;
-  padding: 0.65rem 0.75rem;
-  transition: transform 0.3s var(--ease-apple), border-color 0.3s ease;
-}
-
-.glow-subcard:hover {
-  transform: translateY(-2px);
-  border-color: rgba(255, 215, 0, 0.35);
+  background: rgba(255, 255, 255, 0.025);
+  border-radius: 12px;
+  padding: 0.5rem 0.65rem;
 }
 
 .column-divider {
   width: 1px;
-  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.15), transparent);
 }
 
 .column-label {
   display: block;
-  font-size: 0.6rem;
+  font-size: 0.58rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   color: var(--accent-color);
   text-transform: uppercase;
-  margin-bottom: 0.25rem;
-  text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+  margin-bottom: 0.2rem;
+  opacity: 0.85;
 }
 
 .column-body {
-  font-size: clamp(0.72rem, 2.5vw, 0.8rem);
-  line-height: 1.42;
-  color: rgba(255, 255, 255, 0.9);
-  min-height: 3.2em;
+  font-size: clamp(0.7rem, 2.4vw, 0.78rem);
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .font-odia {
   font-family: var(--font-odia);
 }
 
-/* 5. Decorative Lotus Accents (Outside Text Area) */
-.corner-lotus-bottom-left {
+/* 5. Bottom Lotus & Bottom Nav Orb */
+.bottom-lotus-left {
   position: absolute;
-  bottom: -32px;
-  left: -32px;
-  width: 95px;
-  height: 95px;
+  bottom: -15px;
+  left: -20px;
+  width: 105px;
+  height: 105px;
   pointer-events: none;
-  z-index: 1;
-  opacity: 0.7;
-  filter: drop-shadow(0 0 22px rgba(244, 63, 94, 0.8));
-}
-
-.corner-lotus-bottom-right {
-  position: absolute;
-  bottom: -32px;
-  right: -32px;
-  width: 95px;
-  height: 95px;
-  pointer-events: none;
-  z-index: 1;
-  opacity: 0.7;
-  filter: drop-shadow(0 0 22px rgba(217, 70, 239, 0.8));
-}
-
-.lotus-pulse {
-  animation: lotusPulse 6s ease-in-out infinite alternate;
+  z-index: 4;
+  filter: drop-shadow(0 0 22px rgba(244, 63, 94, 0.75));
+  animation: lotusFloat 6s ease-in-out infinite alternate;
 }
 
 .corner-lotus-svg {
@@ -405,72 +335,26 @@ html, body {
   bottom: 8px;
   left: 50%;
   transform: translateX(-50%);
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: radial-gradient(circle, #38bdf8 0%, #1e1b4b 100%);
-  border: 1.5px solid rgba(255, 215, 0, 0.55);
+  border: 1px solid rgba(255, 215, 0, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 22px rgba(56, 189, 248, 0.8);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
   z-index: 5;
 }
 
-.orb-pulse {
-  animation: orbGlowPulse 3s ease-in-out infinite alternate;
-}
-
 .dot-orb {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
 }
 
 /* Keyframe Animations */
-@keyframes beamSwayLeft {
-  0% { transform: rotate(-25deg) translateY(0px); opacity: 0.6; }
-  100% { transform: rotate(-20deg) translateY(-15px); opacity: 1; }
-}
-
-@keyframes beamSwayRight {
-  0% { transform: rotate(25deg) translateY(0px); opacity: 0.6; }
-  100% { transform: rotate(20deg) translateY(-15px); opacity: 1; }
-}
-
-@keyframes textShineWave {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 200% 50%; }
-}
-
-@keyframes lotusPulse {
-  0% { transform: scale(0.95) rotate(0deg); opacity: 0.6; }
-  100% { transform: scale(1.08) rotate(4deg); opacity: 0.85; }
-}
-
-@keyframes orbGlowPulse {
-  0% { transform: translateX(-50%) scale(0.92); box-shadow: 0 0 14px rgba(56, 189, 248, 0.5); }
-  100% { transform: translateX(-50%) scale(1.08); box-shadow: 0 0 26px rgba(56, 189, 248, 0.95); }
-}
-
-@keyframes orbRotate {
+@keyframes mandalaRotate {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
-
-@keyframes kenBurnsBreathing {
-  0% { background-size: 100% auto; }
-  50% { background-size: 106% auto; }
-  100% { background-size: 100% auto; }
-}
-
-@keyframes textGradientFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-@keyframes auroraPulse {
-  0% { opacity: 0.6; }
-  100% { opacity: 1; }
 }
 
 @keyframes cardShimmerSweep {
@@ -483,6 +367,22 @@ html, body {
 @keyframes borderGlowPulse {
   0% { opacity: 0.4; }
   100% { opacity: 1; }
+}
+
+@keyframes emblemPulse {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  100% { transform: scale(1.15); opacity: 1; }
+}
+
+@keyframes lotusFloat {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-7px) rotate(3deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes haloPulse {
+  0% { transform: scale(0.95); opacity: 0.6; }
+  100% { transform: scale(1.12); opacity: 0.95; }
 }
 
 @keyframes fadeInUp {

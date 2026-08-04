@@ -3,139 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>🌸 Misti Divine</title>
-  
+  <title>🌸 Misti's Divine Companion</title>
+
   <!-- Preload Critical Background Image (bg image.png) -->
   <link rel="preload" as="image" href="./bg%20image.png">
-
+  
   <!-- SEO & PWA Meta -->
   <meta name="description" content="A peaceful daily spiritual companion inspired by Lord Jagannath and Lord Hanuman.">
-  <meta name="theme-color" content="#06020e">
+  <meta name="theme-color" content="#090514">
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Odia:wght@400;600&family=Outfit:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Odia:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS Design System -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Desktop Wrapper for Mobile-First Frame Centering -->
-  <div class="mobile-frame-wrapper">
+  <!-- Single Viewport App Container (100dvh) -->
+  <main class="app-viewport">
     
-    <!-- Mobile App Viewport (100dvh Lock) -->
-    <main class="app-viewport">
+    <!-- 60 FPS Canvas Particle Background -->
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+    <!-- Single Screen Content Frame -->
+    <div class="content-frame">
       
-      <!-- Dynamic Aurora Mesh Gradient Overlay -->
-      <div class="aurora-mesh-overlay"></div>
+      <!-- 1. Header Greeting -->
+      <header class="greeting-header">
+        <div class="header-top-bar">
+          <span class="header-dots">•••</span>
+          <span class="header-subtitle">Divine Teachings</span>
+          <span class="header-pill"></span>
+        </div>
+        <h1 class="greeting-text" id="greetingText">Good Morning, Misti 🌸</h1>
+        <p class="date-badge" id="dateBadge">Wednesday, 5 August</p>
+      </header>
 
-      <!-- Ambient Divine Light Beams -->
-      <div class="divine-beam-left"></div>
-      <div class="divine-beam-right"></div>
+      <!-- 2. Divine Stage (~50% Height) -->
+      <section class="art-stage">
+        <!-- Rotating Gold Mandala Ring -->
+        <div class="mandala-ring">
+          <svg viewBox="0 0 200 200" class="mandala-svg">
+            <circle cx="100" cy="100" r="90" fill="none" stroke="rgba(255, 215, 0, 0.4)" stroke-width="1.5" stroke-dasharray="4 6"/>
+            <circle cx="100" cy="100" r="75" fill="none" stroke="rgba(217, 70, 239, 0.35)" stroke-width="1"/>
+            <path d="M 100 10 L 100 190 M 10 100 L 190 100 M 36 36 L 164 164 M 36 164 L 164 36" stroke="rgba(255, 215, 0, 0.25)" stroke-width="1"/>
+          </svg>
+        </div>
+        
+        <div class="divine-halo"></div>
+      </section>
 
-      <!-- 60 FPS Interactive Canvas Particle System -->
-      <canvas id="particleCanvas" class="particle-canvas"></canvas>
+      <!-- 3. Primary Main Card ("Teachings & Bhakti" / Greeting Box) -->
+      <section class="main-card-section">
+        <article class="glass-card primary-teaching-card shimmer-card">
+          <div class="card-border-glow"></div>
+          <h2 class="greeting-title" id="cardGreeting">Good Morning, Misti 🌸</h2>
+          <p class="primary-thought-text" id="primaryThought">Maan mein shanti ho toh har din ek utsav jaisa lagta hai.</p>
+          
+          <!-- Exact Reference Jewel Emblem Divider -->
+          <div class="jewel-emblem-divider">
+            <span class="divider-line"></span>
+            <span class="jewel-orb">🔵</span>
+            <span class="divider-line"></span>
+          </div>
+        </article>
+      </section>
 
-      <!-- Background Starburst Fireworks Layer -->
-      <div class="sky-fireworks-layer">
-        <svg viewBox="0 0 400 400" class="fireworks-svg">
-          <g transform="translate(70, 50)" stroke="rgba(217, 70, 239, 0.4)" stroke-width="1.2" stroke-dasharray="2 4">
-            <line x1="0" y1="-30" x2="0" y2="30"/>
-            <line x1="-30" y1="0" x2="30" y2="0"/>
-            <line x1="-20" y1="-20" x2="20" y2="20"/>
-            <line x1="-20" y1="20" x2="20" y2="-20"/>
-            <circle cx="0" cy="0" r="8" fill="none" stroke="rgba(255, 215, 0, 0.4)" stroke-width="1"/>
-          </g>
-          <g transform="translate(330, 65)" stroke="rgba(255, 215, 0, 0.35)" stroke-width="1.2" stroke-dasharray="2 4">
-            <line x1="0" y1="-25" x2="0" y2="25"/>
-            <line x1="-25" y1="0" x2="25" y2="0"/>
-            <line x1="-18" y1="-18" x2="18" y2="18"/>
-            <line x1="-18" y1="18" x2="18" y2="-18"/>
-            <circle cx="0" cy="0" r="6" fill="none" stroke="rgba(217, 70, 239, 0.4)" stroke-width="1"/>
-          </g>
+      <!-- 4. Twin Bottom Columns (Left: Thought / Right: Guidance) -->
+      <section class="twin-columns-section">
+        <article class="sub-column left-column">
+          <span class="column-label">TODAY'S THOUGHT</span>
+          <p class="column-body" id="thoughtBody">...</p>
+        </article>
+        
+        <div class="column-divider"></div>
+
+        <article class="sub-column right-column">
+          <span class="column-label">DAILY GUIDANCE</span>
+          <p class="column-body" id="guidanceBody">...</p>
+        </article>
+      </section>
+
+      <!-- 5. Bottom Lotus Flower & Indicator (Exact Reference) -->
+      <div class="bottom-lotus-left">
+        <svg viewBox="0 0 100 100" class="corner-lotus-svg">
+          <path d="M 50 10 Q 75 45 50 90 Q 25 45 50 10 Z" fill="#f43f5e" opacity="0.9"/>
+          <path d="M 50 25 Q 85 45 75 85 Q 35 70 50 25 Z" fill="#fb7185" opacity="0.8"/>
+          <path d="M 50 25 Q 15 45 25 85 Q 65 70 50 25 Z" fill="#fb7185" opacity="0.8"/>
+          <path d="M 50 40 Q 90 60 70 95 Q 30 95 50 40 Z" fill="#e11d48" opacity="0.85"/>
         </svg>
       </div>
 
-      <!-- Single Screen Content Frame -->
-      <div class="content-frame">
-        
-        <!-- 1. Header Bar ("Misti Divine 🌸") -->
-        <header class="greeting-header">
-          <div class="mobile-notch-bar">
-            <h1 class="notch-title text-shine-wave">Misti Divine 🌸</h1>
-          </div>
-        </header>
-
-        <!-- 2. Clean Open Art Stage -->
-        <section class="art-stage"></section>
-
-        <!-- 3. Primary 3D Glass Teaching Card -->
-        <section class="main-card-section">
-          <article class="glass-card primary-teaching-card tilt-card shimmer-card" id="tiltCard">
-            <div class="animated-border-gradient"></div>
-            <div class="card-specular-reflection"></div>
-            
-            <h2 class="greeting-title glowing-text-flow" id="greetingText">Good Morning, Misti 🌸</h2>
-            <p class="primary-thought-text typewriter-text" id="primaryThought"></p>
-            
-            <!-- Jewel Emblem 3D Orb Divider -->
-            <div class="jewel-emblem-divider">
-              <span class="divider-line"></span>
-              <div class="jewel-orb-3d">
-                <span class="orb-core">🌸</span>
-                <span class="orb-ring"></span>
-                <span class="orb-sparkle"></span>
-              </div>
-              <span class="divider-line"></span>
-            </div>
-          </article>
-        </section>
-
-        <!-- 4. Twin Sub-Columns (Left: Thought / Right: Guidance) -->
-        <section class="twin-columns-section">
-          <article class="sub-column left-column glass-subcard glow-subcard">
-            <span class="column-label">TODAY'S THOUGHT</span>
-            <p class="column-body typewriter-text" id="thoughtBody"></p>
-          </article>
-          
-          <div class="column-divider"></div>
-
-          <article class="sub-column right-column glass-subcard glow-subcard">
-            <span class="column-label">DAILY GUIDANCE</span>
-            <p class="column-body typewriter-text" id="guidanceBody"></p>
-          </article>
-        </section>
-
-        <!-- 5. Multi-Layer Floating Lotus Ornaments -->
-        <div class="corner-lotus-bottom-left lotus-pulse">
-          <svg viewBox="0 0 100 100" class="corner-lotus-svg">
-            <path d="M 50 8 Q 78 45 50 92 Q 22 45 50 8 Z" fill="#f43f5e" opacity="0.9"/>
-            <path d="M 50 22 Q 88 45 78 88 Q 35 70 50 22 Z" fill="#fb7185" opacity="0.8"/>
-            <path d="M 50 22 Q 12 45 22 88 Q 65 70 50 22 Z" fill="#fb7185" opacity="0.8"/>
-            <circle cx="50" cy="50" r="8" fill="#ffd700" opacity="0.8"/>
-          </svg>
-        </div>
-
-        <div class="corner-lotus-bottom-right lotus-pulse">
-          <svg viewBox="0 0 100 100" class="corner-lotus-svg">
-            <path d="M 50 8 Q 78 45 50 92 Q 22 45 50 8 Z" fill="#d946ef" opacity="0.9"/>
-            <path d="M 50 22 Q 88 45 78 88 Q 35 70 50 22 Z" fill="#f472b6" opacity="0.8"/>
-            <path d="M 50 22 Q 12 45 22 88 Q 65 70 50 22 Z" fill="#f472b6" opacity="0.8"/>
-            <circle cx="50" cy="50" r="8" fill="#ffd700" opacity="0.8"/>
-          </svg>
-        </div>
-
-        <div class="bottom-nav-dot orb-pulse">
-          <span class="dot-orb">✨</span>
-        </div>
-
+      <div class="bottom-nav-dot">
+        <span class="dot-orb">💧</span>
       </div>
-    </main>
-  </div>
+
+    </div>
+  </main>
 
   <!-- Modular Engines Launcher -->
   <script type="module" src="js/app.js"></script>
