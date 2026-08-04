@@ -1,10 +1,11 @@
 /**
  * 🌸 RenderEngine
- * Renders background artwork, glassmorphism UI, 48px Misti profile, and synchronized Odia mantra switching.
+ * Renders background artwork, glassmorphism UI, 48px Misti profile, and rock-solid synchronized 5s background/mantra rotation.
  */
 export class RenderEngine {
   constructor() {
-    this.initMantraSync();
+    this.currentIndex = 0; // 0 = Jagannath (BG1), 1 = Bajrangbali (BG2)
+    this.initSynchronizedCarousel();
   }
 
   render(state) {
@@ -46,29 +47,48 @@ export class RenderEngine {
   }
 
   /**
-   * Synchronizes Odia Mantra Badge with 5-Second Background Image Slide Cycle
-   * Swaps between ଜୟ ଜଗନ୍ନାଥ (BG1) and ଜୟ ବଜରଙ୍ଗବଲୀ (BG2) every 5 seconds.
+   * Deterministic, Ultra-Smooth 5-Second Carousel Engine
+   * Crossfades BG1 (bg image.png) & BG2 (bg2 image.png) and Odia Mantras in 100% Perfect Sync.
    */
-  initMantraSync() {
+  initSynchronizedCarousel() {
+    const bg1 = document.getElementById('bgLayer1');
+    const bg2 = document.getElementById('bgLayer2');
     const mantraEl = document.getElementById('odiaMantra');
-    if (!mantraEl) return;
 
-    // Set initial text matching BG1 (Jagannath)
+    if (!bg1 || !bg2 || !mantraEl) return;
+
+    // Initial State: BG1 active, Mantra = ଜୟ ଜଗନ୍ନାଥ
+    bg1.style.opacity = '1';
+    bg2.style.opacity = '0';
     mantraEl.textContent = 'ଜୟ ଜଗନ୍ନାଥ';
+    mantraEl.style.opacity = '1';
 
-    // 5-second interval cycle matching 5s bg image slide
     setInterval(() => {
-      mantraEl.style.opacity = '0';
-
-      setTimeout(() => {
-        if (mantraEl.textContent.trim() === 'ଜୟ ଜଗନ୍ନାଥ') {
+      if (this.currentIndex === 0) {
+        // Switch to BG2 (Lord Hanuman) & ଜୟ ବଜରଙ୍ଗବଲୀ
+        bg1.style.opacity = '0';
+        bg2.style.opacity = '1';
+        
+        mantraEl.style.opacity = '0';
+        setTimeout(() => {
           mantraEl.textContent = 'ଜୟ ବଜରଙ୍ଗବଲୀ';
-        } else {
-          mantraEl.textContent = 'ଜୟ ଜଗନ୍ନାଥ';
-        }
-        mantraEl.style.opacity = '1';
-      }, 500);
+          mantraEl.style.opacity = '1';
+        }, 500);
 
-    }, 5000); // Swaps exactly every 5 seconds
+        this.currentIndex = 1;
+      } else {
+        // Switch to BG1 (Lord Jagannath) & ଜୟ ଜଗନ୍ନାଥ
+        bg1.style.opacity = '1';
+        bg2.style.opacity = '0';
+
+        mantraEl.style.opacity = '0';
+        setTimeout(() => {
+          mantraEl.textContent = 'ଜୟ ଜଗନ୍ନାଥ';
+          mantraEl.style.opacity = '1';
+        }, 500);
+
+        this.currentIndex = 0;
+      }
+    }, 5000); // Toggles cleanly every 5 seconds
   }
 }
