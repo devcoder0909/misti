@@ -1,36 +1,50 @@
 /**
  * 🌸 AnimationEngine
- * Applies motion presets, 3D card tilt parallax, and accessibility rules.
+ * Handles 3D card tilt parallax interaction and smooth GPU-accelerated micro-animations.
  */
 export class AnimationEngine {
-  applyPreset(presetName = 'Divine') {
-    const root = document.documentElement;
-    root.setAttribute('data-motion-preset', presetName.toLowerCase());
-
-    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (prefersReduced) {
-      root.setAttribute('data-reduced-motion', 'true');
-      return;
-    }
-
-    this.initCardParallax();
+  constructor() {
+    this.initCardTilt();
   }
 
-  initCardParallax() {
-    const card = document.getElementById('tiltCard');
-    if (!card) return;
+  initCardTilt() {
+    const cardSection = document.querySelector('.main-card-section');
+    const card = document.querySelector('.primary-teaching-card');
 
-    window.addEventListener('pointermove', (e) => {
-      const { innerWidth, innerHeight } = window;
-      const x = (e.clientX - innerWidth / 2) / (innerWidth / 2);
-      const y = (e.clientY - innerHeight / 2) / (innerHeight / 2);
+    if (!cardSection || !card) return;
 
-      // Subtle 3D Tilt
-      card.style.transform = `perspective(1000px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg) translateY(-2px)`;
+    cardSection.addEventListener('mousemove', (e) => {
+      const rect = cardSection.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+
+      const rotateX = (y / (rect.height / 2)) * -8;
+      const rotateY = (x / (rect.width / 2)) * 8;
+
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
     });
 
-    window.addEventListener('pointerleave', () => {
-      card.style.transform = `perspective(1000px) rotateY(0deg) rotateX(0deg) translateY(0px)`;
+    cardSection.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+    });
+
+    // Touch Support for Mobile
+    cardSection.addEventListener('touchmove', (e) => {
+      if (e.touches.length > 0) {
+        const touch = e.touches[0];
+        const rect = cardSection.getBoundingClientRect();
+        const x = touch.clientX - rect.left - rect.width / 2;
+        const y = touch.clientY - rect.top - rect.height / 2;
+
+        const rotateX = (y / (rect.height / 2)) * -6;
+        const rotateY = (x / (rect.width / 2)) * 6;
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      }
+    }, { passive: true });
+
+    cardSection.addEventListener('touchend', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
     });
   }
 }

@@ -153,11 +153,12 @@ html, body {
   margin: 0.1rem 0;
 }
 
-/* 3. Primary Main Glass Teaching Card Section */
+/* 3. Primary Main Glass Teaching Card Section with 3D Tilt */
 .main-card-section {
   position: relative;
   margin-top: 1.4rem;
   margin-bottom: 0.4rem;
+  perspective: 1000px;
 }
 
 /* Misti Profile Avatar (100% Unclipped Floating Circle Half Above Top Border) */
@@ -197,6 +198,8 @@ html, body {
     0 0 25px rgba(217, 70, 239, 0.22),
     inset 0 1.5px 0 rgba(255, 255, 255, 0.22);
   overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease;
   animation: fadeInUp 1s var(--ease-divine);
 }
 
