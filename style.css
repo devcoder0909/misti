@@ -141,7 +141,7 @@ html, body {
   margin: 0.1rem 0;
 }
 
-/* 3. Primary Main Glass Card with Half-Above Profile Avatar */
+/* 3. Primary Main Glass Teaching Card with Half-Above Profile Avatar */
 .main-card-section {
   position: relative;
   margin-top: 1rem;
@@ -155,13 +155,13 @@ html, body {
   -webkit-backdrop-filter: blur(28px) saturate(200%);
   border: 1px solid var(--glass-border);
   border-radius: 20px;
-  padding: 1.55rem 1.2rem 0.8rem 1.2rem; /* Reduced height, room for top avatar */
+  padding: 1.6rem 1.25rem 0.85rem 1.25rem;
   text-align: center;
   box-shadow: 
     0 16px 40px rgba(0, 0, 0, 0.65),
     0 0 25px rgba(217, 70, 239, 0.22),
     inset 0 1.5px 0 rgba(255, 255, 255, 0.22);
-  overflow: visible; /* Allows avatar to overlap top boundary seamlessly */
+  overflow: hidden; /* Glass shine effect strictly contained inside message box */
   animation: fadeInUp 1s var(--ease-divine);
 }
 
@@ -189,19 +189,21 @@ html, body {
 }
 
 .greeting-title {
-  font-size: clamp(1.1rem, 4.4vw, 1.35rem);
+  font-size: clamp(1.1rem, 4.4vw, 1.38rem);
   font-weight: 600;
   letter-spacing: -0.01em;
   color: #ffffff;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
   text-shadow: 0 0 14px rgba(255, 255, 255, 0.3);
 }
 
+/* Slightly Increased Message Box Font Size for Better Readability */
 .primary-thought-text {
-  font-size: clamp(0.76rem, 2.7vw, 0.86rem);
-  line-height: 1.42;
-  color: rgba(255, 255, 255, 0.88);
-  margin-bottom: 0.55rem;
+  font-size: clamp(0.86rem, 3.2vw, 0.98rem);
+  line-height: 1.52;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 0.65rem;
+  font-weight: 400;
 }
 
 /* Jewel Emblem Divider */
@@ -239,7 +241,7 @@ html, body {
   background: #ffd700;
 }
 
-/* Dynamic Odia Mantra Badge (Requested linear-gradient(135deg, #ecd3a1 0%, #ff9400 45%, #ffe094 100%)) */
+/* Dynamic Odia Mantra Badge (Synchronized with BG1 / BG2 Crossfade) */
 .mantra-badge-container {
   text-align: center;
   margin-top: 0.4rem;
@@ -253,28 +255,28 @@ html, body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 20px rgba(255, 148, 0, 0.55);
-  transition: opacity 0.6s ease;
+  transition: opacity 0.8s ease;
   display: inline-block;
 }
 
-/* Specular Light Sweep Shimmer */
+/* Refined Specular Light Sweep Shimmer (Contained Strictly Inside Message Box) */
 .shimmer-card::after {
   content: '';
   position: absolute;
   top: -50%;
   left: -150%;
-  width: 100%;
+  width: 60%;
   height: 200%;
   background: linear-gradient(
     60deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.08) 45%,
-    rgba(255, 215, 0, 0.25) 50%,
-    rgba(255, 255, 255, 0.08) 55%,
+    rgba(255, 255, 255, 0.05) 45%,
+    rgba(255, 215, 0, 0.18) 50%,
+    rgba(255, 255, 255, 0.05) 55%,
     transparent 100%
   );
   transform: rotate(25deg);
-  animation: cardShimmerSweep 5s ease-in-out infinite;
+  animation: cardShimmerSweep 7s ease-in-out infinite;
   pointer-events: none;
 }
 
@@ -324,9 +326,9 @@ html, body {
 }
 
 .column-body {
-  font-size: clamp(0.7rem, 2.4vw, 0.78rem);
-  line-height: 1.4;
-  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(0.72rem, 2.5vw, 0.8rem);
+  line-height: 1.42;
+  color: rgba(255, 255, 255, 0.84);
 }
 
 .font-odia {
