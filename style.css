@@ -1,6 +1,6 @@
 /* ==========================================================================
-   🌸 MISTI'S DIVINE COMPANION — PIXEL-FAITHFUL MOBILE PWA EXPERIENCE
-   Target: 60 FPS, Apple / Awwwards Quality, 100dvh Lock
+   🌸 MISTI DIVINE — STUNNING ODIA TITLE & MISTI IMAGE EXPERIENCE
+   Target: 60 FPS, Apple Design Award Quality, 100dvh Lock
    ========================================================================== */
 
 :root {
@@ -66,7 +66,7 @@ html, body {
   overflow: hidden;
   padding: clamp(0.5rem, 2vh, 1rem) clamp(0.85rem, 3.5vw, 1.25rem);
   background-color: var(--deep-indigo);
-  background-image: linear-gradient(180deg, rgba(12, 6, 26, 0.25) 0%, rgba(12, 6, 26, 0.85) 100%), url('./bg%20image.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.85) 100%), url('./bg%20image.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -105,23 +105,18 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.75);
-  letter-spacing: 0.05em;
-  margin-bottom: 0.2rem;
-}
-
-.header-dots {
-  letter-spacing: 0.15em;
-  opacity: 0.8;
-}
-
-.header-subtitle {
   font-size: 0.82rem;
-  font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
-  text-transform: capitalize;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.15rem;
+}
+
+.header-brand-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #ffffff;
   letter-spacing: 0.04em;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
 }
 
 .header-pill {
@@ -142,28 +137,42 @@ html, body {
   border-radius: 2px;
 }
 
+/* Stunning Odia Main Title "ଜୟ ଜଗନ୍ନାଥ" */
+.odia-main-title {
+  font-family: var(--font-odia);
+  font-size: clamp(1.4rem, 5.5vw, 1.85rem);
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff 0%, #ffd700 45%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 24px rgba(255, 215, 0, 0.6);
+  margin-top: 0.2rem;
+  letter-spacing: 0.02em;
+}
+
 /* 2. Clean Open Art Stage */
 .art-stage {
   position: relative;
   flex: 1;
-  max-height: 28vh; /* Reduced height to shift card upwards */
+  max-height: 25vh;
   margin: 0.1rem 0;
 }
 
-/* 3. Primary Main Glass Card (Shifted Upwards) */
+/* 3. Primary Main Glass Card with misti.jpg Image */
 .main-card-section {
-  margin-top: -2rem; /* Shift message box higher up on screen */
+  margin-top: -1.5rem;
   margin-bottom: 0.5rem;
 }
 
 .primary-teaching-card {
   position: relative;
-  background: linear-gradient(180deg, rgba(38, 14, 46, 0.88) 0%, rgba(18, 7, 26, 0.92) 100%);
+  background: linear-gradient(180deg, rgba(38, 14, 46, 0.9) 0%, rgba(18, 7, 26, 0.94) 100%);
   backdrop-filter: blur(28px) saturate(200%);
   -webkit-backdrop-filter: blur(28px) saturate(200%);
   border: 1px solid var(--glass-border);
   border-radius: 20px;
-  padding: 1.15rem 1.25rem 0.9rem 1.25rem;
+  padding: 0.95rem 1.25rem 0.85rem 1.25rem;
   text-align: center;
   box-shadow: 
     0 16px 40px rgba(0, 0, 0, 0.65),
@@ -173,23 +182,43 @@ html, body {
   animation: fadeInUp 1s var(--ease-divine);
 }
 
+/* Misti Image Avatar Frame */
+.misti-avatar-frame {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 0.5rem auto;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(135deg, #ffd700 0%, #d946ef 50%, #38bdf8 100%);
+  box-shadow: 0 0 18px rgba(217, 70, 239, 0.5);
+}
+
+.misti-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
 .greeting-title {
-  font-size: clamp(1.2rem, 4.8vw, 1.55rem);
+  font-size: clamp(1.15rem, 4.5vw, 1.45rem);
   font-weight: 600;
   letter-spacing: -0.01em;
   color: #ffffff;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.3rem;
   text-shadow: 0 0 14px rgba(255, 255, 255, 0.3);
 }
 
 .primary-thought-text {
-  font-size: clamp(0.8rem, 2.9vw, 0.9rem);
-  line-height: 1.48;
+  font-size: clamp(0.78rem, 2.8vw, 0.88rem);
+  line-height: 1.45;
   color: rgba(255, 255, 255, 0.88);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.65rem;
 }
 
-/* Jewel Emblem Divider (—— 🔵 ——) */
+/* Jewel Emblem Divider */
 .jewel-emblem-divider {
   display: flex;
   justify-content: center;
@@ -205,10 +234,23 @@ html, body {
   background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.4), transparent);
 }
 
-.jewel-orb {
-  font-size: 0.75rem;
-  filter: drop-shadow(0 0 8px #38bdf8);
-  animation: emblemPulse 3s ease-in-out infinite alternate;
+.jewel-orb-frame {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #38bdf8 0%, #1e1b4b 100%);
+  border: 1px solid rgba(255, 215, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+.jewel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffd700;
 }
 
 /* Specular Light Sweep Shimmer */
@@ -337,11 +379,6 @@ html, body {
 @keyframes borderGlowPulse {
   0% { opacity: 0.4; }
   100% { opacity: 1; }
-}
-
-@keyframes emblemPulse {
-  0% { transform: scale(0.9); opacity: 0.7; }
-  100% { transform: scale(1.15); opacity: 1; }
 }
 
 @keyframes lotusFloat {

@@ -1,43 +1,28 @@
 /**
  * 🌸 RenderEngine
- * Updates DOM components smoothly matching the exact reference layout without layout thrashing.
+ * Renders background artwork (bg image.png) and clean glassmorphism UI with Misti image integration.
  */
 export class RenderEngine {
   render(state) {
-    const { greetingText, selectedThought, selectedGuidance, activeTheme, date } = state;
+    const { greetingText, selectedThought, selectedGuidance, activeTheme } = state;
 
-    // 1. Update Background with bg image.png + Dynamic Time Gradient Overlay
+    // 1. Apply requested linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.85) 100%), url(./bg%20image.png)
+    document.body.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.85) 100%), url('./bg%20image.png')`;
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundPosition = 'center top';
+    document.body.style.backgroundRepeat = 'no-repeat';
+
     if (activeTheme) {
-      document.body.style.backgroundImage = `linear-gradient(180deg, rgba(12, 6, 26, 0.35) 0%, rgba(12, 6, 26, 0.85) 100%), url('./bg%20image.png')`;
-      document.body.style.backgroundSize = 'cover';
-      document.body.style.backgroundPosition = 'center top';
-      document.body.style.backgroundRepeat = 'no-repeat';
-
       document.documentElement.style.setProperty('--glow-color', activeTheme.glowColor);
       document.documentElement.style.setProperty('--accent-color', activeTheme.accentColor);
       document.documentElement.style.setProperty('--glass-border', activeTheme.glassBorder);
-    } else {
-      document.body.style.backgroundImage = `linear-gradient(180deg, rgba(12, 6, 26, 0.35) 0%, rgba(12, 6, 26, 0.85) 100%), url('./bg%20image.png')`;
-      document.body.style.backgroundSize = 'cover';
-      document.body.style.backgroundPosition = 'center top';
     }
 
-    // 2. Header & Primary Greeting Title
-    const greetingEl = document.getElementById('greetingText');
-    if (greetingEl && greetingText) {
-      greetingEl.textContent = greetingText;
-    }
-
+    // 2. Primary Greeting Title (Clean without emoji in message box)
     const cardGreetingEl = document.getElementById('cardGreeting');
     if (cardGreetingEl && greetingText) {
-      cardGreetingEl.textContent = greetingText;
-    }
-
-    // Date Badge
-    const dateEl = document.getElementById('dateBadge');
-    if (dateEl) {
-      const options = { weekday: 'long', day: 'numeric', month: 'long' };
-      dateEl.textContent = date.toLocaleDateString('en-US', options);
+      // Strip emojis for clean message box title
+      cardGreetingEl.textContent = greetingText.replace(/[\u{1F300}-\u{1F9FF}]/gu, '').trim();
     }
 
     // 3. Primary Card Thought Text & Sub-column Thought Body

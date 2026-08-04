@@ -1,9 +1,10 @@
-const CACHE_NAME = 'misti-divine-companion-v3';
+const CACHE_NAME = 'misti-divine-companion-v4';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './style.css',
   './bg%20image.png',
+  './misti.jpg',
   './manifest.json',
   './js/app.js',
   './js/engines/app-engine.js',
@@ -48,7 +49,7 @@ self.addEventListener('activate', (event) => {
       );
     })
   );
-  self.clients.claim();
+  self.skipWaiting();
 });
 
 self.addEventListener('fetch', (event) => {

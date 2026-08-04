@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>🌸 Misti's Divine Companion</title>
+  <title>🌸 Misti Divine</title>
 
-  <!-- Preload Critical Background Image (bg image.png) -->
+  <!-- Preload Critical Background Image & Misti Avatar -->
   <link rel="preload" as="image" href="./bg%20image.png">
+  <link rel="preload" as="image" href="./misti.jpg">
   
   <!-- SEO & PWA Meta -->
   <meta name="description" content="A peaceful daily spiritual companion inspired by Lord Jagannath and Lord Hanuman.">
@@ -17,7 +18,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Odia:wght@400;600&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Odia:wght@600;700&family=Outfit:wght@400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
 
   <!-- CSS Design System -->
   <link rel="stylesheet" href="style.css">
@@ -36,29 +37,38 @@
       <!-- Single Screen Content Frame -->
       <div class="content-frame">
         
-        <!-- 1. Header Bar -->
+        <!-- 1. Header Bar ("Misti Divine" & Stunning Odia Main Title "ଜୟ ଜଗନ୍ନାଥ") -->
         <header class="greeting-header">
           <div class="header-top-bar">
-            <span class="header-dots">•••</span>
-            <span class="header-subtitle">Divine Teachings</span>
+            <span class="header-brand-title">Misti Divine 🌸</span>
             <span class="header-pill"></span>
           </div>
+          <h1 class="odia-main-title" id="mainTitle">ଜୟ ଜଗନ୍ନାଥ</h1>
         </header>
 
-        <!-- 2. Clean Open Art Stage (Mandala removed for 100% clean bg image view) -->
+        <!-- 2. Clean Open Art Stage -->
         <section class="art-stage"></section>
 
-        <!-- 3. Primary Main Glass Teaching Card (Shifted Upwards) -->
+        <!-- 3. Primary Main Glass Teaching Card with Misti Image -->
         <section class="main-card-section">
           <article class="glass-card primary-teaching-card shimmer-card">
             <div class="card-border-glow"></div>
-            <h2 class="greeting-title" id="cardGreeting">Good Morning, Misti 🌸</h2>
+            
+            <!-- Misti Avatar Image Frame -->
+            <div class="misti-avatar-frame">
+              <img src="misti.jpg" alt="Misti" class="misti-avatar-img">
+              <div class="avatar-glow-ring"></div>
+            </div>
+
+            <h2 class="greeting-title" id="cardGreeting">Good Morning, Misti</h2>
             <p class="primary-thought-text" id="primaryThought">Maan mein shanti ho toh har din ek utsav jaisa lagta hai.</p>
             
-            <!-- Jewel Emblem Divider -->
+            <!-- Jewel Emblem Divider with Misti Image Accent -->
             <div class="jewel-emblem-divider">
               <span class="divider-line"></span>
-              <span class="jewel-orb">🔵</span>
+              <div class="jewel-orb-frame">
+                <span class="jewel-dot"></span>
+              </div>
               <span class="divider-line"></span>
             </div>
           </article>
@@ -84,7 +94,7 @@
           <svg viewBox="0 0 100 100" class="corner-lotus-svg">
             <path d="M 50 10 Q 75 45 50 90 Q 25 45 50 10 Z" fill="#f43f5e" opacity="0.9"/>
             <path d="M 50 25 Q 85 45 75 85 Q 35 70 50 25 Z" fill="#fb7185" opacity="0.8"/>
-            <path d="M 50 25 Q 15 45 25 85 Q 65 70 50 25 Z" fill="#fb7185" opacity="0.8"/>
+            <path d="M 50 25 Q 12 45 25 85 Q 65 70 50 25 Z" fill="#fb7185" opacity="0.8"/>
             <path d="M 50 40 Q 90 60 70 95 Q 30 95 50 40 Z" fill="#e11d48" opacity="0.85"/>
           </svg>
         </div>
