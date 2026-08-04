@@ -1,6 +1,6 @@
 /**
  * 🌸 ParticleEngine
- * High performance 60 FPS HTML5 Canvas particle system with touch ripple interactions.
+ * High performance 60 FPS HTML5 Canvas particle system with Touch Haptic Lotus Burst.
  */
 export class ParticleEngine {
   constructor(canvasId) {
@@ -8,6 +8,7 @@ export class ParticleEngine {
     this.ctx = this.canvas ? this.canvas.getContext('2d') : null;
     this.particles = [];
     this.ripples = [];
+    this.burstParticles = [];
     this.animId = null;
     this.mode = 'sparkles';
     this.glowColor = '#ffd700';
@@ -21,8 +22,8 @@ export class ParticleEngine {
     this.resize();
     window.addEventListener('resize', () => this.resize());
 
-    // Interactive Touch / Pointer Listener
-    window.addEventListener('pointerdown', (e) => this.addRipple(e.clientX, e.clientY));
+    // Mobile-First Touch & Pointer Interaction Handler
+    window.addEventListener('pointerdown', (e) => this.handleTouchInteraction(e.clientX, e.clientY), { passive: true });
 
     this.createParticles();
     this.loop();
@@ -34,25 +35,71 @@ export class ParticleEngine {
     this.canvas.height = window.innerHeight;
   }
 
-  addRipple(x, y) {
+  /**
+   * Mobile Haptic & Lotus Particle Burst Handler
+   */
+  handleTouchInteraction(x, y) {
+    // 1. Mobile Native Haptic Pulse
+    if (typeof navigator !== 'undefined' && 'vibrate' in navigator) {
+      try {
+        navigator.vibrate(12);
+      } catch (err) {
+        // Fallback for browsers with vibration restrictions
+      }
+    }
+
+    // 2. Canvas Expanding Ripple
     this.ripples.push({
       x,
       y,
-      radius: 5,
-      maxRadius: 45,
+      radius: 4,
+      maxRadius: 55,
       opacity: 0.95
     });
+
+    // 3. Spawns 10 Radial Lotus Petal Particles
+    for (let i = 0; i < 10; i++) {
+      const angle = (Math.PI * 2 / 10) * i + (Math.random() * 0.4 - 0.2);
+      const speed = Math.random() * 2.8 + 1.2;
+      this.burstParticles.push({
+        x,
+        y,
+        speedX: Math.cos(angle) * speed,
+        speedY: Math.sin(angle) * speed,
+        radius: Math.random() * 3 + 1.8,
+        opacity: 0.9,
+        color: i % 2 === 0 ? '#ffd700' : '#f43f5e',
+        life: 0.8
+      });
+    }
+
+    // 4. CSS Lotus Ripple Element Creation
+    this.createDOMRipple(x, y);
+  }
+
+  createDOMRipple(x, y) {
+    const ripple = document.createElement('div');
+    ripple.className = 'touch-lotus-ripple';
+    ripple.style.left = `${x}px`;
+    ripple.style.top = `${y}px`;
+    document.body.appendChild(ripple);
+
+    setTimeout(() => {
+      if (ripple && ripple.parentNode) {
+        ripple.parentNode.removeChild(ripple);
+      }
+    }, 700);
   }
 
   createParticles() {
     this.particles = [];
-    const count = window.innerWidth < 480 ? 30 : 50;
+    const count = window.innerWidth < 480 ? 35 : 55;
 
     for (let i = 0; i < count; i++) {
       this.particles.push({
         x: Math.random() * this.canvas.width,
         y: Math.random() * this.canvas.height,
-        radius: Math.random() * 3.5 + 1.2,
+        radius: Math.random() * 3.2 + 1.2,
         speedX: (Math.random() - 0.5) * 0.45,
         speedY: (Math.random() - 0.5) * 0.45 - 0.25,
         opacity: Math.random() * 0.75 + 0.25,
@@ -66,7 +113,7 @@ export class ParticleEngine {
     if (!this.ctx) return;
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
-    // 1. Render Floating Ambient Particles
+    // 1. Render Ambient Background Particles
     for (let p of this.particles) {
       p.x += p.speedX;
       p.y += p.speedY;
@@ -81,31 +128,44 @@ export class ParticleEngine {
 
       this.ctx.save();
       this.ctx.beginPath();
-      if (this.mode === 'lotus' || this.mode === 'flowers') {
-        this.ctx.ellipse(p.x, p.y, p.radius * 2.2, p.radius, p.angle, 0, Math.PI * 2);
-        this.ctx.fillStyle = `rgba(244, 63, 94, ${currentOpacity * 0.75})`;
-        this.ctx.shadowBlur = 8;
-        this.ctx.shadowColor = '#f43f5e';
-      } else if (this.mode === 'fireflies') {
-        this.ctx.arc(p.x, p.y, p.radius * 1.5, 0, Math.PI * 2);
-        this.ctx.fillStyle = `rgba(217, 70, 239, ${currentOpacity})`;
-        this.ctx.shadowBlur = 12;
-        this.ctx.shadowColor = '#d946ef';
-      } else {
-        this.ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        this.ctx.fillStyle = `rgba(255, 215, 0, ${currentOpacity})`;
-        this.ctx.shadowBlur = 10;
-        this.ctx.shadowColor = '#ffd700';
-      }
+      this.ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      this.ctx.fillStyle = `rgba(255, 215, 0, ${currentOpacity})`;
+      this.ctx.shadowBlur = 10;
+      this.ctx.shadowColor = '#ffd700';
       this.ctx.fill();
       this.ctx.restore();
     }
 
-    // 2. Render Interactive Touch Ripples
+    // 2. Render Interactive Touch Radial Particles
+    for (let i = this.burstParticles.length - 1; i >= 0; i--) {
+      let bp = this.burstParticles[i];
+      bp.x += bp.speedX;
+      bp.y += bp.speedY;
+      bp.speedX *= 0.95;
+      bp.speedY *= 0.95;
+      bp.opacity -= 0.035;
+
+      if (bp.opacity <= 0) {
+        this.burstParticles.splice(i, 1);
+        continue;
+      }
+
+      this.ctx.save();
+      this.ctx.beginPath();
+      this.ctx.arc(bp.x, bp.y, bp.radius, 0, Math.PI * 2);
+      this.ctx.fillStyle = bp.color;
+      this.ctx.globalAlpha = bp.opacity;
+      this.ctx.shadowBlur = 12;
+      this.ctx.shadowColor = bp.color;
+      this.ctx.fill();
+      this.ctx.restore();
+    }
+
+    // 3. Render Canvas Expanding Ripples
     for (let i = this.ripples.length - 1; i >= 0; i--) {
       let r = this.ripples[i];
-      r.radius += 1.8;
-      r.opacity -= 0.025;
+      r.radius += 2.2;
+      r.opacity -= 0.03;
 
       if (r.opacity <= 0 || r.radius >= r.maxRadius) {
         this.ripples.splice(i, 1);
