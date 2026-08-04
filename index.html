@@ -12,14 +12,18 @@
   
   <!-- SEO & PWA Meta -->
   <meta name="description" content="A peaceful daily spiritual companion inspired by Lord Jagannath and Lord Hanuman.">
-  <meta name="theme-color" content="#090514">
+  <meta name="theme-color" content="#0c061a">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Misti Divine">
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
 
-  <!-- Google Fonts -->
+  <!-- Premium Google Fonts: Playfair Display & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Odia:wght@600;700&family=Outfit:wght@400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Noto+Sans+Odia:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS Design System -->
   <link rel="stylesheet" href="style.css">
@@ -42,7 +46,7 @@
       <!-- Single Screen Content Frame -->
       <div class="content-frame">
         
-        <!-- 1. Centered Header Bar ("Misti Divine" & Dynamic Auto-Fetched Day/Date) -->
+        <!-- 1. Centered Header Bar ("Misti Divine" & Dynamic Date) -->
         <header class="greeting-header">
           <div class="mobile-notch-bar">
             <h1 class="header-brand-title">Misti Divine</h1>
@@ -72,7 +76,7 @@
               <svg viewBox="0 0 40 40"><path d="M 35 5 C 22 5 5 18 5 35 M 35 15 C 25 15 15 25 15 35" stroke="rgba(255, 215, 0, 0.45)" stroke-width="1.2" fill="none"/></svg>
             </div>
 
-            <!-- Clean Title Container without Emojis -->
+            <!-- Clean Title Container with Playfair Display Font -->
             <div class="card-title-container">
               <h2 class="greeting-title" id="cardGreeting">Good Morning, Misti</h2>
             </div>
@@ -140,6 +144,11 @@
             <path d="M 50 25 Q 85 45 75 85 Q 35 70 50 25 Z" fill="#ffb703" opacity="0.5"/>
           </svg>
         </div>
+
+        <!-- Floating PWA Install Banner -->
+        <button class="pwa-install-btn hidden" id="pwaInstallBtn">
+          <span class="btn-icon">📲</span> Install Misti App
+        </button>
 
         <div class="bottom-nav-dot">
           <span class="dot-orb">💧</span>
