@@ -1,15 +1,14 @@
 /**
  * 🌸 RenderEngine
- * Renders full-res background artwork (jaga.png) and clean glassmorphism UI.
- * Implements smooth handwritten letter typewriter reveal animation.
+ * Renders full-res background artwork (jaga.png) with crystal clear visibility and glassmorphism UI.
  */
 export class RenderEngine {
   render(state) {
     const { greetingText, selectedThought, selectedGuidance, activeTheme } = state;
 
-    // 1. Apply Background Image with Smooth Atmospheric Breathing Overlay (No Harsh Slide)
+    // 1. Apply Translucent Atmosphere Gradient so jaga.png Artwork shines through crystal clear
     if (activeTheme) {
-      document.body.style.backgroundImage = `${activeTheme.bgGradient}, url('jaga.png')`;
+      document.body.style.backgroundImage = `linear-gradient(180deg, rgba(6, 2, 14, 0.2) 0%, rgba(6, 2, 14, 0.75) 100%), url('jaga.png')`;
       document.body.style.backgroundSize = 'cover';
       document.body.style.backgroundPosition = 'center top';
       document.body.style.backgroundRepeat = 'no-repeat';
@@ -18,7 +17,7 @@ export class RenderEngine {
       document.documentElement.style.setProperty('--accent-color', activeTheme.accentColor);
       document.documentElement.style.setProperty('--glass-border', activeTheme.glassBorder);
     } else {
-      document.body.style.backgroundImage = `linear-gradient(180deg, rgba(12, 6, 26, 0.45) 0%, rgba(12, 6, 26, 0.88) 100%), url('jaga.png')`;
+      document.body.style.backgroundImage = `linear-gradient(180deg, rgba(6, 2, 14, 0.2) 0%, rgba(6, 2, 14, 0.75) 100%), url('jaga.png')`;
       document.body.style.backgroundSize = 'cover';
       document.body.style.backgroundPosition = 'center top';
     }
