@@ -190,13 +190,55 @@ html, body {
   animation: fadeInUp 1s var(--ease-divine);
 }
 
+/* Card Corner Floral Filigree SVGs */
+.card-corner-floral {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.65;
+}
+
+.top-left-floral {
+  top: 8px;
+  left: 8px;
+}
+
+.top-right-floral {
+  top: 8px;
+  right: 8px;
+}
+
+/* Card Title Container & Sparkles */
+.card-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.3rem;
+}
+
 .greeting-title {
   font-size: clamp(1.1rem, 4.4vw, 1.38rem);
   font-weight: 600;
   letter-spacing: -0.01em;
   color: #ffffff;
-  margin-bottom: 0.3rem;
   text-shadow: 0 0 14px rgba(255, 255, 255, 0.3);
+}
+
+.title-sparkle {
+  font-size: 0.75rem;
+  filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.7));
+  animation: sparklePulse 2.5s ease-in-out infinite alternate;
+}
+
+.sparkle-left {
+  animation-delay: 0s;
+}
+
+.sparkle-right {
+  animation-delay: 1.2s;
 }
 
 .primary-thought-text {
@@ -224,6 +266,7 @@ html, body {
 }
 
 .jewel-orb-frame {
+  position: relative;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -240,6 +283,15 @@ html, body {
   height: 5px;
   border-radius: 50%;
   background: #ffd700;
+}
+
+.jewel-pulse-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px stroke rgba(255, 215, 0, 0.5);
+  animation: orbPulseRing 3s ease-in-out infinite;
+  pointer-events: none;
 }
 
 /* Dynamic Odia Mantra Badge (Synchronized 100% with BG Crossfade) */
@@ -403,6 +455,17 @@ html, body {
 }
 
 /* Keyframe Animations */
+@keyframes sparklePulse {
+  0% { transform: scale(0.85); opacity: 0.6; }
+  100% { transform: scale(1.15); opacity: 1; }
+}
+
+@keyframes orbPulseRing {
+  0% { transform: scale(0.9); opacity: 0.3; }
+  50% { transform: scale(1.3); opacity: 0.8; }
+  100% { transform: scale(0.9); opacity: 0.3; }
+}
+
 @keyframes cardShimmerSweep {
   0% { left: -150%; opacity: 0; }
   20% { opacity: 1; }
