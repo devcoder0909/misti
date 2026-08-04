@@ -14,7 +14,7 @@
   --cream-white: #fcfaff;
   --glow-color: rgba(217, 70, 239, 0.45);
   --accent-color: #ffd700;
-  --glass-border: rgba(255, 215, 0, 0.28);
+  --glass-border: rgba(255, 215, 0, 0.32);
   
   --font-primary: 'Outfit', 'Poppins', -apple-system, sans-serif;
   --font-odia: 'Noto Sans Odia', sans-serif;
@@ -137,43 +137,47 @@ html, body {
 .art-stage {
   position: relative;
   flex: 1;
-  max-height: 25vh;
+  max-height: 24vh;
   margin: 0.1rem 0;
 }
 
-/* 3. Primary Main Glass Card with 45px misti.jpg Avatar */
+/* 3. Primary Main Glass Card with Half-Above Profile Avatar */
 .main-card-section {
-  margin-top: -1.5rem;
-  margin-bottom: 0.5rem;
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
 }
 
 .primary-teaching-card {
   position: relative;
-  background: linear-gradient(180deg, rgba(38, 14, 46, 0.9) 0%, rgba(18, 7, 26, 0.94) 100%);
+  background: linear-gradient(180deg, rgba(38, 14, 46, 0.92) 0%, rgba(18, 7, 26, 0.96) 100%);
   backdrop-filter: blur(28px) saturate(200%);
   -webkit-backdrop-filter: blur(28px) saturate(200%);
   border: 1px solid var(--glass-border);
   border-radius: 20px;
-  padding: 0.85rem 1.25rem 0.8rem 1.25rem;
+  padding: 1.55rem 1.2rem 0.8rem 1.2rem; /* Reduced height, room for top avatar */
   text-align: center;
   box-shadow: 
     0 16px 40px rgba(0, 0, 0, 0.65),
     0 0 25px rgba(217, 70, 239, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  overflow: hidden;
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.22);
+  overflow: visible; /* Allows avatar to overlap top boundary seamlessly */
   animation: fadeInUp 1s var(--ease-divine);
 }
 
-/* Misti Profile Image (Exactly 45px) */
+/* Misti Profile Avatar (Half Above the Message Box Top Border) */
 .misti-avatar-frame {
-  position: relative;
-  width: 45px;
-  height: 45px;
-  margin: 0 auto 0.45rem auto;
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  padding: 2px;
-  background: linear-gradient(135deg, #ffd700 0%, #d946ef 50%, #38bdf8 100%);
-  box-shadow: 0 0 14px rgba(217, 70, 239, 0.45);
+  padding: 2.5px;
+  background: linear-gradient(135deg, #ecd3a1 0%, #ff9400 50%, #ffe094 100%);
+  box-shadow: 0 0 20px rgba(255, 148, 0, 0.6), 0 4px 12px rgba(0, 0, 0, 0.6);
+  z-index: 10;
 }
 
 .misti-avatar-img {
@@ -185,19 +189,19 @@ html, body {
 }
 
 .greeting-title {
-  font-size: clamp(1.1rem, 4.4vw, 1.38rem);
+  font-size: clamp(1.1rem, 4.4vw, 1.35rem);
   font-weight: 600;
   letter-spacing: -0.01em;
   color: #ffffff;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
   text-shadow: 0 0 14px rgba(255, 255, 255, 0.3);
 }
 
 .primary-thought-text {
-  font-size: clamp(0.78rem, 2.8vw, 0.88rem);
-  line-height: 1.45;
+  font-size: clamp(0.76rem, 2.7vw, 0.86rem);
+  line-height: 1.42;
   color: rgba(255, 255, 255, 0.88);
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.55rem;
 }
 
 /* Jewel Emblem Divider */
@@ -206,7 +210,7 @@ html, body {
   justify-content: center;
   align-items: center;
   gap: 0.6rem;
-  margin-top: 0.2rem;
+  margin-top: 0.15rem;
 }
 
 .divider-line {
@@ -220,12 +224,12 @@ html, body {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: radial-gradient(circle, #38bdf8 0%, #1e1b4b 100%);
+  background: radial-gradient(circle, #ff9400 0%, #1e1b4b 100%);
   border: 1px solid rgba(255, 215, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+  box-shadow: 0 0 10px rgba(255, 148, 0, 0.6);
 }
 
 .jewel-dot {
@@ -235,20 +239,20 @@ html, body {
   background: #ffd700;
 }
 
-/* Dynamic Odia Mantra Badge Just Below Message Box */
+/* Dynamic Odia Mantra Badge (Requested linear-gradient(135deg, #ecd3a1 0%, #ff9400 45%, #ffe094 100%)) */
 .mantra-badge-container {
   text-align: center;
-  margin-top: 0.45rem;
+  margin-top: 0.4rem;
 }
 
 .odia-mantra-text {
   font-family: var(--font-odia);
-  font-size: clamp(1.15rem, 4.5vw, 1.4rem);
+  font-size: clamp(1.2rem, 4.8vw, 1.48rem);
   font-weight: 700;
-  background: linear-gradient(135deg, #ffffff 0%, #ffd700 45%, #38bdf8 100%);
+  background: linear-gradient(135deg, #ecd3a1 0%, #ff9400 45%, #ffe094 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 18px rgba(255, 215, 0, 0.55);
+  text-shadow: 0 0 20px rgba(255, 148, 0, 0.55);
   transition: opacity 0.6s ease;
   display: inline-block;
 }
@@ -329,8 +333,8 @@ html, body {
   font-family: var(--font-odia);
 }
 
-/* 5. Scaled Down Lotus Ornaments (NEVER OVERLAPPING TEXT) */
-.bottom-lotus-left {
+/* 5. Scaled Down Flower Ornaments (NEVER OVERLAPPING TEXT) */
+.corner-lotus-bottom-left {
   position: absolute;
   bottom: -20px;
   left: -20px;
@@ -341,6 +345,31 @@ html, body {
   opacity: 0.5;
   filter: drop-shadow(0 0 15px rgba(244, 63, 94, 0.6));
   animation: lotusFloat 6s ease-in-out infinite alternate;
+}
+
+.corner-lotus-bottom-right {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 45px;
+  height: 45px;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+  filter: drop-shadow(0 0 15px rgba(217, 70, 239, 0.6));
+  animation: lotusFloat 7s ease-in-out infinite alternate-reverse;
+}
+
+.corner-lotus-top-right {
+  position: absolute;
+  top: 40px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.45;
+  filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.5));
 }
 
 .corner-lotus-svg {
