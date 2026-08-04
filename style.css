@@ -1,5 +1,5 @@
 /* ==========================================================================
-   🌸 MISTI DIVINE — STUNNING ODIA TITLE & MISTI IMAGE EXPERIENCE
+   🌸 MISTI DIVINE — BILLION-DOLLAR DUAL ROTATING BACKGROUND EXPERIENCE
    Target: 60 FPS, Apple Design Award Quality, 100dvh Lock
    ========================================================================== */
 
@@ -66,11 +66,28 @@ html, body {
   overflow: hidden;
   padding: clamp(0.5rem, 2vh, 1rem) clamp(0.85rem, 3.5vw, 1.25rem);
   background-color: var(--deep-indigo);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.85) 100%), url('./bg%20image.png');
+  box-shadow: 0 0 80px rgba(217, 70, 239, 0.15);
+}
+
+/* Dual Crossfade Rotating Background Layers (bg image.png & bg2 image.png) */
+.bg-layer {
+  position: absolute;
+  inset: 0;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  box-shadow: 0 0 80px rgba(217, 70, 239, 0.15);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bg-layer-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.85) 100%), url('./bg%20image.png');
+  animation: bgRotateCrossfade1 30s ease-in-out infinite alternate;
+}
+
+.bg-layer-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.85) 100%), url('./bg2%20image.png');
+  animation: bgRotateCrossfade2 30s ease-in-out infinite alternate;
 }
 
 /* Background Particle Canvas */
@@ -81,13 +98,13 @@ html, body {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Content Frame Lock */
 .content-frame {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   height: 100%;
   display: flex;
@@ -366,6 +383,19 @@ html, body {
 
 .dot-orb {
   font-size: 0.65rem;
+}
+
+/* Slow Slow Background Crossfade Rotation Keyframes */
+@keyframes bgRotateCrossfade1 {
+  0%, 42% { opacity: 1; transform: scale(1); }
+  50%, 92% { opacity: 0; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes bgRotateCrossfade2 {
+  0%, 42% { opacity: 0; transform: scale(1.05); }
+  50%, 92% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.05); }
 }
 
 /* Keyframe Animations */

@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>🌸 Misti Divine</title>
 
-  <!-- Preload Critical Background Image & Misti Avatar -->
+  <!-- Preload Background Images (bg image.png & bg2 image.png) -->
   <link rel="preload" as="image" href="./bg%20image.png">
+  <link rel="preload" as="image" href="./bg2%20image.png">
   <link rel="preload" as="image" href="./misti.jpg">
   
   <!-- SEO & PWA Meta -->
@@ -31,6 +32,10 @@
     <!-- Mobile Viewport Lock (100dvh) -->
     <main class="app-viewport">
       
+      <!-- Dual Crossfade Rotating Background Layers -->
+      <div class="bg-layer bg-layer-1" id="bgLayer1"></div>
+      <div class="bg-layer bg-layer-2" id="bgLayer2"></div>
+
       <!-- 60 FPS Canvas Particle Background -->
       <canvas id="particleCanvas" class="particle-canvas"></canvas>
 
@@ -63,7 +68,7 @@
             <h2 class="greeting-title" id="cardGreeting">Good Morning, Misti</h2>
             <p class="primary-thought-text" id="primaryThought">Maan mein shanti ho toh har din ek utsav jaisa lagta hai.</p>
             
-            <!-- Jewel Emblem Divider with Misti Image Accent -->
+            <!-- Jewel Emblem Divider -->
             <div class="jewel-emblem-divider">
               <span class="divider-line"></span>
               <div class="jewel-orb-frame">
