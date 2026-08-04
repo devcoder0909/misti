@@ -41,7 +41,7 @@ html, body {
   font-family: var(--font-primary);
   font-style: normal;
   color: var(--cream-white);
-  background-color: #000000;
+  background-color: #07030c;
 }
 
 /* Mobile-First Frame Wrapper for Desktop Presentation */
@@ -68,7 +68,7 @@ html, body {
   align-items: center;
   overflow: hidden;
   padding: clamp(0.5rem, 2vh, 1rem) clamp(0.85rem, 3.5vw, 1.25rem);
-  background-color: #000000;
+  background-color: #07030c;
   box-shadow: 0 0 80px rgba(217, 70, 239, 0.15);
 }
 
@@ -101,7 +101,7 @@ html, body {
   }
 }
 
-/* Ultra-Smooth Hardware Accelerated Dual Background Layers */
+/* Ultra-Smooth Hardware Accelerated Dual Background Layers with Zero Pop-In */
 .bg-layer {
   position: absolute;
   inset: 0;
@@ -110,21 +110,25 @@ html, body {
   background-repeat: no-repeat;
   pointer-events: none;
   z-index: 1;
-  transition: opacity 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transition: opacity 1.8s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity;
+}
+
+.bg-layer.bg-loaded {
+  opacity: 1;
 }
 
 .bg-layer-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('./bg%20image.png');
-  opacity: 1;
 }
 
 .bg-layer-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('./bg2%20image.png');
-  opacity: 0;
+  opacity: 0 !important;
 }
 
-/* Divine Sunbeam God Rays Layer */
+/* Divine Sunbeam God Rays Layer & Sacred Header Halo */
 .god-rays-layer {
   position: absolute;
   top: -10%;
@@ -133,14 +137,27 @@ html, body {
   height: 80%;
   background: radial-gradient(
     ellipse at 50% 0%,
-    rgba(255, 215, 0, 0.22) 0%,
-    rgba(255, 148, 0, 0.12) 40%,
+    rgba(255, 215, 0, 0.24) 0%,
+    rgba(255, 148, 0, 0.14) 40%,
     transparent 75%
   );
   filter: blur(25px);
   pointer-events: none;
   z-index: 2;
   animation: divineRayPulse 8s ease-in-out infinite alternate;
+}
+
+.sacred-header-halo {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  height: 100px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(255, 215, 0, 0.35) 0%, rgba(217, 70, 239, 0.18) 50%, transparent 80%);
+  filter: blur(20px);
+  pointer-events: none;
+  z-index: 2;
 }
 
 @keyframes divineRayPulse {
@@ -529,7 +546,19 @@ html, body {
   font-family: var(--font-odia);
 }
 
-/* 5. Scaled Down High Visibility Flower Ornaments */
+/* 5. Scaled Down High Visibility Lotus Flower Ornaments Across All 4 Corners */
+.corner-lotus-top-left {
+  position: absolute;
+  top: 40px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.8;
+  filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.85));
+}
+
 .corner-lotus-bottom-left {
   position: absolute;
   bottom: -20px;

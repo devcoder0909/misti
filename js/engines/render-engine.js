@@ -6,7 +6,35 @@ export class RenderEngine {
   constructor() {
     this.currentIndex = 0; // 0 = Jagannath (BG1), 1 = Bajrangbali (BG2)
     this.hasTyped = false;
+    this.preloadBackgrounds();
     this.initSynchronizedCarousel();
+  }
+
+  /**
+   * Preload & Pre-decode background images cleanly to prevent initial load pop-in
+   */
+  async preloadBackgrounds() {
+    const bg1 = document.getElementById('bgLayer1');
+    const bg2 = document.getElementById('bgLayer2');
+
+    if (!bg1 || !bg2) return;
+
+    try {
+      const img1 = new Image();
+      img1.src = './bg%20image.png';
+      if (img1.decode) await img1.decode();
+
+      const img2 = new Image();
+      img2.src = './bg2%20image.png';
+      if (img2.decode) await img2.decode();
+
+      bg1.classList.add('bg-loaded');
+      bg2.classList.add('bg-loaded');
+    } catch (err) {
+      // Fallback if decode API is restricted
+      if (bg1) bg1.classList.add('bg-loaded');
+      if (bg2) bg2.classList.add('bg-loaded');
+    }
   }
 
   render(state) {
@@ -32,7 +60,7 @@ export class RenderEngine {
       cardGreetingEl.textContent = greetingText.replace(/[\u{1F300}-\u{1F9FF}]/gu, '').trim();
     }
 
-    // 3. TODAY'S THOUGHT Sub-column (Renders Immediately & Reliably)
+    // 3. TODAY'S THOUGHT Sub-column
     if (selectedThought) {
       const thoughtBodyEl = document.getElementById('thoughtBody');
       if (thoughtBodyEl) {
@@ -40,7 +68,7 @@ export class RenderEngine {
       }
     }
 
-    // 4. DAILY GUIDANCE Sub-column (Renders Immediately & Reliably)
+    // 4. DAILY GUIDANCE Sub-column
     if (selectedGuidance) {
       const guidanceBodyEl = document.getElementById('guidanceBody');
       if (guidanceBodyEl) {
