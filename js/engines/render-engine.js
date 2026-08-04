@@ -1,10 +1,11 @@
 /**
  * 🌸 RenderEngine
- * Renders background artwork, glassmorphism UI, 48px Misti profile, and rock-solid synchronized 5s background/mantra rotation.
+ * Renders background artwork, glassmorphism UI, 48px Misti profile, typewriter letter animation, and 5s mantra sync.
  */
 export class RenderEngine {
   constructor() {
     this.currentIndex = 0; // 0 = Jagannath (BG1), 1 = Bajrangbali (BG2)
+    this.hasTyped = false;
     this.initSynchronizedCarousel();
   }
 
@@ -23,32 +24,54 @@ export class RenderEngine {
       cardGreetingEl.textContent = greetingText.replace(/[\u{1F300}-\u{1F9FF}]/gu, '').trim();
     }
 
-    // 2. Primary Card Thought Text & Sub-column Thought Body
-    if (selectedThought) {
-      const primaryThoughtEl = document.getElementById('primaryThought');
-      if (primaryThoughtEl) {
-        primaryThoughtEl.textContent = selectedThought.text;
-      }
-      const thoughtBodyEl = document.getElementById('thoughtBody');
-      if (thoughtBodyEl) {
-        thoughtBodyEl.textContent = selectedThought.text;
-        thoughtBodyEl.className = `column-body font-${selectedThought.language}`;
-      }
-    }
+    // 2. Typewriter Letter-by-Letter Animation on Full Page Load
+    if (!this.hasTyped) {
+      this.hasTyped = true;
 
-    // 3. Sub-column Guidance Body
-    if (selectedGuidance) {
-      const guidanceBodyEl = document.getElementById('guidanceBody');
-      if (guidanceBodyEl) {
-        guidanceBodyEl.textContent = selectedGuidance.text;
-        guidanceBodyEl.className = `column-body font-${selectedGuidance.language}`;
+      if (selectedThought) {
+        const primaryThoughtEl = document.getElementById('primaryThought');
+        const thoughtBodyEl = document.getElementById('thoughtBody');
+
+        if (primaryThoughtEl) {
+          this.typewriter(primaryThoughtEl, selectedThought.text, 25);
+        }
+        if (thoughtBodyEl) {
+          thoughtBodyEl.className = `column-body font-${selectedThought.language}`;
+          this.typewriter(thoughtBodyEl, selectedThought.text, 25);
+        }
+      }
+
+      if (selectedGuidance) {
+        const guidanceBodyEl = document.getElementById('guidanceBody');
+        if (guidanceBodyEl) {
+          guidanceBodyEl.className = `column-body font-${selectedGuidance.language}`;
+          setTimeout(() => {
+            this.typewriter(guidanceBodyEl, selectedGuidance.text, 25);
+          }, 300);
+        }
       }
     }
   }
 
   /**
+   * Letter-by-letter typewriter animation
+   */
+  typewriter(element, text, speed = 25) {
+    if (!element || !text) return;
+    element.textContent = '';
+    let i = 0;
+    const timer = setInterval(() => {
+      if (i < text.length) {
+        element.textContent += text.charAt(i);
+        i++;
+      } else {
+        clearInterval(timer);
+      }
+    }, speed);
+  }
+
+  /**
    * Deterministic, Ultra-Smooth 5-Second Carousel Engine
-   * Crossfades BG1 (bg image.png) & BG2 (bg2 image.png) and Odia Mantras in 100% Perfect Sync.
    */
   initSynchronizedCarousel() {
     const bg1 = document.getElementById('bgLayer1');
@@ -57,7 +80,6 @@ export class RenderEngine {
 
     if (!bg1 || !bg2 || !mantraEl) return;
 
-    // Initial State: BG1 active, Mantra = ଜୟ ଜଗନ୍ନାଥ
     bg1.style.opacity = '1';
     bg2.style.opacity = '0';
     mantraEl.textContent = 'ଜୟ ଜଗନ୍ନାଥ';
@@ -65,7 +87,6 @@ export class RenderEngine {
 
     setInterval(() => {
       if (this.currentIndex === 0) {
-        // Switch to BG2 (Lord Hanuman) & ଜୟ ବଜରଙ୍ଗବଲୀ
         bg1.style.opacity = '0';
         bg2.style.opacity = '1';
         
@@ -77,7 +98,6 @@ export class RenderEngine {
 
         this.currentIndex = 1;
       } else {
-        // Switch to BG1 (Lord Jagannath) & ଜୟ ଜଗନ୍ନାଥ
         bg1.style.opacity = '1';
         bg2.style.opacity = '0';
 
@@ -89,6 +109,6 @@ export class RenderEngine {
 
         this.currentIndex = 0;
       }
-    }, 5000); // Toggles cleanly every 5 seconds
+    }, 5000);
   }
 }
