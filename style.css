@@ -14,7 +14,7 @@
   --cream-white: #fcfaff;
   --glow-color: rgba(217, 70, 239, 0.45);
   --accent-color: #ffd700;
-  --glass-border: rgba(255, 215, 0, 0.35);
+  --glass-border: rgba(255, 215, 0, 0.38);
   
   --font-primary: 'Plus Jakarta Sans', 'Outfit', -apple-system, sans-serif;
   --font-odia: 'Noto Sans Odia', sans-serif;
@@ -123,6 +123,30 @@ html, body {
   opacity: 0;
 }
 
+/* Divine Sunbeam God Rays Layer */
+.god-rays-layer {
+  position: absolute;
+  top: -10%;
+  left: -20%;
+  width: 140%;
+  height: 80%;
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(255, 215, 0, 0.22) 0%,
+    rgba(255, 148, 0, 0.12) 40%,
+    transparent 75%
+  );
+  filter: blur(25px);
+  pointer-events: none;
+  z-index: 2;
+  animation: divineRayPulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes divineRayPulse {
+  0% { opacity: 0.5; transform: scale(0.95); }
+  100% { opacity: 0.9; transform: scale(1.05); }
+}
+
 /* Background Particle Canvas */
 .particle-canvas {
   position: absolute;
@@ -165,7 +189,7 @@ html, body {
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  text-shadow: 0 0 16px rgba(255, 215, 0, 0.45);
+  text-shadow: 0 0 18px rgba(255, 215, 0, 0.5);
 }
 
 .header-date-badge {
@@ -206,7 +230,7 @@ html, body {
   border-radius: 50%;
   padding: 2.5px;
   background: linear-gradient(135deg, #ecd3a1 0%, #ff9400 50%, #ffe094 100%);
-  box-shadow: 0 0 22px rgba(255, 148, 0, 0.65), 0 4px 14px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 24px rgba(255, 148, 0, 0.7), 0 4px 14px rgba(0, 0, 0, 0.75);
   z-index: 20;
 }
 
@@ -216,6 +240,30 @@ html, body {
   border-radius: 50%;
   object-fit: cover;
   display: block;
+}
+
+/* Sacred Rotating Lotus Mandala Watermark Inside Card */
+.card-mandala-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 180px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.45;
+  animation: rotateMandala 90s linear infinite;
+}
+
+.mandala-svg {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes rotateMandala {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 /* Ultra-Premium Fixed-Dimension Glass Message Box */
@@ -234,7 +282,7 @@ html, body {
   text-align: center;
   box-shadow: 
     0 20px 48px rgba(0, 0, 0, 0.75),
-    0 0 30px rgba(217, 70, 239, 0.25),
+    0 0 35px rgba(217, 70, 239, 0.28),
     inset 0 1.5px 0 rgba(255, 255, 255, 0.25);
   overflow: hidden;
 }
@@ -266,6 +314,8 @@ html, body {
   align-items: center;
   gap: 0.4rem;
   margin-bottom: 0.35rem;
+  position: relative;
+  z-index: 3;
 }
 
 /* Premium Non-Italic Greeting Title (#ffe47a) */
@@ -294,6 +344,8 @@ html, body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 3;
 }
 
 /* Ultra-Luxury Word-by-Word Radiant Reveal Animation */
@@ -326,6 +378,8 @@ html, body {
   align-items: center;
   gap: 0.6rem;
   margin-top: 0.15rem;
+  position: relative;
+  z-index: 3;
 }
 
 .divider-line {
