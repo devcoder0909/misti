@@ -1,79 +1,302 @@
 [
   {
+    "id": "fest-001",
     "name": "New Year",
     "month": 1,
     "day": 1,
     "themeOverride": "festival",
-    "greetingOverride": "Happy New Year, Misti ✨"
+    "greetingOverride": "Happy New Year, Misti ✨",
+    "presetAnimation": "Fireworks",
+    "description": "Naye saal ki nayi shuruat aur aashaon ka parv"
   },
   {
+    "id": "fest-002",
+    "name": "Makar Sankranti",
+    "month": 1,
+    "day": 14,
+    "themeOverride": "festival",
+    "greetingOverride": "Shubh Makar Sankranti, Misti 🪁",
+    "presetAnimation": "Kites",
+    "description": "Nayi urja aur umeedon ka tyohar"
+  },
+  {
+    "id": "fest-003",
     "name": "Republic Day",
     "month": 1,
     "day": 26,
-    "themeOverride": "festival",
-    "greetingOverride": "Happy Republic Day, Misti 🇮🇳"
+    "themeOverride": "national",
+    "greetingOverride": "Happy Republic Day, Misti 🇮🇳",
+    "presetAnimation": "TricolorGlow",
+    "description": "Desh ke gaurav aur swabhiman ka din"
   },
   {
-    "name": "Women's Day",
+    "id": "fest-004",
+    "name": "Saraswati Puja",
+    "month": 2,
+    "day": 14,
+    "themeOverride": "divine",
+    "greetingOverride": "Jai Maa Saraswati, Misti 🪕",
+    "presetAnimation": "FloralPetals",
+    "description": "Gyaan, kala aur sadbuddhi ka utsav"
+  },
+  {
+    "id": "fest-005",
+    "name": "Maha Shivratri",
+    "month": 3,
+    "day": 8,
+    "themeOverride": "shiva",
+    "greetingOverride": "Har Har Mahadev, Misti 🔱",
+    "presetAnimation": "CosmicAura",
+    "description": "Aatmik shanti aur antaruni shakti ka parv"
+  },
+  {
+    "id": "fest-006",
+    "name": "International Women's Day",
     "month": 3,
     "day": 8,
     "themeOverride": "festival",
-    "greetingOverride": "Happy Women's Day, Misti 🌸"
+    "greetingOverride": "Happy Women's Day, Misti 🌸",
+    "presetAnimation": "SoftGlow",
+    "description": "Tumhari aatmshakti aur astitva ka utsav"
   },
   {
+    "id": "fest-007",
+    "name": "Holi",
+    "month": 3,
+    "day": 25,
+    "themeOverride": "festival",
+    "greetingOverride": "Happy Holi, Misti 🎨",
+    "presetAnimation": "ColorBurst",
+    "description": "Khushiyon aur prem ke rangon ka parv"
+  },
+  {
+    "id": "fest-008",
+    "name": "Utkala Dibasa",
+    "month": 4,
+    "day": 1,
+    "themeOverride": "jagannath",
+    "greetingOverride": "Shubha Utkala Dibasa, Misti 🏛️",
+    "presetAnimation": "GoldenTempleGlow",
+    "description": "Odisha ki sanskriti aur swabhiman ka din"
+  },
+  {
+    "id": "fest-009",
+    "name": "Pana Sankranti / Maha Vishuba Sankranti",
+    "month": 4,
+    "day": 14,
+    "themeOverride": "jagannath",
+    "greetingOverride": "Shubha Pana Sankranti, Misti 🏺",
+    "presetAnimation": "SacredBlossom",
+    "description": "Odia Naba Barsha aur pavitra shuruat"
+  },
+  {
+    "id": "fest-010",
+    "name": "Ram Navami",
+    "month": 4,
+    "day": 17,
+    "themeOverride": "divine",
+    "greetingOverride": "Jai Shree Ram, Misti 🏹",
+    "presetAnimation": "GoldenLight",
+    "description": "Maryada aur dharm path ka utsav"
+  },
+  {
+    "id": "fest-011",
     "name": "Hanuman Jayanti",
     "month": 4,
     "day": 23,
     "themeOverride": "hanuman",
-    "greetingOverride": "Jai Bajrangbali, Misti 🚩"
+    "greetingOverride": "Jai Bajrangbali, Misti 🚩",
+    "presetAnimation": "GoldenAura",
+    "description": "Bhakti, sahas aur atoot vishwas ka din"
   },
   {
+    "id": "fest-012",
+    "name": "Akshaya Tritiya",
+    "month": 5,
+    "day": 10,
+    "themeOverride": "golden",
+    "greetingOverride": "Shubh Akshaya Tritiya, Misti ✨",
+    "presetAnimation": "GoldSparkles",
+    "description": "Anant samriddhi aur shubh karya ka din"
+  },
+  {
+    "id": "fest-013",
+    "name": "Buddha Purnima",
+    "month": 5,
+    "day": 23,
+    "themeOverride": "divine",
+    "greetingOverride": "Buddham Sharanam Gacchami, Misti 🪷",
+    "presetAnimation": "LotusBloom",
+    "description": "Shanti, ahimsa aur gyaan ka utsav"
+  },
+  {
+    "id": "fest-014",
+    "name": "Raja Parba",
+    "month": 6,
+    "day": 14,
+    "themeOverride": "festival",
+    "greetingOverride": "Shubha Raja Parba, Misti 🌿",
+    "presetAnimation": "GreeneryGlow",
+    "description": "Nari shakti aur matribhoomi ka prateek"
+  },
+  {
+    "id": "fest-015",
     "name": "Snana Purnima",
     "month": 6,
     "day": 22,
     "themeOverride": "jagannath",
-    "greetingOverride": "Shubha Snana Purnima, Misti 🌸"
+    "greetingOverride": "Shubha Snana Purnima, Misti 🌸",
+    "presetAnimation": "SacredShower",
+    "description": "Mahaprabhu ke divya snan ka pawan parv"
   },
   {
+    "id": "fest-016",
     "name": "Rath Yatra",
     "month": 7,
     "day": 7,
     "themeOverride": "jagannath",
-    "greetingOverride": "Jai Jagannath, Misti 🚩"
+    "greetingOverride": "Jai Jagannath, Misti 🚩",
+    "presetAnimation": "ChariotProcession",
+    "description": "Patitapabana ki leela aur mahotsav"
   },
   {
+    "id": "fest-017",
+    "name": "Bahuda Yatra",
+    "month": 7,
+    "day": 15,
+    "themeOverride": "jagannath",
+    "greetingOverride": "Shubha Bahuda Yatra, Misti 🚩",
+    "presetAnimation": "DivineReturn",
+    "description": "Mahaprabhu ki ghar waapsi ka utsav"
+  },
+  {
+    "id": "fest-018",
+    "name": "Guru Purnima",
+    "month": 7,
+    "day": 21,
+    "themeOverride": "divine",
+    "greetingOverride": "Shubh Guru Purnima, Misti 🙏",
+    "presetAnimation": "WisdomLight",
+    "description": "Margdarshakon ke prati kritagyata ka din"
+  },
+  {
+    "id": "fest-019",
     "name": "Independence Day",
     "month": 8,
     "day": 15,
-    "themeOverride": "festival",
-    "greetingOverride": "Happy Independence Day, Misti 🇮🇳"
+    "themeOverride": "national",
+    "greetingOverride": "Happy Independence Day, Misti 🇮🇳",
+    "presetAnimation": "TricolorGlow",
+    "description": "Swatantrata aur rashtra prem ka utsav"
   },
   {
+    "id": "fest-020",
+    "name": "Raksha Bandhan",
+    "month": 8,
+    "day": 19,
+    "themeOverride": "festival",
+    "greetingOverride": "Happy Raksha Bandhan, Misti 🧵",
+    "presetAnimation": "SilkThreadGlow",
+    "description": "Sneh aur suraksha ke bandhan ka parv"
+  },
+  {
+    "id": "fest-021",
     "name": "Janmashtami",
     "month": 8,
     "day": 26,
-    "themeOverride": "festival",
-    "greetingOverride": "Jai Shree Krishna, Misti 🪈"
+    "themeOverride": "divine",
+    "greetingOverride": "Jai Shree Krishna, Misti 🪈",
+    "presetAnimation": "PeacockFeather",
+    "description": "Nathkhat prem aur Geeta gyaan ka parv"
   },
   {
+    "id": "fest-022",
     "name": "Teacher's Day",
     "month": 9,
     "day": 5,
     "themeOverride": "festival",
-    "greetingOverride": "Happy Teacher's Day, Misti 📚"
+    "greetingOverride": "Happy Teacher's Day, Misti 📚",
+    "presetAnimation": "SparklingWisdom",
+    "description": "Gyaan dene walon ka aadar sanman"
   },
   {
+    "id": "fest-023",
+    "name": "Ganesh Chaturthi",
+    "month": 9,
+    "day": 7,
+    "themeOverride": "divine",
+    "greetingOverride": "Ganpati Bappa Morya, Misti 🐘",
+    "presetAnimation": "ModakGlow",
+    "description": "Nayi shuruat aur vighnaharta ka aagman"
+  },
+  {
+    "id": "fest-024",
+    "name": "Nuakhai",
+    "month": 9,
+    "day": 8,
+    "themeOverride": "festival",
+    "greetingOverride": "Nuakhai Juhar, Misti 🌾",
+    "presetAnimation": "HarvestGold",
+    "description": "Naye anna aur krishi ka samriddhi parv"
+  },
+  {
+    "id": "fest-025",
+    "name": "Gandhi Jayanti",
+    "month": 10,
+    "day": 2,
+    "themeOverride": "national",
+    "greetingOverride": "Happy Gandhi Jayanti, Misti 🕊️",
+    "presetAnimation": "PeaceDove",
+    "description": "Satya aur ahimsa ke vicharon ka din"
+  },
+  {
+    "id": "fest-026",
+    "name": "Durga Puja / Navratri",
+    "month": 10,
+    "day": 11,
+    "themeOverride": "durga",
+    "greetingOverride": "Subho Maha Navami, Misti 🔱",
+    "presetAnimation": "DivineShakti",
+    "description": "Nari shakti aur adharm par vijay"
+  },
+  {
+    "id": "fest-027",
+    "name": "Dussehra / Vijaya Dashami",
+    "month": 10,
+    "day": 12,
+    "themeOverride": "durga",
+    "greetingOverride": "Shubh Dussehra, Misti 🏹",
+    "presetAnimation": "VictoryFlame",
+    "description": "Aura aur burai par sachhai ki jeet"
+  },
+  {
+    "id": "fest-028",
     "name": "Diwali",
     "month": 11,
     "day": 1,
     "themeOverride": "diwali",
-    "greetingOverride": "Shubh Deepavali, Misti 🪔"
+    "greetingOverride": "Shubh Deepavali, Misti 🪔",
+    "presetAnimation": "Diyaglow",
+    "description": "Ujala, roshni aur samriddhi ka mahaparv"
   },
   {
+    "id": "fest-029",
+    "name": "Kartik Purnima / Boita Bandana",
+    "month": 11,
+    "day": 15,
+    "themeOverride": "jagannath",
+    "greetingOverride": "Shubha Kartik Purnima, Misti ⛵",
+    "presetAnimation": "FloatingPaperBoats",
+    "description": "Pavitra snaan aur prachin sanskriti ka utsav"
+  },
+  {
+    "id": "fest-030",
     "name": "Christmas",
     "month": 12,
     "day": 25,
     "themeOverride": "festival",
-    "greetingOverride": "Merry Christmas, Misti 🎄"
+    "greetingOverride": "Merry Christmas, Misti 🎄",
+    "presetAnimation": "Snowfall",
+    "description": "Shanti, prem aur khushiyan baantne ka utsav"
   }
 ]
