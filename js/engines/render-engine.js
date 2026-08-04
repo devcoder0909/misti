@@ -1,6 +1,6 @@
 /**
  * 🌸 RenderEngine
- * Renders background artwork, glassmorphism UI, 48px Misti profile, serene typewriter, and 5s mantra sync.
+ * Renders background artwork, glassmorphism UI, 48px Misti profile, radiant word reveal, and 5s mantra sync.
  */
 export class RenderEngine {
   constructor() {
@@ -48,31 +48,31 @@ export class RenderEngine {
       }
     }
 
-    // 5. Primary Message Box Thought: Serene Typewriter Animation (45ms)
+    // 5. Primary Message Box Thought: Ultra-Luxury Word Radiant Reveal Animation
     if (!this.hasTyped && selectedThought) {
       this.hasTyped = true;
       const primaryThoughtEl = document.getElementById('primaryThought');
       if (primaryThoughtEl) {
-        this.typewriter(primaryThoughtEl, selectedThought.text, 45);
+        this.radiantReveal(primaryThoughtEl, selectedThought.text);
       }
     }
   }
 
   /**
-   * Serene typewriter animation for primary message box
+   * Ultra-Luxury Staggered Word-by-Word Radiant Reveal Animation with Blur & Rise
    */
-  typewriter(element, text, speed = 45) {
+  radiantReveal(element, text) {
     if (!element || !text) return;
-    element.textContent = '';
-    let i = 0;
-    const timer = setInterval(() => {
-      if (i < text.length) {
-        element.textContent += text.charAt(i);
-        i++;
-      } else {
-        clearInterval(timer);
-      }
-    }, speed);
+    element.innerHTML = '';
+    
+    const words = text.split(' ');
+    words.forEach((word, index) => {
+      const span = document.createElement('span');
+      span.className = 'word-span';
+      span.textContent = word + (index < words.length - 1 ? '\u00A0' : '');
+      span.style.animationDelay = `${index * 0.08}s`;
+      element.appendChild(span);
+    });
   }
 
   /**

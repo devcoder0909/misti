@@ -279,7 +279,7 @@ html, body {
   text-shadow: 0 0 16px rgba(255, 228, 122, 0.5);
 }
 
-/* Primary Thought Message Text with Stable Height */
+/* Primary Thought Message Text Container */
 .primary-thought-text {
   font-family: 'Plus Jakarta Sans', var(--font-primary);
   font-size: clamp(0.88rem, 3.4vw, 1rem);
@@ -291,8 +291,32 @@ html, body {
   margin-bottom: 0.7rem;
   min-height: 3.1em;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+/* Ultra-Luxury Word-by-Word Radiant Reveal Animation */
+.word-span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(8px);
+  filter: blur(4px);
+  animation: wordRadiantReveal 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity, filter;
+}
+
+@keyframes wordRadiantReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+  }
 }
 
 /* Jewel Emblem Divider */
