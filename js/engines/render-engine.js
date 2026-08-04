@@ -1,6 +1,6 @@
 /**
  * 🌸 RenderEngine
- * Renders background artwork, glassmorphism UI, 48px Misti profile, typewriter letter animation, and 5s mantra sync.
+ * Renders background artwork, glassmorphism UI, 48px Misti profile, serene primary message typewriter, and 5s mantra sync.
  */
 export class RenderEngine {
   constructor() {
@@ -24,39 +24,37 @@ export class RenderEngine {
       cardGreetingEl.textContent = greetingText.replace(/[\u{1F300}-\u{1F9FF}]/gu, '').trim();
     }
 
-    // 2. Typewriter Letter-by-Letter Animation on Full Page Load
-    if (!this.hasTyped) {
-      this.hasTyped = true;
-
-      if (selectedThought) {
-        const primaryThoughtEl = document.getElementById('primaryThought');
-        const thoughtBodyEl = document.getElementById('thoughtBody');
-
-        if (primaryThoughtEl) {
-          this.typewriter(primaryThoughtEl, selectedThought.text, 25);
-        }
-        if (thoughtBodyEl) {
-          thoughtBodyEl.className = `column-body font-${selectedThought.language}`;
-          this.typewriter(thoughtBodyEl, selectedThought.text, 25);
-        }
+    // 2. Sub-columns (TODAY'S THOUGHT & DAILY GUIDANCE): NO ANIMATION (Renders Immediately)
+    if (selectedThought) {
+      const thoughtBodyEl = document.getElementById('thoughtBody');
+      if (thoughtBodyEl) {
+        thoughtBodyEl.textContent = selectedThought.text;
+        thoughtBodyEl.className = `column-body font-${selectedThought.language}`;
       }
+    }
 
-      if (selectedGuidance) {
-        const guidanceBodyEl = document.getElementById('guidanceBody');
-        if (guidanceBodyEl) {
-          guidanceBodyEl.className = `column-body font-${selectedGuidance.language}`;
-          setTimeout(() => {
-            this.typewriter(guidanceBodyEl, selectedGuidance.text, 25);
-          }, 300);
-        }
+    if (selectedGuidance) {
+      const guidanceBodyEl = document.getElementById('guidanceBody');
+      if (guidanceBodyEl) {
+        guidanceBodyEl.textContent = selectedGuidance.text;
+        guidanceBodyEl.className = `column-body font-${selectedGuidance.language}`;
+      }
+    }
+
+    // 3. Primary Message Box Thought: ONLY ANIMATION with Professional Premium Speed (45ms)
+    if (!this.hasTyped && selectedThought) {
+      this.hasTyped = true;
+      const primaryThoughtEl = document.getElementById('primaryThought');
+      if (primaryThoughtEl) {
+        this.typewriter(primaryThoughtEl, selectedThought.text, 45); // 45ms = serene, calm, premium speed
       }
     }
   }
 
   /**
-   * Letter-by-letter typewriter animation
+   * Serene letter-by-letter typewriter animation for primary message box
    */
-  typewriter(element, text, speed = 25) {
+  typewriter(element, text, speed = 45) {
     if (!element || !text) return;
     element.textContent = '';
     let i = 0;
