@@ -330,46 +330,37 @@ html, body {
   text-shadow: 0 0 18px rgba(255, 228, 122, 0.55);
 }
 
-/* Primary Thought Message Text Container */
+/* Ultra-Smooth Liquid Silk GPU-Accelerated Message Text Animation */
 .primary-thought-text {
   font-family: 'Plus Jakarta Sans', var(--font-primary);
   font-size: clamp(0.88rem, 3.4vw, 1rem);
   font-weight: 500;
   font-style: normal;
   line-height: 1.58;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 0.7rem;
   min-height: 3.1em;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 3;
-}
-
-/* Ultra-Luxury Word-by-Word Radiant Reveal Animation */
-.word-span {
-  display: inline-block;
   opacity: 0;
-  transform: translateY(8px);
-  filter: blur(4px);
-  animation: wordRadiantReveal 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  will-change: transform, opacity, filter;
+  transform: translateY(10px);
+  filter: blur(12px);
+  transition: opacity 1.3s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 1.3s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 1.3s cubic-bezier(0.16, 1, 0.3, 1),
+              letter-spacing 1.3s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter, letter-spacing;
 }
 
-@keyframes wordRadiantReveal {
-  0% {
-    opacity: 0;
-    transform: translateY(8px);
-    filter: blur(4px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0px);
-  }
+.primary-thought-text.liquid-silk-active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0px);
+  letter-spacing: 0.01em;
 }
 
 /* Jewel Emblem Divider */

@@ -1,6 +1,6 @@
 /**
  * 🌸 RenderEngine
- * Renders background artwork, glassmorphism UI, 48px Misti profile, radiant word reveal, and 5s mantra sync.
+ * Renders background artwork, glassmorphism UI, 48px Misti profile, liquid silk reveal, and 5s mantra sync.
  */
 export class RenderEngine {
   constructor() {
@@ -48,30 +48,29 @@ export class RenderEngine {
       }
     }
 
-    // 5. Primary Message Box Thought: Ultra-Luxury Word Radiant Reveal Animation
+    // 5. Primary Message Box Thought: Ultra-Smooth Liquid Silk Reveal
     if (!this.hasTyped && selectedThought) {
       this.hasTyped = true;
       const primaryThoughtEl = document.getElementById('primaryThought');
       if (primaryThoughtEl) {
-        this.radiantReveal(primaryThoughtEl, selectedThought.text);
+        primaryThoughtEl.textContent = selectedThought.text;
+        this.liquidSilkReveal(primaryThoughtEl);
       }
     }
   }
 
   /**
-   * Ultra-Luxury Staggered Word-by-Word Radiant Reveal Animation with Blur & Rise
+   * Ultra-Smooth 60 FPS Liquid Silk Fade & Soft Blur Reveal
    */
-  radiantReveal(element, text) {
-    if (!element || !text) return;
-    element.innerHTML = '';
+  liquidSilkReveal(element) {
+    if (!element) return;
+    element.classList.remove('liquid-silk-active');
     
-    const words = text.split(' ');
-    words.forEach((word, index) => {
-      const span = document.createElement('span');
-      span.className = 'word-span';
-      span.textContent = word + (index < words.length - 1 ? '\u00A0' : '');
-      span.style.animationDelay = `${index * 0.08}s`;
-      element.appendChild(span);
+    // Force Reflow for GPU Re-trigger
+    void element.offsetWidth;
+    
+    requestAnimationFrame(() => {
+      element.classList.add('liquid-silk-active');
     });
   }
 
