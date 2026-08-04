@@ -12,9 +12,9 @@
   --lotus-pink: #f43f5e;
   --soft-lavender: #e0e7ff;
   --cream-white: #fcfaff;
-  --glow-color: rgba(217, 70, 239, 0.5);
+  --glow-color: rgba(217, 70, 239, 0.55);
   --accent-color: #ffd700;
-  --glass-border: rgba(255, 215, 0, 0.32);
+  --glass-border: rgba(255, 215, 0, 0.35);
   
   --font-primary: 'Outfit', 'Poppins', -apple-system, sans-serif;
   --font-odia: 'Noto Sans Odia', sans-serif;
@@ -39,7 +39,7 @@ html, body {
   font-family: var(--font-primary);
   color: var(--cream-white);
   background-color: var(--deep-indigo);
-  background-image: linear-gradient(180deg, rgba(6, 2, 14, 0.2) 0%, rgba(6, 2, 14, 0.75) 100%), url('./jaga.png');
+  background-image: linear-gradient(180deg, rgba(6, 2, 14, 0.18) 0%, rgba(6, 2, 14, 0.72) 100%), url('./jaga.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -70,18 +70,45 @@ html, body {
   align-items: center;
   overflow: hidden;
   padding: clamp(0.5rem, 2vh, 1rem) clamp(0.85rem, 3.8vw, 1.3rem);
-  box-shadow: 0 0 80px rgba(217, 70, 239, 0.15);
+  box-shadow: 0 0 100px rgba(217, 70, 239, 0.2);
 }
 
 /* Dynamic Aurora Mesh Gradient Overlay */
 .aurora-mesh-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% -20%, rgba(217, 70, 239, 0.2), transparent 70%),
-              radial-gradient(circle at 10% 80%, rgba(255, 215, 0, 0.12), transparent 60%);
+  background: radial-gradient(circle at 50% -20%, rgba(217, 70, 239, 0.25), transparent 70%),
+              radial-gradient(circle at 10% 80%, rgba(255, 215, 0, 0.16), transparent 60%);
   pointer-events: none;
   z-index: 1;
   animation: auroraPulse 10s ease-in-out infinite alternate;
+}
+
+/* Ambient Divine Light Beams */
+.divine-beam-left {
+  position: absolute;
+  top: -100px;
+  left: -80px;
+  width: 200px;
+  height: 600px;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.08) 0%, rgba(217, 70, 239, 0) 80%);
+  transform: rotate(-25deg);
+  pointer-events: none;
+  z-index: 1;
+  animation: beamSwayLeft 12s ease-in-out infinite alternate;
+}
+
+.divine-beam-right {
+  position: absolute;
+  top: -100px;
+  right: -80px;
+  width: 200px;
+  height: 600px;
+  background: linear-gradient(225deg, rgba(217, 70, 239, 0.12) 0%, rgba(255, 215, 0, 0) 80%);
+  transform: rotate(25deg);
+  pointer-events: none;
+  z-index: 1;
+  animation: beamSwayRight 14s ease-in-out infinite alternate;
 }
 
 /* Background Canvas & Fireworks */
@@ -95,6 +122,21 @@ html, body {
   z-index: 1;
 }
 
+.sky-fireworks-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.fireworks-svg {
+  width: 100%;
+  height: 100%;
+}
+
 /* Content Frame Lock */
 .content-frame {
   position: relative;
@@ -106,7 +148,7 @@ html, body {
   justify-content: space-between;
 }
 
-/* 1. Header Bar ("Misti Divine 🌸", Centered) */
+/* 1. Header Bar ("Misti Divine 🌸") */
 .greeting-header {
   padding-top: clamp(0.1rem, 0.5vh, 0.4rem);
   text-align: center;
@@ -119,11 +161,19 @@ html, body {
 }
 
 .notch-title {
-  font-size: clamp(1rem, 4vw, 1.15rem);
+  font-size: clamp(1.05rem, 4.2vw, 1.25rem);
   font-weight: 700;
   color: #ffffff;
-  letter-spacing: 0.04em;
-  text-shadow: 0 0 16px rgba(255, 215, 0, 0.45);
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 18px rgba(255, 215, 0, 0.5);
+}
+
+.text-shine-wave {
+  background: linear-gradient(90deg, #ffffff 0%, var(--accent-color) 45%, var(--neon-magenta) 55%, #ffffff 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShineWave 5s linear infinite;
 }
 
 /* 2. Clean Open Art Stage */
@@ -151,7 +201,7 @@ html, body {
   text-align: center;
   box-shadow: 
     0 20px 50px rgba(0, 0, 0, 0.7),
-    0 0 30px rgba(217, 70, 239, 0.28),
+    0 0 35px rgba(217, 70, 239, 0.32),
     inset 0 1.5px 0 rgba(255, 255, 255, 0.25);
   overflow: hidden;
   transform-style: preserve-3d;
@@ -175,13 +225,13 @@ html, body {
 .primary-thought-text {
   font-size: clamp(0.8rem, 2.9vw, 0.9rem);
   line-height: 1.48;
-  color: rgba(255, 255, 255, 0.92);
+  color: rgba(255, 255, 255, 0.94);
   margin-bottom: 0.75rem;
   font-weight: 400;
   min-height: 2.6em;
 }
 
-/* Jewel Emblem 3D Orb */
+/* Jewel Emblem 3D Orb Divider */
 .jewel-emblem-divider {
   display: flex;
   justify-content: center;
@@ -194,31 +244,40 @@ html, body {
   flex: 1;
   max-width: 75px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.45), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.5), transparent);
 }
 
 .jewel-orb-3d {
   position: relative;
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   background: radial-gradient(circle, #f43f5e 0%, #8b5cf6 100%);
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 12px var(--neon-magenta);
+  box-shadow: 0 0 16px var(--neon-magenta);
 }
 
 .orb-core {
-  font-size: 0.65rem;
+  font-size: 0.68rem;
+  filter: drop-shadow(0 0 4px #ffffff);
 }
 
 .orb-ring {
   position: absolute;
-  inset: -3px;
+  inset: -4px;
   border-radius: 50%;
-  border: 1px stroke rgba(255, 215, 0, 0.6);
-  animation: orbRotate 4s linear infinite;
+  border: 1px stroke rgba(255, 215, 0, 0.7);
+  animation: orbRotate 3s linear infinite;
+}
+
+.orb-sparkle {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 1px dashed rgba(217, 70, 239, 0.5);
+  animation: orbRotate 6s linear infinite reverse;
 }
 
 /* Specular Shimmer */
@@ -232,9 +291,9 @@ html, body {
   background: linear-gradient(
     60deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.1) 45%,
-    rgba(255, 215, 0, 0.3) 50%,
-    rgba(255, 255, 255, 0.1) 55%,
+    rgba(255, 255, 255, 0.12) 45%,
+    rgba(255, 215, 0, 0.35) 50%,
+    rgba(255, 255, 255, 0.12) 55%,
     transparent 100%
   );
   transform: rotate(25deg);
@@ -242,17 +301,17 @@ html, body {
   pointer-events: none;
 }
 
-.card-border-glow {
+.animated-border-gradient {
   position: absolute;
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(255, 215, 0, 0.6), rgba(217, 70, 239, 0.7), rgba(255, 215, 0, 0.25));
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.7), rgba(217, 70, 239, 0.8), rgba(255, 215, 0, 0.3));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
-  animation: borderGlowPulse 4s ease-in-out infinite alternate;
+  animation: borderGlowPulse 3.5s ease-in-out infinite alternate;
 }
 
 /* 4. Twin Sub-Columns (Left & Right Split) */
@@ -265,18 +324,24 @@ html, body {
   z-index: 5;
 }
 
-.glass-subcard {
+.glow-subcard {
   flex: 1;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.045);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 14px;
-  padding: 0.55rem 0.7rem;
+  padding: 0.65rem 0.75rem;
+  transition: transform 0.3s var(--ease-apple), border-color 0.3s ease;
+}
+
+.glow-subcard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 215, 0, 0.35);
 }
 
 .column-divider {
   width: 1px;
-  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.25), transparent);
 }
 
 .column-label {
@@ -287,13 +352,13 @@ html, body {
   color: var(--accent-color);
   text-transform: uppercase;
   margin-bottom: 0.25rem;
-  text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
 }
 
 .column-body {
   font-size: clamp(0.72rem, 2.5vw, 0.8rem);
   line-height: 1.42;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 0.9);
   min-height: 3.2em;
 }
 
@@ -304,28 +369,30 @@ html, body {
 /* 5. Decorative Lotus Accents (Outside Text Area) */
 .corner-lotus-bottom-left {
   position: absolute;
-  bottom: -30px;
-  left: -30px;
-  width: 90px;
-  height: 90px;
+  bottom: -32px;
+  left: -32px;
+  width: 95px;
+  height: 95px;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.65;
-  filter: drop-shadow(0 0 20px rgba(244, 63, 94, 0.7));
-  animation: lotusFloat 7s ease-in-out infinite alternate;
+  opacity: 0.7;
+  filter: drop-shadow(0 0 22px rgba(244, 63, 94, 0.8));
 }
 
 .corner-lotus-bottom-right {
   position: absolute;
-  bottom: -30px;
-  right: -30px;
-  width: 90px;
-  height: 90px;
+  bottom: -32px;
+  right: -32px;
+  width: 95px;
+  height: 95px;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.65;
-  filter: drop-shadow(0 0 20px rgba(217, 70, 239, 0.7));
-  animation: lotusFloat 8s ease-in-out infinite alternate-reverse;
+  opacity: 0.7;
+  filter: drop-shadow(0 0 22px rgba(217, 70, 239, 0.8));
+}
+
+.lotus-pulse {
+  animation: lotusPulse 6s ease-in-out infinite alternate;
 }
 
 .corner-lotus-svg {
@@ -338,23 +405,57 @@ html, body {
   bottom: 8px;
   left: 50%;
   transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background: radial-gradient(circle, #38bdf8 0%, #1e1b4b 100%);
-  border: 1.5px solid rgba(255, 215, 0, 0.5);
+  border: 1.5px solid rgba(255, 215, 0, 0.55);
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 20px rgba(56, 189, 248, 0.7);
+  box-shadow: 0 0 22px rgba(56, 189, 248, 0.8);
   z-index: 5;
 }
 
+.orb-pulse {
+  animation: orbGlowPulse 3s ease-in-out infinite alternate;
+}
+
 .dot-orb {
-  font-size: 0.68rem;
+  font-size: 0.7rem;
 }
 
 /* Keyframe Animations */
+@keyframes beamSwayLeft {
+  0% { transform: rotate(-25deg) translateY(0px); opacity: 0.6; }
+  100% { transform: rotate(-20deg) translateY(-15px); opacity: 1; }
+}
+
+@keyframes beamSwayRight {
+  0% { transform: rotate(25deg) translateY(0px); opacity: 0.6; }
+  100% { transform: rotate(20deg) translateY(-15px); opacity: 1; }
+}
+
+@keyframes textShineWave {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+@keyframes lotusPulse {
+  0% { transform: scale(0.95) rotate(0deg); opacity: 0.6; }
+  100% { transform: scale(1.08) rotate(4deg); opacity: 0.85; }
+}
+
+@keyframes orbGlowPulse {
+  0% { transform: translateX(-50%) scale(0.92); box-shadow: 0 0 14px rgba(56, 189, 248, 0.5); }
+  100% { transform: translateX(-50%) scale(1.08); box-shadow: 0 0 26px rgba(56, 189, 248, 0.95); }
+}
+
+@keyframes orbRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 @keyframes kenBurnsBreathing {
   0% { background-size: 100% auto; }
   50% { background-size: 106% auto; }
@@ -380,14 +481,8 @@ html, body {
 }
 
 @keyframes borderGlowPulse {
-  0% { opacity: 0.5; }
+  0% { opacity: 0.4; }
   100% { opacity: 1; }
-}
-
-@keyframes lotusFloat {
-  0% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-6px) rotate(4deg); }
-  100% { transform: translateY(0px) rotate(0deg); }
 }
 
 @keyframes fadeInUp {
