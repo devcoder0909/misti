@@ -189,9 +189,13 @@ html, body {
   display: block;
 }
 
-/* Ultra-Premium Glass Message Box */
+/* Ultra-Premium Fixed-Dimension Glass Message Box (Never resizes during typewriter typing) */
 .primary-teaching-card {
   position: relative;
+  min-height: 165px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: linear-gradient(180deg, rgba(38, 14, 46, 0.94) 0%, rgba(18, 7, 26, 0.97) 100%);
   backdrop-filter: blur(32px) saturate(210%);
   -webkit-backdrop-filter: blur(32px) saturate(210%);
@@ -204,7 +208,6 @@ html, body {
     0 0 30px rgba(217, 70, 239, 0.25),
     inset 0 1.5px 0 rgba(255, 255, 255, 0.25);
   overflow: hidden;
-  animation: fadeInUp 1s var(--ease-divine);
 }
 
 /* Card Corner Floral Filigree SVGs */
@@ -247,7 +250,7 @@ html, body {
   text-shadow: 0 0 16px rgba(255, 228, 122, 0.5);
 }
 
-/* Premium Non-Italic Primary Thought Message Text */
+/* Primary Thought Message Text with Stable Height (Only text types letter-by-letter, box stays static) */
 .primary-thought-text {
   font-family: 'Plus Jakarta Sans', var(--font-primary);
   font-size: clamp(0.88rem, 3.4vw, 1rem);
@@ -257,6 +260,10 @@ html, body {
   letter-spacing: 0.01em;
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 0.7rem;
+  min-height: 3.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Jewel Emblem Divider */
@@ -364,7 +371,6 @@ html, body {
   align-items: stretch;
   gap: 0.75rem;
   padding-bottom: 1.25rem;
-  animation: fadeInUp 1.2s var(--ease-divine);
 }
 
 .sub-column {
@@ -512,9 +518,4 @@ html, body {
   0% { transform: translateY(0px) rotate(0deg); }
   50% { transform: translateY(-5px) rotate(3deg); }
   100% { transform: translateY(0px) rotate(0deg); }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(18px); }
-  to { opacity: 1; transform: translateY(0); }
 }
