@@ -116,7 +116,7 @@ html, body {
   justify-content: space-between;
 }
 
-/* 1. Centered Header Bar ("Misti Divine" & Dynamic Date Badge) */
+/* 1. Centered Header Bar ("Misti Divine" & Ultra-Light Dynamic Date Badge) */
 .greeting-header {
   text-align: center;
   padding-top: clamp(0.15rem, 0.5vh, 0.35rem);
@@ -141,12 +141,12 @@ html, body {
 .header-date-badge {
   font-family: var(--font-primary);
   font-size: 0.7rem;
-  font-weight: 600;
-  color: rgba(255, 215, 0, 0.88);
-  letter-spacing: 0.1em;
+  font-weight: 300; /* Ultra-delicate thin font weight */
+  color: rgba(255, 215, 0, 0.82);
+  letter-spacing: 0.12em;
   margin-top: 0.15rem;
   text-transform: uppercase;
-  text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.25);
 }
 
 /* 2. Clean Open Art Stage */
