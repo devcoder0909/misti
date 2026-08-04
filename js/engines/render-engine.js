@@ -1,8 +1,12 @@
 /**
  * 🌸 RenderEngine
- * Renders background artwork and clean glassmorphism UI with Misti image integration.
+ * Renders background artwork, clean glassmorphism UI, 45px Misti profile, and dynamic Odia mantra switching.
  */
 export class RenderEngine {
+  constructor() {
+    this.initMantraRotation();
+  }
+
   render(state) {
     const { greetingText, selectedThought, selectedGuidance, activeTheme } = state;
 
@@ -39,5 +43,31 @@ export class RenderEngine {
         guidanceBodyEl.className = `column-body font-${selectedGuidance.language}`;
       }
     }
+  }
+
+  /**
+   * Dynamic Odia Mantra Switcher
+   * Swaps between ଜୟ ଜଗନ୍ନାଥ (BG1) and ଜୟ ବଜରଙ୍ଗବଲୀ (BG2) in sync with 30s background rotation
+   */
+  initMantraRotation() {
+    const mantraEl = document.getElementById('odiaMantra');
+    if (!mantraEl) return;
+
+    // Toggle every 15 seconds in sync with background crossfade
+    setInterval(() => {
+      if (mantraEl.textContent.trim() === 'ଜୟ ଜଗନ୍ନାଥ') {
+        mantraEl.style.opacity = '0';
+        setTimeout(() => {
+          mantraEl.textContent = 'ଜୟ ବଜରଙ୍ଗବଲୀ';
+          mantraEl.style.opacity = '1';
+        }, 600);
+      } else {
+        mantraEl.style.opacity = '0';
+        setTimeout(() => {
+          mantraEl.textContent = 'ଜୟ ଜଗନ୍ନାଥ';
+          mantraEl.style.opacity = '1';
+        }, 600);
+      }
+    }, 15000);
   }
 }

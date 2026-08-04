@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>🌸 Misti Divine</title>
+  <title>Misti Divine</title>
 
-  <!-- Preload Background Images (bg image.png & bg2 image.png) -->
+  <!-- Preload Background Images & Misti Profile Avatar -->
   <link rel="preload" as="image" href="./bg%20image.png">
   <link rel="preload" as="image" href="./bg2%20image.png">
   <link rel="preload" as="image" href="./misti.jpg">
@@ -42,27 +42,24 @@
       <!-- Single Screen Content Frame -->
       <div class="content-frame">
         
-        <!-- 1. Header Bar ("Misti Divine" & Stunning Odia Main Title "ଜୟ ଜଗନ୍ନାଥ") -->
+        <!-- 1. Centered Header Bar ("Misti Divine" - No Flower Emoji) -->
         <header class="greeting-header">
-          <div class="header-top-bar">
-            <span class="header-brand-title">Misti Divine 🌸</span>
-            <span class="header-pill"></span>
+          <div class="mobile-notch-bar">
+            <h1 class="header-brand-title">Misti Divine</h1>
           </div>
-          <h1 class="odia-main-title" id="mainTitle">ଜୟ ଜଗନ୍ନାଥ</h1>
         </header>
 
         <!-- 2. Clean Open Art Stage -->
         <section class="art-stage"></section>
 
-        <!-- 3. Primary Main Glass Teaching Card with Misti Image -->
+        <!-- 3. Primary Main Glass Teaching Card with 45px Misti Image -->
         <section class="main-card-section">
           <article class="glass-card primary-teaching-card shimmer-card">
             <div class="card-border-glow"></div>
             
-            <!-- Misti Avatar Image Frame -->
+            <!-- Misti 45px Avatar Frame -->
             <div class="misti-avatar-frame">
               <img src="misti.jpg" alt="Misti" class="misti-avatar-img">
-              <div class="avatar-glow-ring"></div>
             </div>
 
             <h2 class="greeting-title" id="cardGreeting">Good Morning, Misti</h2>
@@ -77,6 +74,11 @@
               <span class="divider-line"></span>
             </div>
           </article>
+          
+          <!-- Dynamic Odia Mantra Badge Just Below Message Box -->
+          <div class="mantra-badge-container">
+            <span class="odia-mantra-text" id="odiaMantra">ଜୟ ଜଗନ୍ନାଥ</span>
+          </div>
         </section>
 
         <!-- 4. Twin Bottom Columns (Left: Thought / Right: Guidance) -->
@@ -94,13 +96,12 @@
           </article>
         </section>
 
-        <!-- 5. Bottom Ornaments -->
+        <!-- 5. Scaled Down Lotus Accents (Positioned Behind & Completely Outside Text) -->
         <div class="bottom-lotus-left">
           <svg viewBox="0 0 100 100" class="corner-lotus-svg">
-            <path d="M 50 10 Q 75 45 50 90 Q 25 45 50 10 Z" fill="#f43f5e" opacity="0.9"/>
-            <path d="M 50 25 Q 85 45 75 85 Q 35 70 50 25 Z" fill="#fb7185" opacity="0.8"/>
-            <path d="M 50 25 Q 12 45 25 85 Q 65 70 50 25 Z" fill="#fb7185" opacity="0.8"/>
-            <path d="M 50 40 Q 90 60 70 95 Q 30 95 50 40 Z" fill="#e11d48" opacity="0.85"/>
+            <path d="M 50 10 Q 75 45 50 90 Q 25 45 50 10 Z" fill="#f43f5e" opacity="0.85"/>
+            <path d="M 50 25 Q 85 45 75 85 Q 35 70 50 25 Z" fill="#fb7185" opacity="0.75"/>
+            <path d="M 50 25 Q 12 45 25 85 Q 65 70 50 25 Z" fill="#fb7185" opacity="0.75"/>
           </svg>
         </div>
 
