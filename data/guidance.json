@@ -268,5 +268,275 @@
     "theme": "divine",
     "festival": "bahudayatra",
     "weekday": "any"
+  },
+  {
+    "id": "guidance-31",
+    "language": "hinglish",
+    "text": "Hanuman ji ki tarah apni shaktiyon par kabhi sandeh mat karein. Jab aapki neeyat saf safaf aur vishwas pakka ho, toh har badha dur ho jaati hai.",
+    "emotion": "strength",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "tuesday"
+  },
+  {
+    "id": "guidance-32",
+    "language": "hinglish",
+    "text": "Jagannath ji ki karuna humein sikhati hai ki har jeev ke prati kripa rakhein. Aaj kisi ki choti si madad karke dekhein, man ko sukoon milega.",
+    "emotion": "kindness",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-33",
+    "language": "hinglish",
+    "text": "Shiv ji ki Tapasya humein sikhati hai ki ekagrata hi safalta ki kunji hai. Aaj apne dhyan ko bhatakne mat dein aur apne kaam par tikka rahein.",
+    "emotion": "focus",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "monday"
+  },
+  {
+    "id": "guidance-34",
+    "language": "hinglish",
+    "text": "Mata Laxmi ki kripa unhi par hoti hai jo mehnat aur sachhai ka rasta chunte hain. Apne aatmanirbhar banne ke safar par aage badhte rahein.",
+    "emotion": "growth",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "friday"
+  },
+  {
+    "id": "guidance-35",
+    "language": "hinglish",
+    "text": "Ganesh ji ki buddhi se seekhein ki har samasya ka hal dhairya aur samajhdaari mein hota hai. Jaldbazi mein koi bhi faisla na lein.",
+    "emotion": "wisdom",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "wednesday"
+  },
+  {
+    "id": "guidance-36",
+    "language": "hinglish",
+    "text": "Jagannath Puri ke Neelachakra ki tarah apni aasha ki kiran ko hamesha uncha rakhein. Andhera chahe jitna ho, ujala zaroor aayega.",
+    "emotion": "hope",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-37",
+    "language": "hinglish",
+    "text": "Hanuman Chalisa ka saar hai ki jahan vishwas hai wahan darr ka koi kaam nahi. Apne andar ke darr ko aaj hamesha ke liye chhod dein.",
+    "emotion": "courage",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "saturday"
+  },
+  {
+    "id": "guidance-38",
+    "language": "hinglish",
+    "text": "Shri Krishna ki Bansuri ki tarah apne andar ke sabhi vikaaron ko khali karein, tabhi aatmik shanti aur madhurta ka vaas hoga.",
+    "emotion": "peace",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-39",
+    "language": "hinglish",
+    "text": "Mata Saraswati ka aashirwad unhe milta hai jo gyaan aur vinamrata dono ko apnate hain. Aaj apni seekhne ki pravritti ko jagaye rakhein.",
+    "emotion": "humility",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "thursday"
+  },
+  {
+    "id": "guidance-40",
+    "language": "hinglish",
+    "text": "Surya Dev ki tarah bina kisi swarth ke doosron ko roshni dein. Apni positivity se apne aaspas ke mahaul ko khushgawar banayein.",
+    "emotion": "energy",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "sunday"
+  },
+  {
+    "id": "guidance-41",
+    "language": "hinglish",
+    "text": "Jagannath ji ki Ananda Bazar humein sikhati hai ki sath milkar khana aur khushiyan baantna hi jeevan ka asli anand hai.",
+    "emotion": "joy",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-42",
+    "language": "hinglish",
+    "text": "Hanuman ji ne Samudra langhte waqt ek pal ke liye bhi vishram nahi kiya. Apne lakshya ko paane tak apni mehnat ko viram mat dein.",
+    "emotion": "discipline",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "tuesday"
+  },
+  {
+    "id": "guidance-43",
+    "language": "hinglish",
+    "text": "Shri Ram ka aadarsh jeevan sikhata hai ki vikat se vikat sthiti mein bhi apni maryada aur vivek ko kabhi mat khoyiye.",
+    "emotion": "patience",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-44",
+    "language": "hinglish",
+    "text": "Mata Durga ka aashirwad humein andaruni shakti deta hai. Apne andar ke aalasy aur nakaratmak vichaaron par vijay praapt karein.",
+    "emotion": "strength",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "friday"
+  },
+  {
+    "id": "guidance-45",
+    "language": "hinglish",
+    "text": "Jagannath ji ke Nabakalebara ki pratha humein sikhati hai ki badlav hi shaswat hai. Purane vichaaron ko chhodkar naye ko apnayein.",
+    "emotion": "healing",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-46",
+    "language": "hinglish",
+    "text": "Hanuman ji ki Seva Bhavna humein sikhati hai ki bina swarth ke ki gayi madad hi sachhi sadhana hai. Aaj kisi ke kaam aayein.",
+    "emotion": "kindness",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "saturday"
+  },
+  {
+    "id": "guidance-47",
+    "language": "hinglish",
+    "text": "Gita ke Chintan se samajh aata hai ki kal ki chinta mein aaj ke pal ko barbaad na karein. Vartaman mein jeena hi asli gyaan hai.",
+    "emotion": "peace",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-48",
+    "language": "hinglish",
+    "text": "Mata Annapurna ki kripa ke liye har din swasth bhojan aur shuddh jal ke prati kritagyata vyakt karein. Santosh hi sabse bada dhan hai.",
+    "emotion": "gratitude",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-49",
+    "language": "hinglish",
+    "text": "Jagannath Puri ki Snana Bedi ki pavitrata ki tarah apne man aur aatma ko dwesh aur eershya se doorith rakhein.",
+    "emotion": "purity",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-50",
+    "language": "hinglish",
+    "text": "Hanuman ji ki Bhakti humein sikhate hai ki prem aur samarpan mein aisi shakti hai jo har asambhav ko sambhav bana deti hai.",
+    "emotion": "faith",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "tuesday"
+  },
+  {
+    "id": "guidance-51",
+    "language": "hinglish",
+    "text": "Vishnu ji ka Sheshashaiya par shant rehna humein sikhati hai ki kathinaiyon ke beech bhi man ko sthir rakhna hi sachi shakti hai.",
+    "emotion": "peace",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "thursday"
+  },
+  {
+    "id": "guidance-52",
+    "language": "hinglish",
+    "text": "Jagannath ji ki Gundicha Mandir Yatra humein sikhati hai ki prem se har dury ko mitaya ja sakta hai. Rishton mein mithaas banaye rakhein.",
+    "emotion": "harmony",
+    "theme": "divine",
+    "festival": "rathayatra",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-53",
+    "language": "hinglish",
+    "text": "Hanuman ji ki buddhimatta humein samjhaati hai ki kathin paristhiti mein aavesh nahi, balki chaturai aur vishleshana kaam aata hai.",
+    "emotion": "wisdom",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "saturday"
+  },
+  {
+    "id": "guidance-54",
+    "language": "hinglish",
+    "text": "Mata Bhuvaneshwari ki daya se prapt is jeevan ke har pal ko khushdili se jeeyein. Aasha ka daaman kabhi mat chhodie.",
+    "emotion": "hope",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "friday"
+  },
+  {
+    "id": "guidance-55",
+    "language": "hinglish",
+    "text": "Shiv ji ke Neelkanth roop se seekhein ki doosron ke diye hue kadve bol ko pi kar bhi sabhi ko prem aur shanti hi dena chahiye.",
+    "emotion": "healing",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "monday"
+  },
+  {
+    "id": "guidance-56",
+    "language": "hinglish",
+    "text": "Jagannath ji ka Mahaprasad sabhi ke liye saman hai. Yeh sikhata hai ki insaniyat se bada koi dharam nahi hota.",
+    "emotion": "unity",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-57",
+    "language": "hinglish",
+    "text": "Hanuman ji ki Sindoor ki bhakti humein nirbharta aur nishtha ka paath padhati hai. Apne kaam mein poori lagan dikhayein.",
+    "emotion": "focus",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "tuesday"
+  },
+  {
+    "id": "guidance-58",
+    "language": "hinglish",
+    "text": "Shri Krishna ki Dwarka Nagri ka nirmaan humein naye sapne dekhne aur unhe poora karne ki prerna deta hai. Aaj nayi shuruat karein.",
+    "emotion": "growth",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-59",
+    "language": "hinglish",
+    "text": "Mata Gayatri ka dhyan man ko shuddh aur vicharon ko tejasvi banata hai. Aaj din ki shuruat acche vicharon ke sath karein.",
+    "emotion": "purity",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "sunday"
+  },
+  {
+    "id": "guidance-60",
+    "language": "hinglish",
+    "text": "Jagannath ji ki kripa se har subah naya mauka milta hai. Beete hue kal ki galtiyon se seekhein aur aage badhein.",
+    "emotion": "hope",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
   }
 ]
