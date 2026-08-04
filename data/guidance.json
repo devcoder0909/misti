@@ -19,74 +19,254 @@
   },
   {
     "id": "guidance-3",
-    "language": "odia",
-    "text": "ନିଜର ପ୍ରତ୍ୟେକ କାର୍ଯ୍ୟକୁ ସଚ୍ଚୋଟତାର ସହ କରନ୍ତୁ। ନମ୍ରତା ଓ ସେବା ମନୋଭାବ ହିଁ ଆପଣଙ୍କୁ ପ୍ରକୃତ ସଫଳତା ଆଣିଦେବ।",
-    "emotion": "calmness",
-    "theme": "calm",
+    "language": "hinglish",
+    "text": "Jagannath ji ki daya humein sikhati hai ki har insaan ko apnaya jaaye. Aaj kisi ke liye bhi apne dil mein kadwahat mat rakhein.",
+    "emotion": "kindness",
+    "theme": "divine",
     "festival": "any",
     "weekday": "any"
   },
   {
     "id": "guidance-4",
-    "language": "english",
-    "text": "Focus your mind on pure intentions today. When your heart is light and kind, clarity unfolds effortlessly in every decision.",
-    "emotion": "comfort",
-    "theme": "night",
+    "language": "hinglish",
+    "text": "Hanuman ji ka samarpan yaad rakhein: Jab irade sachhe ho toh koi bhi rasta kathin nahi hota. Apne lakshya par dhyan kendrit rakhein.",
+    "emotion": "focus",
+    "theme": "golden",
     "festival": "any",
-    "weekday": "any"
+    "weekday": "tuesday"
   },
   {
     "id": "guidance-5",
     "language": "hinglish",
-    "text": "Choti mushkilon ko apni shanti mat cheenne dijiye. Apni aantarik urja par bharosa rakhiye aur muskurate hue aage badhiye.",
-    "emotion": "hope",
-    "theme": "sunrise",
+    "text": "Gita ke saar ko yaad rakhein: Kartavya bina fal ki chinta ke karein. Aaj apna 100% dein aur baaki samay par chhod dein.",
+    "emotion": "peace",
+    "theme": "divine",
     "festival": "any",
     "weekday": "any"
   },
   {
     "id": "guidance-6",
     "language": "hinglish",
-    "text": "Prem aur karuna har rishte ko aalokit karte hain. Aaj kisi ke chehre par ek choti si muskan laane ka prayas karein.",
+    "text": "Jagannath ji ka prem behad vishal hai. Unse sikhein ki choti choti baaton ko bhool kar aage badhna hi asli shanti hai.",
+    "emotion": "peace",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "sunday"
+  },
+  {
+    "id": "guidance-7",
+    "language": "hinglish",
+    "text": "Hanuman ji ki sahasi drishti se dekhein: Darr ko apne raaste ka ruda mat banne dein. Apne andar ki anant shakti par vishwas rakhein.",
+    "emotion": "courage",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "saturday"
+  },
+  {
+    "id": "guidance-8",
+    "language": "hinglish",
+    "text": "Shri Ram ka dhairya aur Maryada sikhati hai ki har mushkil waqt mein sayam banaye rakhna hi sache vyaktitva ki pehchan hai.",
+    "emotion": "patience",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-9",
+    "language": "hinglish",
+    "text": "Shri Krishna ki leela humein sikhati hai ki har sthiti mein muskurana seekhein. Chinta chhod kar aaj ke pal ko jeeyein.",
+    "emotion": "joy",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "wednesday"
+  },
+  {
+    "id": "guidance-10",
+    "language": "hinglish",
+    "text": "Mata Bhuvaneshwari ki kripa humein prithvi se jude rehna sikhati hai. Aaj ke din sabhi ke prati aabhar aur kritagyata vyakt karein.",
+    "emotion": "gratitude",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "friday"
+  },
+  {
+    "id": "guidance-11",
+    "language": "hinglish",
+    "text": "Jagannath ji ki Mahaprasad ki tarah har rishte mein mithaas gholein. Apne sabhi vichaar aur vaani mein madhurta rakhein.",
+    "emotion": "harmony",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-12",
+    "language": "hinglish",
+    "text": "Hanuman ji ki bina kisi ahankar ke seva karne ki bhavna ko apnayein. Namrata hi sachhi mahanata ki buniyad hai.",
+    "emotion": "humility",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "tuesday"
+  },
+  {
+    "id": "guidance-13",
+    "language": "hinglish",
+    "text": "Shiv ji ki tarah shant aur sthir rehna seekhein. Bahar ke shor se door apne andar ki antaratma ki aawaz sunein.",
+    "emotion": "peace",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "monday"
+  },
+  {
+    "id": "guidance-14",
+    "language": "hinglish",
+    "text": "Devi Laxmi ki kripa ka mool mantra hai shuddh neeyat aur imandari. Apne safar mein hamesha sachhai ka saath dein.",
+    "emotion": "purity",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "friday"
+  },
+  {
+    "id": "guidance-15",
+    "language": "hinglish",
+    "text": "Jagannath Puri ki Ratha Yatra humein sikhati hai ki sabhi ko saath hokar ek hi disha mein aage badhna chahiye.",
+    "emotion": "unity",
+    "theme": "divine",
+    "festival": "rathayatra",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-16",
+    "language": "hinglish",
+    "text": "Hanuman Chalisa ka saar hai atoot vishwas. Jab vishwas pakka ho toh darr ka koi sthan nahi reh jaata.",
+    "emotion": "faith",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "saturday"
+  },
+  {
+    "id": "guidance-17",
+    "language": "hinglish",
+    "text": "Mata Saraswati ki kripa se apne gyaan aur vichaaron ko shuddh rakhein. Aaj kuch naya seekhne ki ruchi banaye rakhein.",
+    "emotion": "growth",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "thursday"
+  },
+  {
+    "id": "guidance-18",
+    "language": "hinglish",
+    "text": "Ganesh ji ki tarah sabhi vighno ko samajhdaari se suljhayein. Shanti aur vivek hi har samasya ka asli hal hain.",
+    "emotion": "wisdom",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "wednesday"
+  },
+  {
+    "id": "guidance-19",
+    "language": "hinglish",
+    "text": "Jagannath ji ki ankhein prem se bhari hain. Unhi ki tarah har kisi ko bina kisi bhedbhav ke prem aur samman se dekhein.",
     "emotion": "love",
     "theme": "divine",
     "festival": "any",
     "weekday": "any"
   },
   {
-    "id": "guidance-7",
-    "language": "odia",
-    "text": "ଧୈର୍ଯ୍ୟ ରଖନ୍ତୁ, ପ୍ରଭୁଙ୍କ ଉପରେ ବିଶ୍ୱାସ ରଖନ୍ତୁ। ଶାନ୍ତ ମନରେ ନିଆଯାଇଥିବା ନିଷ୍ପତ୍ତି ସଦାସର୍ବଦା ଉତ୍ତମ ଫଳ ପ୍ରଦାନ କରିଥାଏ।",
-    "emotion": "calmness",
-    "theme": "calm",
-    "festival": "any",
-    "weekday": "any"
-  },
-  {
-    "id": "guidance-8",
+    "id": "guidance-20",
     "language": "hinglish",
-    "text": "Rath Yatra ka sandesh hai ki mahaprabhu har bhakt ke paas swayam aate hain. Apne man mein shraddha aur samarpan ka bhav sajayein.",
-    "emotion": "devotion",
+    "text": "Hanuman ji ki nishtha humein sikhati hai ki discipline se hi sachha lakshya praapt hota hai. Apne niyam par kayam rahein.",
+    "emotion": "discipline",
     "theme": "golden",
-    "festival": "Rath Yatra",
-    "weekday": "any"
-  },
-  {
-    "id": "guidance-9",
-    "language": "hinglish",
-    "text": "Hanuman Jayanti par sankalp lein ki kisi bhi chunauti ke aage jhukna nahi hai. Apni nigahon mein aatmavishwas ka roop rakhein.",
-    "emotion": "strength",
-    "theme": "divine",
-    "festival": "Hanuman Jayanti",
-    "weekday": "any"
-  },
-  {
-    "id": "guidance-10",
-    "language": "english",
-    "text": "Cultivate gratitude for small wins today. True harmony begins inside your heart before it reflects in the world.",
-    "emotion": "positivity",
-    "theme": "sunrise",
     "festival": "any",
+    "weekday": "tuesday"
+  },
+  {
+    "id": "guidance-21",
+    "language": "hinglish",
+    "text": "Surya Dev ki tarah bina rukey apna kartavya nibhayein. Prakash aur urja hamesha doosron me baantein.",
+    "emotion": "energy",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "sunday"
+  },
+  {
+    "id": "guidance-22",
+    "language": "hinglish",
+    "text": "Mata Durga ki shakti se apne andar ki sabhi nakaratmakta ko khatam karein. Aaj sirf aasha aur positivity par focus karein.",
+    "emotion": "hope",
+    "theme": "divine",
+    "festival": "navratri",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-23",
+    "language": "hinglish",
+    "text": "Jagannath ji ke Snana Yatra ki tarah apne man aur vichaaron ko saaf karein. Purani baaton ko bhool kar shuruat karein.",
+    "emotion": "healing",
+    "theme": "divine",
+    "festival": "snanayatra",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-24",
+    "language": "hinglish",
+    "text": "Hanuman ji ne Sanjeevani laane mein koi hesitation nahi dikhayi. Jab madad ki baat aaye, bina kisi jhijhak ke aage badhein.",
+    "emotion": "kindness",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "saturday"
+  },
+  {
+    "id": "guidance-25",
+    "language": "hinglish",
+    "text": "Mata Annapurna ki kripa ko yaad karte hue, aaj jo bhi aapke paas hai uske liye dil se dhanyawad karein.",
+    "emotion": "gratitude",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-26",
+    "language": "hinglish",
+    "text": "Vishnu ji ki sthirta sikhati hai ki jeet ho ya haar, apne man ki shanti ko kabhi prabhavit mat hone dein.",
+    "emotion": "peace",
+    "theme": "divine",
+    "festival": "any",
+    "weekday": "thursday"
+  },
+  {
+    "id": "guidance-27",
+    "language": "hinglish",
+    "text": "Jagannath ji ki Chhera Pahara ki pratha humein namrata sikhati hai. Kitne bhi safal ho jayein, zameen se jude rahein.",
+    "emotion": "humility",
+    "theme": "divine",
+    "festival": "rathayatra",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-28",
+    "language": "hinglish",
+    "text": "Hanuman ji ki buddhi humein har sthiti mein sahi decision lene me madad karti hai. Shanti se sochiye aur faisla lijiye.",
+    "emotion": "wisdom",
+    "theme": "golden",
+    "festival": "any",
+    "weekday": "tuesday"
+  },
+  {
+    "id": "guidance-29",
+    "language": "hinglish",
+    "text": "Shri Krishna ke Upadesh yaad rakhein: Nirash mat hoiaye, har kathinai ke peeche ek bada karan aur seekh chhupi hoti hai.",
+    "emotion": "hope",
+    "theme": "divine",
+    "festival": "janmashtami",
+    "weekday": "any"
+  },
+  {
+    "id": "guidance-30",
+    "language": "hinglish",
+    "text": "Jagannath ji ki Bahuda Yatra humein ghar waapsi aur andar ki shanti ki yaad dilaati hai. Apne man mein vishram karein.",
+    "emotion": "peace",
+    "theme": "divine",
+    "festival": "bahudayatra",
     "weekday": "any"
   }
 ]
