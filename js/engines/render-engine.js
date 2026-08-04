@@ -1,14 +1,14 @@
 /**
  * 🌸 RenderEngine
- * Renders full-res background artwork (jaga.png) with crystal clear visibility and glassmorphism UI.
+ * Renders full-res background artwork (bg image.png) with crystal clear visibility and glassmorphism UI.
  */
 export class RenderEngine {
   render(state) {
     const { greetingText, selectedThought, selectedGuidance, activeTheme } = state;
 
-    // 1. Apply Translucent Atmosphere Gradient so jaga.png Artwork shines through crystal clear
+    // 1. Apply Translucent Atmosphere Gradient over bg image.png
     if (activeTheme) {
-      document.body.style.backgroundImage = `linear-gradient(180deg, rgba(6, 2, 14, 0.2) 0%, rgba(6, 2, 14, 0.75) 100%), url('jaga.png')`;
+      document.body.style.backgroundImage = `linear-gradient(180deg, rgba(6, 2, 14, 0.18) 0%, rgba(6, 2, 14, 0.72) 100%), url('./bg%20image.png')`;
       document.body.style.backgroundSize = 'cover';
       document.body.style.backgroundPosition = 'center top';
       document.body.style.backgroundRepeat = 'no-repeat';
@@ -17,7 +17,7 @@ export class RenderEngine {
       document.documentElement.style.setProperty('--accent-color', activeTheme.accentColor);
       document.documentElement.style.setProperty('--glass-border', activeTheme.glassBorder);
     } else {
-      document.body.style.backgroundImage = `linear-gradient(180deg, rgba(6, 2, 14, 0.2) 0%, rgba(6, 2, 14, 0.75) 100%), url('jaga.png')`;
+      document.body.style.backgroundImage = `linear-gradient(180deg, rgba(6, 2, 14, 0.18) 0%, rgba(6, 2, 14, 0.72) 100%), url('./bg%20image.png')`;
       document.body.style.backgroundSize = 'cover';
       document.body.style.backgroundPosition = 'center top';
     }

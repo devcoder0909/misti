@@ -39,7 +39,7 @@ html, body {
   font-family: var(--font-primary);
   color: var(--cream-white);
   background-color: var(--deep-indigo);
-  background-image: linear-gradient(180deg, rgba(6, 2, 14, 0.18) 0%, rgba(6, 2, 14, 0.72) 100%), url('./jaga.png');
+  background-image: linear-gradient(180deg, rgba(6, 2, 14, 0.18) 0%, rgba(6, 2, 14, 0.72) 100%), url('./bg%20image.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;

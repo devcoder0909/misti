@@ -1,9 +1,9 @@
-const CACHE_NAME = 'misti-divine-companion-v2';
+const CACHE_NAME = 'misti-divine-companion-v3';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './style.css',
-  './jaga.png',
+  './bg%20image.png',
   './manifest.json',
   './js/app.js',
   './js/engines/app-engine.js',
