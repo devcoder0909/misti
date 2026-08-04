@@ -69,7 +69,7 @@ html, body {
   box-shadow: 0 0 80px rgba(217, 70, 239, 0.15);
 }
 
-/* Dual Crossfade Rotating Background Layers (bg image.png & bg2 image.png) */
+/* Dual Crossfade Rotating Background Layers (bg image.png & bg2 image.png) - 5 Sec Rotation */
 .bg-layer {
   position: absolute;
   inset: 0;
@@ -82,12 +82,12 @@ html, body {
 
 .bg-layer-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.85) 100%), url('./bg%20image.png');
-  animation: bgRotateCrossfade1 30s ease-in-out infinite alternate;
+  animation: bgRotateCrossfade1 10s ease-in-out infinite alternate;
 }
 
 .bg-layer-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.85) 100%), url('./bg2%20image.png');
-  animation: bgRotateCrossfade2 30s ease-in-out infinite alternate;
+  animation: bgRotateCrossfade2 10s ease-in-out infinite alternate;
 }
 
 /* Background Particle Canvas */
@@ -161,7 +161,7 @@ html, body {
     0 16px 40px rgba(0, 0, 0, 0.65),
     0 0 25px rgba(217, 70, 239, 0.22),
     inset 0 1.5px 0 rgba(255, 255, 255, 0.22);
-  overflow: hidden; /* Glass shine effect strictly contained inside message box */
+  overflow: hidden;
   animation: fadeInUp 1s var(--ease-divine);
 }
 
@@ -197,7 +197,6 @@ html, body {
   text-shadow: 0 0 14px rgba(255, 255, 255, 0.3);
 }
 
-/* Slightly Increased Message Box Font Size for Better Readability */
 .primary-thought-text {
   font-size: clamp(0.86rem, 3.2vw, 0.98rem);
   line-height: 1.52;
@@ -241,7 +240,7 @@ html, body {
   background: #ffd700;
 }
 
-/* Dynamic Odia Mantra Badge (Synchronized with BG1 / BG2 Crossfade) */
+/* Dynamic Odia Mantra Badge (Synchronized with 5-Second BG1 / BG2 Slide) */
 .mantra-badge-container {
   text-align: center;
   margin-top: 0.4rem;
@@ -255,11 +254,11 @@ html, body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 20px rgba(255, 148, 0, 0.55);
-  transition: opacity 0.8s ease;
+  transition: opacity 0.5s ease;
   display: inline-block;
 }
 
-/* Refined Specular Light Sweep Shimmer (Contained Strictly Inside Message Box) */
+/* Specular Light Sweep Shimmer (Contained Strictly Inside Message Box) */
 .shimmer-card::after {
   content: '';
   position: absolute;
@@ -400,17 +399,17 @@ html, body {
   font-size: 0.65rem;
 }
 
-/* Background Crossfade Rotation Keyframes */
+/* Fast 5-Second Background Crossfade Rotation Keyframes */
 @keyframes bgRotateCrossfade1 {
-  0%, 42% { opacity: 1; transform: scale(1); }
-  50%, 92% { opacity: 0; transform: scale(1.05); }
+  0%, 40% { opacity: 1; transform: scale(1); }
+  50%, 90% { opacity: 0; transform: scale(1.04); }
   100% { opacity: 1; transform: scale(1); }
 }
 
 @keyframes bgRotateCrossfade2 {
-  0%, 42% { opacity: 0; transform: scale(1.05); }
-  50%, 92% { opacity: 1; transform: scale(1); }
-  100% { opacity: 0; transform: scale(1.05); }
+  0%, 40% { opacity: 0; transform: scale(1.04); }
+  50%, 90% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.04); }
 }
 
 /* Keyframe Animations */

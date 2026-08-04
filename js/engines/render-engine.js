@@ -46,8 +46,8 @@ export class RenderEngine {
   }
 
   /**
-   * Synchronizes Odia Mantra Badge with BG1 (Jagannath) vs BG2 (Hanuman) Crossfade Cycle
-   * 30-Second Alternate Cycle: 0-14s -> Jagannath, 15-29s -> Bajrangbali
+   * Synchronizes Odia Mantra Badge with 5-Second Background Image Slide Cycle
+   * Swaps between ଜୟ ଜଗନ୍ନାଥ (BG1) and ଜୟ ବଜରଙ୍ଗବଲୀ (BG2) every 5 seconds.
    */
   initMantraSync() {
     const mantraEl = document.getElementById('odiaMantra');
@@ -56,9 +56,8 @@ export class RenderEngine {
     // Set initial text matching BG1 (Jagannath)
     mantraEl.textContent = 'ଜୟ ଜଗନ୍ନାଥ';
 
-    // 30-second interval cycle matching bgRotateCrossfade 30s alternate loop
+    // 5-second interval cycle matching 5s bg image slide
     setInterval(() => {
-      // Fade out
       mantraEl.style.opacity = '0';
 
       setTimeout(() => {
@@ -67,10 +66,9 @@ export class RenderEngine {
         } else {
           mantraEl.textContent = 'ଜୟ ଜଗନ୍ନାଥ';
         }
-        // Fade in
         mantraEl.style.opacity = '1';
-      }, 800);
+      }, 500);
 
-    }, 15000); // Swaps at 15s mark in sync with 30s bg crossfade
+    }, 5000); // Swaps exactly every 5 seconds
   }
 }
