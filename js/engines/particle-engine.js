@@ -57,18 +57,18 @@ export class ParticleEngine {
       opacity: 0.95
     });
 
-    // 3. Spawns 10 Radial Lotus Petal Particles
-    for (let i = 0; i < 10; i++) {
-      const angle = (Math.PI * 2 / 10) * i + (Math.random() * 0.4 - 0.2);
-      const speed = Math.random() * 2.8 + 1.2;
+    // 3. Spawns 16 Radial Lotus Petal Particles
+    for (let i = 0; i < 16; i++) {
+      const angle = (Math.PI * 2 / 16) * i + (Math.random() * 0.4 - 0.2);
+      const speed = Math.random() * 3.2 + 1.5;
       this.burstParticles.push({
         x,
         y,
         speedX: Math.cos(angle) * speed,
         speedY: Math.sin(angle) * speed,
-        radius: Math.random() * 3 + 1.8,
-        opacity: 0.9,
-        color: i % 2 === 0 ? '#ffd700' : '#f43f5e',
+        radius: Math.random() * 3.5 + 1.8,
+        opacity: 0.95,
+        color: i % 3 === 0 ? '#ffd700' : (i % 3 === 1 ? '#f43f5e' : '#d946ef'),
         life: 0.8
       });
     }
@@ -93,18 +93,22 @@ export class ParticleEngine {
 
   createParticles() {
     this.particles = [];
-    const count = window.innerWidth < 480 ? 35 : 55;
+    // Rich dense particles count: 110 on mobile, 160 on desktop
+    const count = window.innerWidth < 480 ? 110 : 160;
+
+    const colors = ['#ffd700', '#ffe47a', '#f43f5e', '#d946ef', '#ffffff'];
 
     for (let i = 0; i < count; i++) {
       this.particles.push({
         x: Math.random() * this.canvas.width,
         y: Math.random() * this.canvas.height,
-        radius: Math.random() * 3.2 + 1.2,
-        speedX: (Math.random() - 0.5) * 0.45,
-        speedY: (Math.random() - 0.5) * 0.45 - 0.25,
-        opacity: Math.random() * 0.75 + 0.25,
-        pulseSpeed: Math.random() * 0.02 + 0.008,
-        angle: Math.random() * Math.PI * 2
+        radius: Math.random() * 2.8 + 0.8,
+        speedX: (Math.random() - 0.5) * 0.5,
+        speedY: - (Math.random() * 0.6 + 0.15), // Gentle upward drift
+        opacity: Math.random() * 0.8 + 0.2,
+        pulseSpeed: Math.random() * 0.025 + 0.01,
+        angle: Math.random() * Math.PI * 2,
+        color: colors[Math.floor(Math.random() * colors.length)]
       });
     }
   }
@@ -113,7 +117,7 @@ export class ParticleEngine {
     if (!this.ctx) return;
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
-    // 1. Render Ambient Background Particles
+    // 1. Render Ambient Floating Particles
     for (let p of this.particles) {
       p.x += p.speedX;
       p.y += p.speedY;
@@ -122,16 +126,20 @@ export class ParticleEngine {
       if (p.x < 0) p.x = this.canvas.width;
       if (p.x > this.canvas.width) p.x = 0;
       if (p.y < 0) p.y = this.canvas.height;
-      if (p.y > this.canvas.height) p.y = 0;
+      if (p.y > this.canvas.height) {
+        p.y = 0;
+        p.x = Math.random() * this.canvas.width;
+      }
 
       const currentOpacity = Math.abs(Math.sin(p.angle)) * p.opacity;
 
       this.ctx.save();
       this.ctx.beginPath();
       this.ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-      this.ctx.fillStyle = `rgba(255, 215, 0, ${currentOpacity})`;
-      this.ctx.shadowBlur = 10;
-      this.ctx.shadowColor = '#ffd700';
+      this.ctx.fillStyle = p.color;
+      this.ctx.globalAlpha = currentOpacity;
+      this.ctx.shadowBlur = 12;
+      this.ctx.shadowColor = p.color;
       this.ctx.fill();
       this.ctx.restore();
     }
@@ -155,7 +163,7 @@ export class ParticleEngine {
       this.ctx.arc(bp.x, bp.y, bp.radius, 0, Math.PI * 2);
       this.ctx.fillStyle = bp.color;
       this.ctx.globalAlpha = bp.opacity;
-      this.ctx.shadowBlur = 12;
+      this.ctx.shadowBlur = 14;
       this.ctx.shadowColor = bp.color;
       this.ctx.fill();
       this.ctx.restore();
