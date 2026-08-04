@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>🌸 Misti's Divine Companion</title>
+  <title>🌸 Misti Divine</title>
   
   <!-- SEO & PWA Meta -->
   <meta name="description" content="A peaceful daily spiritual companion inspired by Lord Jagannath and Lord Hanuman.">
@@ -14,7 +14,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Odia:wght@400;600&family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Odia:wght@400;600&family=Outfit:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
 
   <!-- CSS Design System -->
   <link rel="stylesheet" href="style.css">
@@ -36,13 +36,13 @@
       <!-- Background Starburst & Fireworks Layer -->
       <div class="sky-fireworks-layer">
         <svg viewBox="0 0 400 400" class="fireworks-svg">
-          <g transform="translate(60, 50)" stroke="rgba(217, 70, 239, 0.4)" stroke-width="1.2" stroke-dasharray="2 3">
+          <g transform="translate(60, 50)" stroke="rgba(217, 70, 239, 0.35)" stroke-width="1.2" stroke-dasharray="2 3">
             <line x1="0" y1="-30" x2="0" y2="30"/>
             <line x1="-30" y1="0" x2="30" y2="0"/>
             <line x1="-20" y1="-20" x2="20" y2="20"/>
             <line x1="-20" y1="20" x2="20" y2="-20"/>
           </g>
-          <g transform="translate(340, 60)" stroke="rgba(255, 215, 0, 0.35)" stroke-width="1.2" stroke-dasharray="2 3">
+          <g transform="translate(340, 60)" stroke="rgba(255, 215, 0, 0.3)" stroke-width="1.2" stroke-dasharray="2 3">
             <line x1="0" y1="-25" x2="0" y2="25"/>
             <line x1="-25" y1="0" x2="25" y2="0"/>
             <line x1="-18" y1="-18" x2="18" y2="18"/>
@@ -54,11 +54,10 @@
       <!-- Single Screen Content Frame -->
       <div class="content-frame">
         
-        <!-- 1. Apple-Style Native Mobile Header Bar -->
+        <!-- 1. Native Header Bar ("Misti Divine", No 3 Dots) -->
         <header class="greeting-header">
           <div class="mobile-notch-bar">
-            <span class="notch-time">9:41</span>
-            <span class="notch-title">Divine Teachings</span>
+            <span class="notch-title">Misti Divine 🌸</span>
             <div class="notch-icons">
               <span class="icon-signal">📶</span>
               <span class="icon-wifi">📡</span>
@@ -67,7 +66,7 @@
           </div>
         </header>
 
-        <!-- 2. Divine Stage (Highlights full-res jaga.png background artwork) -->
+        <!-- 2. Divine Stage (Center Aura Halo) -->
         <section class="art-stage">
           <!-- Rotating Divine Light Rays -->
           <div class="divine-light-rays">
@@ -103,14 +102,14 @@
           <div class="divine-halo"></div>
         </section>
 
-        <!-- 3. Billion-Dollar 3D Glass Teaching Card -->
+        <!-- 3. Primary Letter Teaching Card -->
         <section class="main-card-section">
           <article class="glass-card primary-teaching-card tilt-card shimmer-card" id="tiltCard">
             <div class="card-border-glow"></div>
             <div class="card-specular-reflection"></div>
             
             <h1 class="greeting-title glowing-text-flow" id="greetingText">Good Morning, Misti 🌸</h1>
-            <p class="primary-thought-text" id="primaryThought">Maan mein shanti ho toh har din ek utsav jaisa lagta hai.</p>
+            <p class="primary-thought-text typewriter-text" id="primaryThought"></p>
             
             <!-- Jewel Emblem Divider -->
             <div class="jewel-emblem-divider">
@@ -128,24 +127,31 @@
         <section class="twin-columns-section">
           <article class="sub-column left-column glass-subcard">
             <span class="column-label">TODAY'S THOUGHT</span>
-            <p class="column-body" id="thoughtBody">...</p>
+            <p class="column-body typewriter-text" id="thoughtBody"></p>
           </article>
           
           <div class="column-divider"></div>
 
           <article class="sub-column right-column glass-subcard">
             <span class="column-label">DAILY GUIDANCE</span>
-            <p class="column-body" id="guidanceBody">...</p>
+            <p class="column-body typewriter-text" id="guidanceBody"></p>
           </article>
         </section>
 
-        <!-- 5. Bottom Blooming 3D Lotus & Navigation Control -->
-        <div class="bottom-lotus-left">
+        <!-- 5. Multiple Decorative Lotus Accents (Positioned OUTSIDE text cards) -->
+        <div class="corner-lotus-bottom-left">
           <svg viewBox="0 0 100 100" class="corner-lotus-svg">
-            <path d="M 50 8 Q 78 45 50 92 Q 22 45 50 8 Z" fill="#f43f5e" opacity="0.95"/>
-            <path d="M 50 22 Q 88 45 78 88 Q 35 70 50 22 Z" fill="#fb7185" opacity="0.85"/>
-            <path d="M 50 22 Q 12 45 22 88 Q 65 70 50 22 Z" fill="#fb7185" opacity="0.85"/>
-            <path d="M 50 38 Q 92 60 72 96 Q 28 96 50 38 Z" fill="#e11d48" opacity="0.9"/>
+            <path d="M 50 8 Q 78 45 50 92 Q 22 45 50 8 Z" fill="#f43f5e" opacity="0.85"/>
+            <path d="M 50 22 Q 88 45 78 88 Q 35 70 50 22 Z" fill="#fb7185" opacity="0.75"/>
+            <path d="M 50 22 Q 12 45 22 88 Q 65 70 50 22 Z" fill="#fb7185" opacity="0.75"/>
+          </svg>
+        </div>
+
+        <div class="corner-lotus-bottom-right">
+          <svg viewBox="0 0 100 100" class="corner-lotus-svg">
+            <path d="M 50 8 Q 78 45 50 92 Q 22 45 50 8 Z" fill="#d946ef" opacity="0.85"/>
+            <path d="M 50 22 Q 88 45 78 88 Q 35 70 50 22 Z" fill="#f472b6" opacity="0.75"/>
+            <path d="M 50 22 Q 12 45 22 88 Q 65 70 50 22 Z" fill="#f472b6" opacity="0.75"/>
           </svg>
         </div>
 

@@ -1,6 +1,6 @@
 /* ==========================================================================
-   🌸 MISTI'S DIVINE COMPANION — BILLION-DOLLAR MOBILE PWA EXPERIENCE
-   Target: 60 FPS, Apple Design Award Level, 100dvh Lock
+   🌸 MISTI DIVINE — BILLION-DOLLAR HANDWRITTEN LETTER EXPERIENCE
+   Target: 60 FPS, Apple Design Award Quality, 100dvh Lock
    ========================================================================== */
 
 :root {
@@ -39,7 +39,7 @@ html, body {
   font-family: var(--font-primary);
   color: var(--cream-white);
   background: var(--deep-indigo);
-  transition: background 2s var(--ease-apple);
+  animation: kenBurnsBreathing 25s ease-in-out infinite alternate;
 }
 
 /* Mobile-First Frame Wrapper for Desktop Presentation */
@@ -117,7 +117,7 @@ html, body {
   justify-content: space-between;
 }
 
-/* 1. Mobile Status Notch Header */
+/* 1. Mobile Status Bar ("Misti Divine 🌸", No 3 Dots) */
 .greeting-header {
   padding-top: clamp(0.1rem, 0.4vh, 0.3rem);
 }
@@ -126,24 +126,18 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.76rem;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
   letter-spacing: 0.04em;
 }
 
-.notch-time {
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
-
 .notch-title {
-  font-size: 0.82rem;
-  font-weight: 600;
+  font-size: 0.92rem;
+  font-weight: 700;
   color: #ffffff;
-  text-transform: capitalize;
   letter-spacing: 0.05em;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
 }
 
 .notch-icons {
@@ -206,7 +200,7 @@ html, body {
   z-index: 3;
 }
 
-/* 3. Billion-Dollar 3D Glass Teaching Card */
+/* 3. Primary 3D Glass Teaching Card */
 .main-card-section {
   margin-bottom: 0.5rem;
   perspective: 1000px;
@@ -214,7 +208,7 @@ html, body {
 
 .primary-teaching-card {
   position: relative;
-  background: linear-gradient(180deg, rgba(38, 14, 46, 0.88) 0%, rgba(18, 7, 26, 0.94) 100%);
+  background: linear-gradient(180deg, rgba(38, 14, 46, 0.92) 0%, rgba(18, 7, 26, 0.96) 100%);
   backdrop-filter: blur(32px) saturate(220%);
   -webkit-backdrop-filter: blur(32px) saturate(220%);
   border: 1px solid var(--glass-border);
@@ -229,6 +223,7 @@ html, body {
   transform-style: preserve-3d;
   transition: transform 0.2s var(--ease-apple), box-shadow 0.4s ease;
   animation: fadeInUp 1s var(--ease-divine);
+  z-index: 5;
 }
 
 .glowing-text-flow {
@@ -246,9 +241,10 @@ html, body {
 .primary-thought-text {
   font-size: clamp(0.8rem, 2.9vw, 0.9rem);
   line-height: 1.48;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 0.92);
   margin-bottom: 0.75rem;
   font-weight: 400;
+  min-height: 2.6em;
 }
 
 /* Jewel Emblem 3D Orb */
@@ -332,13 +328,14 @@ html, body {
   gap: 0.75rem;
   padding-bottom: 1.25rem;
   animation: fadeInUp 1.2s var(--ease-divine);
+  z-index: 5;
 }
 
 .glass-subcard {
   flex: 1;
-  background: rgba(255, 255, 255, 0.035);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
   padding: 0.55rem 0.7rem;
 }
@@ -362,24 +359,39 @@ html, body {
 .column-body {
   font-size: clamp(0.72rem, 2.5vw, 0.8rem);
   line-height: 1.42;
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(255, 255, 255, 0.88);
+  min-height: 3.2em;
 }
 
 .font-odia {
   font-family: var(--font-odia);
 }
 
-/* 5. Bottom Lotus & Bottom Nav Indicator */
-.bottom-lotus-left {
+/* 5. Decorative Lotus Accents (POSITIONED FULLY OUTSIDE TEXT CARDS) */
+.corner-lotus-bottom-left {
   position: absolute;
-  bottom: -15px;
-  left: -20px;
-  width: 105px;
-  height: 105px;
+  bottom: -30px;
+  left: -30px;
+  width: 90px;
+  height: 90px;
   pointer-events: none;
-  z-index: 4;
-  filter: drop-shadow(0 0 25px rgba(244, 63, 94, 0.8));
-  animation: lotusFloat 6s ease-in-out infinite alternate;
+  z-index: 1;
+  opacity: 0.65;
+  filter: drop-shadow(0 0 20px rgba(244, 63, 94, 0.7));
+  animation: lotusFloat 7s ease-in-out infinite alternate;
+}
+
+.corner-lotus-bottom-right {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 90px;
+  height: 90px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.65;
+  filter: drop-shadow(0 0 20px rgba(217, 70, 239, 0.7));
+  animation: lotusFloat 8s ease-in-out infinite alternate-reverse;
 }
 
 .corner-lotus-svg {
@@ -409,6 +421,12 @@ html, body {
 }
 
 /* Keyframe Animations */
+@keyframes kenBurnsBreathing {
+  0% { background-size: 100% auto; }
+  50% { background-size: 106% auto; }
+  100% { background-size: 100% auto; }
+}
+
 @keyframes textGradientFlow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -444,7 +462,7 @@ html, body {
 
 @keyframes lotusFloat {
   0% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-7px) rotate(3deg); }
+  50% { transform: translateY(-6px) rotate(4deg); }
   100% { transform: translateY(0px) rotate(0deg); }
 }
 
