@@ -16,6 +16,7 @@
   --accent-color: #ffd700;
   --glass-border: rgba(255, 215, 0, 0.38);
   
+  --font-cinzel: 'Cinzel', serif;
   --font-primary: 'Plus Jakarta Sans', 'Outfit', -apple-system, sans-serif;
   --font-odia: 'Noto Sans Odia', sans-serif;
 
@@ -182,14 +183,14 @@ html, body {
 }
 
 .header-brand-title {
-  font-family: 'Outfit', var(--font-primary);
-  font-size: clamp(1.02rem, 4vw, 1.18rem);
-  font-weight: 700;
+  font-family: var(--font-cinzel);
+  font-size: clamp(1.05rem, 4.2vw, 1.25rem);
+  font-weight: 800;
   font-style: normal;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  text-shadow: 0 0 18px rgba(255, 215, 0, 0.5);
+  letter-spacing: 0.16em;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.55);
 }
 
 .header-date-badge {
@@ -318,15 +319,15 @@ html, body {
   z-index: 3;
 }
 
-/* Premium Non-Italic Greeting Title (#ffe47a) */
+/* Premium Non-Italic Greeting Title (#ffe47a in Cinzel Font) */
 .greeting-title {
-  font-family: 'Plus Jakarta Sans', var(--font-primary);
-  font-size: clamp(1.12rem, 4.5vw, 1.4rem);
+  font-family: var(--font-cinzel);
+  font-size: clamp(1.15rem, 4.6vw, 1.42rem);
   font-weight: 700;
   font-style: normal;
-  letter-spacing: -0.015em;
+  letter-spacing: 0.03em;
   color: #ffe47a;
-  text-shadow: 0 0 16px rgba(255, 228, 122, 0.5);
+  text-shadow: 0 0 18px rgba(255, 228, 122, 0.55);
 }
 
 /* Primary Thought Message Text Container */
@@ -513,11 +514,11 @@ html, body {
 
 .column-label {
   display: block;
-  font-family: 'Plus Jakarta Sans', var(--font-primary);
-  font-size: 0.6rem;
+  font-family: var(--font-cinzel);
+  font-size: 0.62rem;
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   color: var(--accent-color);
   text-transform: uppercase;
   opacity: 1;
