@@ -16,8 +16,8 @@
   --accent-color: #ffd700;
   --glass-border: rgba(255, 215, 0, 0.38);
   
-  --font-cinzel: 'Cinzel', serif;
-  --font-primary: 'Plus Jakarta Sans', 'Outfit', -apple-system, sans-serif;
+  --font-poppins: 'Poppins', -apple-system, sans-serif;
+  --font-primary: 'Poppins', -apple-system, sans-serif;
   --font-odia: 'Noto Sans Odia', sans-serif;
 
   --ease-apple: cubic-bezier(0.25, 1, 0.5, 1);
@@ -38,7 +38,7 @@ html, body {
   height: 100%;
   height: 100dvh;
   overflow: hidden;
-  font-family: var(--font-primary);
+  font-family: var(--font-poppins);
   font-style: normal;
   color: var(--cream-white);
   background-color: #07030c;
@@ -108,7 +108,7 @@ html, body {
 }
 
 .splash-brand {
-  font-family: var(--font-cinzel);
+  font-family: var(--font-poppins);
   font-size: 0.85rem;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.85);
@@ -277,18 +277,18 @@ html, body {
 }
 
 .header-brand-title {
-  font-family: var(--font-cinzel);
-  font-size: clamp(1.05rem, 4.2vw, 1.25rem);
-  font-weight: 800;
+  font-family: var(--font-poppins);
+  font-size: clamp(1.05rem, 4.2vw, 1.22rem);
+  font-weight: 700;
   font-style: normal;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
   text-shadow: 0 0 20px rgba(255, 215, 0, 0.55);
 }
 
 .header-date-badge {
-  font-family: var(--font-primary);
+  font-family: var(--font-poppins);
   font-size: 0.72rem;
   font-weight: 500;
   font-style: normal;
@@ -413,20 +413,20 @@ html, body {
   z-index: 3;
 }
 
-/* Premium Non-Italic Greeting Title (#ffe47a in Cinzel Font) */
+/* Premium Non-Italic Greeting Title (#ffe47a in Poppins Font) */
 .greeting-title {
-  font-family: var(--font-cinzel);
-  font-size: clamp(1.15rem, 4.6vw, 1.42rem);
+  font-family: var(--font-poppins);
+  font-size: clamp(1.12rem, 4.5vw, 1.38rem);
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 0.03em;
+  letter-spacing: -0.015em;
   color: #ffe47a;
   text-shadow: 0 0 18px rgba(255, 228, 122, 0.55);
 }
 
-/* Ultra-Smooth Liquid Silk GPU-Accelerated Message Text Animation */
+/* Ultra-Smooth Liquid Silk GPU-Accelerated Message Text Animation in Poppins Font */
 .primary-thought-text {
-  font-family: 'Plus Jakarta Sans', var(--font-primary);
+  font-family: var(--font-poppins);
   font-size: clamp(0.88rem, 3.4vw, 1rem);
   font-weight: 500;
   font-style: normal;
@@ -599,11 +599,11 @@ html, body {
 
 .column-label {
   display: block;
-  font-family: var(--font-cinzel);
-  font-size: 0.62rem;
+  font-family: var(--font-poppins);
+  font-size: 0.6rem;
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   color: var(--accent-color);
   text-transform: uppercase;
   opacity: 1;
@@ -611,7 +611,7 @@ html, body {
 }
 
 .column-body {
-  font-family: 'Plus Jakarta Sans', var(--font-primary);
+  font-family: var(--font-poppins);
   font-size: clamp(0.74rem, 2.6vw, 0.82rem);
   font-weight: 400;
   font-style: normal;
@@ -623,7 +623,7 @@ html, body {
   font-family: var(--font-odia);
 }
 
-/* 5. Scaled Down High Visibility Lotus Flower Ornaments Across All 4 Corners */
+/* 5. Scaled Down High Visibility Flower Ornaments Across All 4 Corners */
 .corner-lotus-top-left {
   position: absolute;
   top: 40px;
