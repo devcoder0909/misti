@@ -44,11 +44,11 @@ html, body {
   background-color: #07030c;
 }
 
-/* Full-Screen Black Luxurious Splash Transition Overlay */
+/* Full-Screen Black & Gold Ultra-Luxurious Splash Transition Overlay */
 .splash-screen {
   position: fixed;
   inset: 0;
-  background: #050209;
+  background: radial-gradient(circle at 50% 45%, #180826 0%, #050209 75%, #000000 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,6 +60,25 @@ html, body {
   will-change: opacity, transform, filter;
 }
 
+.splash-ambient-halo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.28) 0%, rgba(217, 70, 239, 0.15) 45%, transparent 75%);
+  filter: blur(40px);
+  pointer-events: none;
+  animation: splashHaloPulse 3s ease-in-out infinite alternate;
+}
+
+@keyframes splashHaloPulse {
+  0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.6; }
+  100% { transform: translate(-50%, -50%) scale(1.15); opacity: 1; }
+}
+
 .splash-screen.splash-hidden {
   opacity: 0;
   transform: scale(1.06);
@@ -68,57 +87,61 @@ html, body {
 }
 
 .splash-content {
+  position: relative;
+  z-index: 2;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.65rem;
 }
 
 .splash-emblem-frame {
   position: relative;
-  width: 75px;
-  height: 75px;
-  margin-bottom: 0.4rem;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 0.5rem;
 }
 
 .splash-lotus-svg {
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 0 25px rgba(255, 215, 0, 0.8));
-  animation: splashLotusPulse 2s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 28px rgba(255, 215, 0, 0.85));
+  animation: splashLotusRotate 25s linear infinite;
+}
+
+@keyframes splashLotusRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .splash-pulse-ring {
   position: absolute;
-  inset: -12px;
+  inset: -14px;
   border-radius: 50%;
-  border: 1.5px stroke rgba(255, 215, 0, 0.5);
+  border: 1.5px stroke rgba(255, 215, 0, 0.6);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
   animation: orbPulseRing 2.5s ease-in-out infinite;
 }
 
 .splash-mantra {
   font-family: var(--font-odia);
-  font-size: clamp(1.6rem, 6.5vw, 2.2rem);
+  font-size: clamp(1.75rem, 7vw, 2.35rem);
   font-weight: 700;
   background: linear-gradient(135deg, #ecd3a1 0%, #ff9400 45%, #ffe094 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 25px rgba(255, 148, 0, 0.65);
+  text-shadow: 0 0 30px rgba(255, 148, 0, 0.7);
 }
 
 .splash-brand {
   font-family: var(--font-poppins);
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.85);
-  letter-spacing: 0.22em;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.24em;
   text-transform: uppercase;
-}
-
-@keyframes splashLotusPulse {
-  0% { transform: scale(0.95); }
-  100% { transform: scale(1.08); }
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
 }
 
 /* Mobile-First Frame Wrapper for Desktop Presentation */
@@ -623,7 +646,7 @@ html, body {
   font-family: var(--font-odia);
 }
 
-/* 5. Scaled Down High Visibility Flower Ornaments Across All 4 Corners */
+/* 5. Scaled Down High Visibility Rounded Lotus Flower Ornaments Across All 4 Corners */
 .corner-lotus-top-left {
   position: absolute;
   top: 40px;

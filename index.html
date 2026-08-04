@@ -26,14 +26,33 @@
 </head>
 <body>
 
-  <!-- Full-Screen Black Luxurious Splash Transition Overlay -->
+  <!-- Full-Screen Ultra-Luxurious Black & Gold Opening Splash Transition Overlay -->
   <div class="splash-screen" id="splashScreen">
+    <div class="splash-ambient-halo"></div>
     <div class="splash-content">
       <div class="splash-emblem-frame">
+        <!-- Rounded Multi-Petal Lotus Rosette SVG -->
         <svg viewBox="0 0 100 100" class="splash-lotus-svg">
-          <path d="M 50 10 Q 75 45 50 90 Q 25 45 50 10 Z" fill="#ffd700" opacity="0.95"/>
-          <path d="M 50 25 Q 85 45 75 85 Q 35 70 50 25 Z" fill="#ffb703" opacity="0.85"/>
-          <path d="M 50 25 Q 12 45 25 85 Q 65 70 50 25 Z" fill="#ffb703" opacity="0.85"/>
+          <defs>
+            <radialGradient id="goldGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#ffe094"/>
+              <stop offset="60%" stop-color="#ff9400"/>
+              <stop offset="100%" stop-color="#d946ef"/>
+            </radialGradient>
+          </defs>
+          <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255, 215, 0, 0.35)" stroke-width="1" stroke-dasharray="4,3"/>
+          <g fill="url(#goldGrad)" opacity="0.88">
+            <ellipse cx="50" cy="20" rx="6.5" ry="15"/>
+            <ellipse cx="50" cy="80" rx="6.5" ry="15"/>
+            <ellipse cx="20" cy="50" rx="15" ry="6.5"/>
+            <ellipse cx="80" cy="50" rx="15" ry="6.5"/>
+            <ellipse cx="29" cy="29" rx="7" ry="14" transform="rotate(-45 29 29)"/>
+            <ellipse cx="71" cy="29" rx="7" ry="14" transform="rotate(45 71 29)"/>
+            <ellipse cx="29" cy="71" rx="7" ry="14" transform="rotate(45 29 71)"/>
+            <ellipse cx="71" cy="71" rx="7" ry="14" transform="rotate(-45 71 71)"/>
+          </g>
+          <circle cx="50" cy="50" r="11" fill="#ffd700"/>
+          <circle cx="50" cy="50" r="5" fill="#1e1b4b"/>
         </svg>
         <span class="splash-pulse-ring"></span>
       </div>
@@ -148,34 +167,68 @@
           </article>
         </section>
 
-        <!-- 5. Rich Multi-Corner Lotus & Filigree Flower Accents -->
+        <!-- 5. Rounded Multi-Petal Lotus Flowers Across 4 Corners -->
         <div class="corner-lotus-top-left">
           <svg viewBox="0 0 100 100" class="corner-lotus-svg">
-            <path d="M 50 10 Q 75 45 50 90 Q 25 45 50 10 Z" fill="#ffd700" opacity="0.75"/>
-            <path d="M 50 25 Q 85 45 75 85 Q 35 70 50 25 Z" fill="#f43f5e" opacity="0.65"/>
+            <circle cx="50" cy="50" r="10" fill="#ffd700"/>
+            <g fill="#ffd700" opacity="0.85">
+              <ellipse cx="50" cy="22" rx="7" ry="16"/>
+              <ellipse cx="50" cy="78" rx="7" ry="16"/>
+              <ellipse cx="22" cy="50" rx="16" ry="7"/>
+              <ellipse cx="78" cy="50" rx="16" ry="7"/>
+              <ellipse cx="30" cy="30" rx="10" ry="14" transform="rotate(-45 30 30)"/>
+              <ellipse cx="70" cy="30" rx="10" ry="14" transform="rotate(45 70 30)"/>
+              <ellipse cx="30" cy="70" rx="10" ry="14" transform="rotate(45 30 70)"/>
+              <ellipse cx="70" cy="70" rx="10" ry="14" transform="rotate(-45 70 70)"/>
+            </g>
           </svg>
         </div>
 
         <div class="corner-lotus-bottom-left">
           <svg viewBox="0 0 100 100" class="corner-lotus-svg">
-            <path d="M 50 10 Q 75 45 50 90 Q 25 45 50 10 Z" fill="#f43f5e" opacity="0.85"/>
-            <path d="M 50 25 Q 85 45 75 85 Q 35 70 50 25 Z" fill="#fb7185" opacity="0.75"/>
-            <path d="M 50 25 Q 12 45 25 85 Q 65 70 50 25 Z" fill="#fb7185" opacity="0.75"/>
+            <circle cx="50" cy="50" r="10" fill="#f43f5e"/>
+            <g fill="#f43f5e" opacity="0.85">
+              <ellipse cx="50" cy="22" rx="7" ry="16"/>
+              <ellipse cx="50" cy="78" rx="7" ry="16"/>
+              <ellipse cx="22" cy="50" rx="16" ry="7"/>
+              <ellipse cx="78" cy="50" rx="16" ry="7"/>
+              <ellipse cx="30" cy="30" rx="10" ry="14" transform="rotate(-45 30 30)"/>
+              <ellipse cx="70" cy="30" rx="10" ry="14" transform="rotate(45 70 30)"/>
+              <ellipse cx="30" cy="70" rx="10" ry="14" transform="rotate(45 30 70)"/>
+              <ellipse cx="70" cy="70" rx="10" ry="14" transform="rotate(-45 70 70)"/>
+            </g>
           </svg>
         </div>
 
         <div class="corner-lotus-bottom-right">
           <svg viewBox="0 0 100 100" class="corner-lotus-svg">
-            <path d="M 50 10 Q 75 45 50 90 Q 25 45 50 10 Z" fill="#d946ef" opacity="0.85"/>
-            <path d="M 50 22 Q 88 45 78 88 Q 35 70 50 22 Z" fill="#f472b6" opacity="0.75"/>
-            <path d="M 50 22 Q 12 45 22 88 Q 65 70 50 22 Z" fill="#f472b6" opacity="0.75"/>
+            <circle cx="50" cy="50" r="10" fill="#d946ef"/>
+            <g fill="#d946ef" opacity="0.85">
+              <ellipse cx="50" cy="22" rx="7" ry="16"/>
+              <ellipse cx="50" cy="78" rx="7" ry="16"/>
+              <ellipse cx="22" cy="50" rx="16" ry="7"/>
+              <ellipse cx="78" cy="50" rx="16" ry="7"/>
+              <ellipse cx="30" cy="30" rx="10" ry="14" transform="rotate(-45 30 30)"/>
+              <ellipse cx="70" cy="30" rx="10" ry="14" transform="rotate(45 70 30)"/>
+              <ellipse cx="30" cy="70" rx="10" ry="14" transform="rotate(45 30 70)"/>
+              <ellipse cx="70" cy="70" rx="10" ry="14" transform="rotate(-45 70 70)"/>
+            </g>
           </svg>
         </div>
 
         <div class="corner-lotus-top-right">
           <svg viewBox="0 0 100 100" class="corner-lotus-svg">
-            <path d="M 50 10 Q 75 45 50 90 Q 25 45 50 10 Z" fill="#ffd700" opacity="0.7"/>
-            <path d="M 50 25 Q 85 45 75 85 Q 35 70 50 25 Z" fill="#ffb703" opacity="0.6"/>
+            <circle cx="50" cy="50" r="10" fill="#ffd700"/>
+            <g fill="#ffd700" opacity="0.85">
+              <ellipse cx="50" cy="22" rx="7" ry="16"/>
+              <ellipse cx="50" cy="78" rx="7" ry="16"/>
+              <ellipse cx="22" cy="50" rx="16" ry="7"/>
+              <ellipse cx="78" cy="50" rx="16" ry="7"/>
+              <ellipse cx="30" cy="30" rx="10" ry="14" transform="rotate(-45 30 30)"/>
+              <ellipse cx="70" cy="30" rx="10" ry="14" transform="rotate(45 70 30)"/>
+              <ellipse cx="30" cy="70" rx="10" ry="14" transform="rotate(45 30 70)"/>
+              <ellipse cx="70" cy="70" rx="10" ry="14" transform="rotate(-45 70 70)"/>
+            </g>
           </svg>
         </div>
 
