@@ -38,7 +38,7 @@ html, body {
   overflow: hidden;
   font-family: var(--font-primary);
   color: var(--cream-white);
-  background-color: #040108;
+  background-color: #000000;
 }
 
 /* Mobile-First Frame Wrapper for Desktop Presentation */
@@ -49,7 +49,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #040108;
+  background: #000000;
 }
 
 /* Mobile App Viewport Lock (Max Width 430px) */
@@ -65,7 +65,7 @@ html, body {
   align-items: center;
   overflow: hidden;
   padding: clamp(0.5rem, 2vh, 1rem) clamp(0.85rem, 3.5vw, 1.25rem);
-  background-color: var(--deep-indigo);
+  background-color: #000000;
   box-shadow: 0 0 80px rgba(217, 70, 239, 0.15);
 }
 
@@ -82,13 +82,14 @@ html, body {
   will-change: opacity;
 }
 
+/* Updated Background Gradient Overlay: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%) */
 .bg-layer-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.85) 100%), url('./bg%20image.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('./bg%20image.png');
   opacity: 1;
 }
 
 .bg-layer-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.85) 100%), url('./bg2%20image.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('./bg2%20image.png');
   opacity: 0;
 }
 
