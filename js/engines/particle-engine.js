@@ -1,143 +1,132 @@
 /**
  * 🌸 ParticleEngine
- * 60 FPS HTML5 Canvas particle physics system with ambient floating gold/pink petals and tactile haptic tap bursts.
+ * High performance 60 FPS HTML5 Canvas particle system with touch ripple interactions.
  */
 export class ParticleEngine {
-  constructor() {
-    this.canvas = document.getElementById('particleCanvas');
-    if (!this.canvas) return;
-    this.ctx = this.canvas.getContext('2d');
+  constructor(canvasId) {
+    this.canvas = document.getElementById(canvasId);
+    this.ctx = this.canvas ? this.canvas.getContext('2d') : null;
     this.particles = [];
-    this.init();
+    this.ripples = [];
+    this.animId = null;
+    this.mode = 'sparkles';
+    this.glowColor = '#ffd700';
   }
 
-  init() {
-    this.resizeCanvas();
-    window.addEventListener('resize', () => this.resizeCanvas());
+  init(mode = 'sparkles', glowColor = 'rgba(255, 215, 0, 0.45)') {
+    if (!this.canvas || !this.ctx) return;
+    this.mode = mode;
+    this.glowColor = glowColor;
 
-    // Spawn initial ambient floating gold & pink petals
-    for (let i = 0; i < 35; i++) {
-      this.particles.push(this.createAmbientParticle());
-    }
+    this.resize();
+    window.addEventListener('resize', () => this.resize());
 
-    // Tactile Haptic Petal Burst on Tap / Click
-    window.addEventListener('pointerdown', (e) => {
-      this.spawnTapPetalBurst(e.clientX, e.clientY);
-    });
+    // Interactive Touch / Pointer Listener
+    window.addEventListener('pointerdown', (e) => this.addRipple(e.clientX, e.clientY));
 
-    this.animate();
+    this.createParticles();
+    this.loop();
   }
 
-  resizeCanvas() {
+  resize() {
+    if (!this.canvas) return;
     this.canvas.width = window.innerWidth;
     this.canvas.height = window.innerHeight;
   }
 
-  createAmbientParticle() {
-    return {
-      x: Math.random() * this.canvas.width,
-      y: Math.random() * this.canvas.height,
-      radius: Math.random() * 2.5 + 1,
-      speedX: (Math.random() - 0.5) * 0.4,
-      speedY: -(Math.random() * 0.5 + 0.2),
-      opacity: Math.random() * 0.7 + 0.2,
-      color: Math.random() > 0.4 ? '#ffd700' : '#f43f5e',
-      pulse: Math.random() * Math.PI,
-      spin: Math.random() * Math.PI * 2,
-      spinSpeed: (Math.random() - 0.5) * 0.02,
-      isPetal: Math.random() > 0.5
-    };
+  addRipple(x, y) {
+    this.ripples.push({
+      x,
+      y,
+      radius: 5,
+      maxRadius: 45,
+      opacity: 0.95
+    });
   }
 
-  /**
-   * Tactile Haptic Petal Burst on Touch/Click
-   */
-  spawnTapPetalBurst(x, y) {
-    // Try haptic vibration if supported
-    if (navigator.vibrate) {
-      try { navigator.vibrate(15); } catch(e) {}
-    }
+  createParticles() {
+    this.particles = [];
+    const count = window.innerWidth < 480 ? 30 : 50;
 
-    // Spawn 14 glowing burst petals
-    for (let i = 0; i < 14; i++) {
-      const angle = (Math.PI * 2 / 14) * i + (Math.random() * 0.3);
-      const speed = Math.random() * 3 + 1.5;
-
+    for (let i = 0; i < count; i++) {
       this.particles.push({
-        x: x,
-        y: y,
-        radius: Math.random() * 4 + 2,
-        speedX: Math.cos(angle) * speed,
-        speedY: Math.sin(angle) * speed,
-        opacity: 1,
-        color: Math.random() > 0.3 ? '#ffd700' : '#d946ef',
-        pulse: 0,
-        spin: Math.random() * Math.PI * 2,
-        spinSpeed: (Math.random() - 0.5) * 0.08,
-        isPetal: true,
-        life: 1,
-        decay: Math.random() * 0.02 + 0.015
+        x: Math.random() * this.canvas.width,
+        y: Math.random() * this.canvas.height,
+        radius: Math.random() * 3.5 + 1.2,
+        speedX: (Math.random() - 0.5) * 0.45,
+        speedY: (Math.random() - 0.5) * 0.45 - 0.25,
+        opacity: Math.random() * 0.75 + 0.25,
+        pulseSpeed: Math.random() * 0.02 + 0.008,
+        angle: Math.random() * Math.PI * 2
       });
     }
   }
 
-  animate() {
+  loop() {
+    if (!this.ctx) return;
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
-    for (let i = this.particles.length - 1; i >= 0; i--) {
-      const p = this.particles[i];
-
+    // 1. Render Floating Ambient Particles
+    for (let p of this.particles) {
       p.x += p.speedX;
       p.y += p.speedY;
-      p.spin += p.spinSpeed;
+      p.angle += p.pulseSpeed;
 
-      // Handle burst particles decaying
-      if (p.life !== undefined) {
-        p.life -= p.decay;
-        p.opacity = Math.max(0, p.life);
-        if (p.life <= 0) {
-          this.particles.splice(i, 1);
-          continue;
-        }
-      } else {
-        // Reset ambient particles floating off top screen
-        if (p.y < -10) {
-          p.y = this.canvas.height + 10;
-          p.x = Math.random() * this.canvas.width;
-        }
-      }
+      if (p.x < 0) p.x = this.canvas.width;
+      if (p.x > this.canvas.width) p.x = 0;
+      if (p.y < 0) p.y = this.canvas.height;
+      if (p.y > this.canvas.height) p.y = 0;
+
+      const currentOpacity = Math.abs(Math.sin(p.angle)) * p.opacity;
 
       this.ctx.save();
-      this.ctx.translate(p.x, p.y);
-      this.ctx.rotate(p.spin);
-      this.ctx.globalAlpha = p.opacity;
-
-      if (p.isPetal) {
-        // Draw 3D Lotus Petal Shape
-        this.ctx.fillStyle = p.color;
-        this.ctx.beginPath();
-        this.ctx.ellipse(0, 0, p.radius * 1.5, p.radius * 0.8, 0, 0, Math.PI * 2);
-        this.ctx.fill();
-
-        // Inner Petal Highlight
-        this.ctx.fillStyle = '#ffffff';
-        this.ctx.globalAlpha = p.opacity * 0.4;
-        this.ctx.beginPath();
-        this.ctx.ellipse(0, 0, p.radius * 0.8, p.radius * 0.4, 0, 0, Math.PI * 2);
-        this.ctx.fill();
-      } else {
-        // Draw Sparkle Orbs
-        this.ctx.fillStyle = p.color;
+      this.ctx.beginPath();
+      if (this.mode === 'lotus' || this.mode === 'flowers') {
+        this.ctx.ellipse(p.x, p.y, p.radius * 2.2, p.radius, p.angle, 0, Math.PI * 2);
+        this.ctx.fillStyle = `rgba(244, 63, 94, ${currentOpacity * 0.75})`;
         this.ctx.shadowBlur = 8;
-        this.ctx.shadowColor = p.color;
-        this.ctx.beginPath();
-        this.ctx.arc(0, 0, p.radius, 0, Math.PI * 2);
-        this.ctx.fill();
+        this.ctx.shadowColor = '#f43f5e';
+      } else if (this.mode === 'fireflies') {
+        this.ctx.arc(p.x, p.y, p.radius * 1.5, 0, Math.PI * 2);
+        this.ctx.fillStyle = `rgba(217, 70, 239, ${currentOpacity})`;
+        this.ctx.shadowBlur = 12;
+        this.ctx.shadowColor = '#d946ef';
+      } else {
+        this.ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        this.ctx.fillStyle = `rgba(255, 215, 0, ${currentOpacity})`;
+        this.ctx.shadowBlur = 10;
+        this.ctx.shadowColor = '#ffd700';
       }
-
+      this.ctx.fill();
       this.ctx.restore();
     }
 
-    requestAnimationFrame(() => this.animate());
+    // 2. Render Interactive Touch Ripples
+    for (let i = this.ripples.length - 1; i >= 0; i--) {
+      let r = this.ripples[i];
+      r.radius += 1.8;
+      r.opacity -= 0.025;
+
+      if (r.opacity <= 0 || r.radius >= r.maxRadius) {
+        this.ripples.splice(i, 1);
+        continue;
+      }
+
+      this.ctx.save();
+      this.ctx.beginPath();
+      this.ctx.arc(r.x, r.y, r.radius, 0, Math.PI * 2);
+      this.ctx.strokeStyle = `rgba(255, 215, 0, ${r.opacity})`;
+      this.ctx.lineWidth = 1.8;
+      this.ctx.shadowBlur = 15;
+      this.ctx.shadowColor = '#ffd700';
+      this.ctx.stroke();
+      this.ctx.restore();
+    }
+
+    this.animId = requestAnimationFrame(() => this.loop());
+  }
+
+  stop() {
+    if (this.animId) cancelAnimationFrame(this.animId);
   }
 }
