@@ -1,5 +1,5 @@
 /* ==========================================================================
-   🌸 MISTI'S DIVINE COMPANION — LUXURY REFERENCE DESIGN & MOTION SYSTEM
+   🌸 MISTI'S DIVINE COMPANION — PIXEL-FAITHFUL REFERENCE DESIGN SYSTEM
    Target: 60 FPS, Apple / Awwwards Quality, 100dvh Lock
    ========================================================================== */
 
@@ -53,10 +53,10 @@ html, body {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  padding: clamp(0.6rem, 2.5vh, 1.25rem) clamp(0.9rem, 3.8vw, 1.35rem);
+  padding: clamp(0.5rem, 2vh, 1rem) clamp(0.85rem, 3.5vw, 1.25rem);
 }
 
-/* Particle Canvas */
+/* Background Layers */
 .particle-canvas {
   position: absolute;
   top: 0;
@@ -65,6 +65,21 @@ html, body {
   height: 100%;
   pointer-events: none;
   z-index: 1;
+}
+
+.sky-fireworks-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.fireworks-svg {
+  width: 100%;
+  height: 100%;
 }
 
 /* Content Frame Lock */
@@ -79,10 +94,10 @@ html, body {
   justify-content: space-between;
 }
 
-/* 1. Header & Greeting Bar */
+/* 1. Header & Top Bar */
 .greeting-header {
   text-align: center;
-  padding-top: clamp(0.1rem, 0.5vh, 0.4rem);
+  padding-top: clamp(0.1rem, 0.5vh, 0.35rem);
 }
 
 .header-top-bar {
@@ -90,28 +105,27 @@ html, body {
   justify-content: space-between;
   align-items: center;
   font-size: 0.72rem;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.75);
   letter-spacing: 0.05em;
-  margin-bottom: 0.25rem;
 }
 
 .header-dots {
   letter-spacing: 0.15em;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .header-subtitle {
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.85);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: capitalize;
+  letter-spacing: 0.04em;
 }
 
 .header-pill {
   width: 22px;
   height: 10px;
-  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
   border-radius: 6px;
   position: relative;
 }
@@ -126,27 +140,6 @@ html, body {
   border-radius: 2px;
 }
 
-.greeting-text {
-  font-size: clamp(1.3rem, 5.4vw, 1.8rem);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #ffffff 0%, var(--soft-lavender) 50%, var(--accent-color) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 24px var(--glow-color);
-  animation: fadeInDown 1s var(--ease-divine);
-}
-
-.date-badge {
-  font-size: clamp(0.75rem, 2.6vw, 0.85rem);
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.75);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-top: 0.15rem;
-  animation: fadeIn 1.2s var(--ease-divine);
-}
-
 /* 2. Divine Stage (~50% Height) */
 .art-stage {
   position: relative;
@@ -154,14 +147,14 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 48vh;
-  margin: 0.3rem 0;
+  max-height: 46vh;
+  margin: 0.2rem 0;
 }
 
 .mandala-ring {
   position: absolute;
-  width: min(280px, 68vw);
-  height: min(280px, 68vw);
+  width: min(290px, 70vw);
+  height: min(290px, 70vw);
   pointer-events: none;
   z-index: 1;
   animation: mandalaRotate 35s linear infinite;
@@ -170,16 +163,16 @@ html, body {
 .mandala-svg {
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.3));
+  filter: drop-shadow(0 0 16px rgba(255, 215, 0, 0.35));
 }
 
 .divine-halo {
   position: absolute;
-  width: min(250px, 60vw);
-  height: min(250px, 60vw);
+  width: min(260px, 62vw);
+  height: min(260px, 62vw);
   border-radius: 50%;
   background: radial-gradient(circle, var(--neon-magenta) 0%, var(--glow-color) 40%, rgba(0,0,0,0) 75%);
-  filter: blur(25px);
+  filter: blur(28px);
   animation: haloPulse 6s ease-in-out infinite alternate;
   pointer-events: none;
   z-index: 2;
@@ -194,43 +187,77 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.65));
 }
 
 .divine-svg-graphic {
   width: 100%;
   height: 100%;
-  max-width: 330px;
+  max-width: 340px;
   animation: floatBreathing 8s ease-in-out infinite alternate;
 }
 
-/* 3. Cards Section & Advanced Text Box Animations */
-.cards-container {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(0.55rem, 1.8vh, 0.95rem);
-  padding-bottom: clamp(0.2rem, 0.8vh, 0.6rem);
+/* 3. Primary Main Glass Card ("Teachings & Bhakti") */
+.main-card-section {
+  margin-bottom: 0.5rem;
 }
 
-.glass-card {
+.primary-teaching-card {
   position: relative;
-  background: linear-gradient(135deg, rgba(28, 12, 48, 0.72) 0%, rgba(15, 6, 30, 0.82) 100%);
+  background: linear-gradient(180deg, rgba(38, 14, 46, 0.88) 0%, rgba(18, 7, 26, 0.92) 100%);
   backdrop-filter: blur(28px) saturate(200%);
   -webkit-backdrop-filter: blur(28px) saturate(200%);
   border: 1px solid var(--glass-border);
-  border-radius: clamp(16px, 4.5vw, 22px);
-  padding: clamp(0.85rem, 2.2vh, 1.2rem) clamp(1rem, 3.8vw, 1.35rem);
+  border-radius: 20px;
+  padding: 1.1rem 1.25rem 0.85rem 1.25rem;
+  text-align: center;
   box-shadow: 
-    0 14px 40px rgba(0, 0, 0, 0.55),
-    0 0 25px rgba(217, 70, 239, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    0 16px 40px rgba(0, 0, 0, 0.65),
+    0 0 25px rgba(217, 70, 239, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
   overflow: hidden;
-  transition: transform 0.4s var(--ease-apple), box-shadow 0.4s ease;
   animation: fadeInUp 1s var(--ease-divine);
 }
 
-/* Specular Light Sweep Reflection across Text Box */
+.greeting-title {
+  font-size: clamp(1.2rem, 4.8vw, 1.55rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  margin-bottom: 0.35rem;
+  text-shadow: 0 0 14px rgba(255, 255, 255, 0.3);
+}
+
+.primary-thought-text {
+  font-size: clamp(0.78rem, 2.8vw, 0.88rem);
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 0.75rem;
+}
+
+/* Jewel Emblem Divider (—— 🔵 ——) */
+.jewel-emblem-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.25rem;
+}
+
+.divider-line {
+  flex: 1;
+  max-width: 70px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.4), transparent);
+}
+
+.jewel-orb {
+  font-size: 0.7rem;
+  filter: drop-shadow(0 0 8px #38bdf8);
+  animation: emblemPulse 3s ease-in-out infinite alternate;
+}
+
+/* Specular Light Sweep Shimmer */
 .shimmer-card::after {
   content: '';
   position: absolute;
@@ -242,7 +269,7 @@ html, body {
     60deg,
     transparent 0%,
     rgba(255, 255, 255, 0.08) 45%,
-    rgba(255, 215, 0, 0.22) 50%,
+    rgba(255, 215, 0, 0.25) 50%,
     rgba(255, 255, 255, 0.08) 55%,
     transparent 100%
   );
@@ -251,7 +278,6 @@ html, body {
   pointer-events: none;
 }
 
-/* Glowing Animated Border Pulse */
 .card-border-glow {
   position: absolute;
   inset: 0;
@@ -265,71 +291,58 @@ html, body {
   animation: borderGlowPulse 4s ease-in-out infinite alternate;
 }
 
-.glass-card:hover {
-  transform: translateY(-3px) scale(1.01);
-  box-shadow: 
-    0 18px 48px rgba(0, 0, 0, 0.65),
-    0 0 35px rgba(255, 215, 0, 0.35);
+/* 4. Twin Sub-Columns (Left & Right Split) */
+.twin-columns-section {
+  display: flex;
+  align-items: stretch;
+  gap: 0.75rem;
+  padding-bottom: 1.25rem;
+  animation: fadeInUp 1.2s var(--ease-divine);
 }
 
-.card-label {
-  display: inline-block;
-  font-size: clamp(0.62rem, 2vw, 0.7rem);
+.sub-column {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.025);
+  border-radius: 12px;
+  padding: 0.5rem 0.65rem;
+}
+
+.column-divider {
+  width: 1px;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+}
+
+.column-label {
+  display: block;
+  font-size: 0.58rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   color: var(--accent-color);
   text-transform: uppercase;
-  margin-bottom: 0.35rem;
-  text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+  margin-bottom: 0.2rem;
+  opacity: 0.85;
 }
 
-.card-body {
-  font-size: clamp(0.85rem, 3.2vw, 0.98rem);
-  line-height: 1.55;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.95);
-  text-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+.column-body {
+  font-size: clamp(0.7rem, 2.4vw, 0.78rem);
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .font-odia {
   font-family: var(--font-odia);
-  line-height: 1.65;
 }
 
-/* Card Bottom Center Emblem Divider */
-.card-emblem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.5rem;
-  position: relative;
-}
-
-.card-emblem::before,
-.card-emblem::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.3), transparent);
-}
-
-.emblem-gem {
-  font-size: 0.75rem;
-  padding: 0 0.5rem;
-  filter: drop-shadow(0 0 8px var(--neon-magenta));
-  animation: emblemPulse 3s ease-in-out infinite alternate;
-}
-
-/* Corner Floating Lotus */
+/* 5. Bottom Lotus & Bottom Nav Orb */
 .bottom-lotus-left {
   position: absolute;
-  bottom: -10px;
-  left: -15px;
-  width: 90px;
-  height: 90px;
+  bottom: -15px;
+  left: -20px;
+  width: 105px;
+  height: 105px;
   pointer-events: none;
   z-index: 4;
-  filter: drop-shadow(0 0 18px rgba(244, 63, 94, 0.7));
+  filter: drop-shadow(0 0 22px rgba(244, 63, 94, 0.75));
   animation: lotusFloat 6s ease-in-out infinite alternate;
 }
 
@@ -338,7 +351,28 @@ html, body {
   height: 100%;
 }
 
-/* Keyframes & Motion Tokens */
+.bottom-nav-dot {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #38bdf8 0%, #1e1b4b 100%);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+  z-index: 5;
+}
+
+.dot-orb {
+  font-size: 0.65rem;
+}
+
+/* Keyframe Animations */
 @keyframes mandalaRotate {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -363,7 +397,7 @@ html, body {
 
 @keyframes lotusFloat {
   0% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-8px) rotate(3deg); }
+  50% { transform: translateY(-7px) rotate(3deg); }
   100% { transform: translateY(0px) rotate(0deg); }
 }
 
@@ -386,18 +420,4 @@ html, body {
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(18px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Accessibility Reduced Motion */
-[data-reduced-motion="true"] *,
-[data-reduced-motion="true"] .divine-svg-graphic,
-[data-reduced-motion="true"] .mandala-ring,
-[data-reduced-motion="true"] .shimmer-card::after {
-  animation: none !important;
-  transition: none !important;
 }
