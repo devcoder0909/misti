@@ -243,15 +243,20 @@
   <!-- Modular Engines Launcher -->
   <script type="module" src="js/app.js"></script>
 
-  <!-- Background Music (No UI, Low Volume) -->
+  <!-- Background Music (No UI) -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const music = new Audio('music.mp3');
+      window.bgMusic = music; // Prevent garbage collection
       music.loop = true;
-      music.volume = 0.05; // Very low normal background sound
+      music.volume = 0.3; // Increased to 30% so it's clearly audible
       
       const playMusic = () => {
-        music.play().catch(e => console.log("Autoplay blocked:", e));
+        music.play().then(() => {
+          console.log("Music playing successfully!");
+        }).catch(e => {
+          console.log("Autoplay blocked, waiting for click:", e);
+        });
       };
       
       playMusic();
