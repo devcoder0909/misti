@@ -23,10 +23,10 @@ messaging.onBackgroundMessage((payload) => {
   // Pick a random notification from the array
   const randomMsg = notifications[Math.floor(Math.random() * notifications.length)];
 
-  // If Firebase sends a specific title in the payload, use it, otherwise use our smart rotator!
-  const notificationTitle = payload.notification?.title || randomMsg.title;
+  // ALWAYS use our smart rotator text (ignore whatever is typed in Firebase)
+  const notificationTitle = randomMsg.title;
   const notificationOptions = {
-    body: payload.notification?.body || randomMsg.body,
+    body: randomMsg.body,
     icon: './misti.jpg',
     data: { url: 'https://devcoder0909.github.io/misti/' }
   };
