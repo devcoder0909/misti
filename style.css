@@ -228,11 +228,11 @@ html, body {
 }
 
 .bg-layer-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('./bg%20image.png');
+  background-image: linear-gradient(rgb(0 0 0 / 23%) 0%, rgba(0, 0, 0, 1) 100%), url('./bg%20image.png');
 }
 
 .bg-layer-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('./bg2%20image.png');
+  background-image: linear-gradient(rgb(0 0 0 / 23%) 0%, rgba(0, 0, 0, 1) 100%), url(./bg2%20image.png);
   opacity: 0;
 }
 
