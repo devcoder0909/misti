@@ -240,6 +240,27 @@
     </main>
   </div>
 
+  <!-- Firebase SDK -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js";
+    import { getMessaging, getToken, onMessage } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-messaging.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAMX1Cflv2Bj4CYwLftMCJsk_3eQTOGZsg",
+      authDomain: "mistidivine.firebaseapp.com",
+      projectId: "mistidivine",
+      storageBucket: "mistidivine.firebasestorage.app",
+      messagingSenderId: "575967429933",
+      appId: "1:575967429933:web:3e9a4864bc9ac569b4bfa4",
+      measurementId: "G-LR4Z147DC2"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const messaging = getMessaging(app);
+    window.firebaseMessaging = messaging;
+    window.firebaseGetToken = getToken;
+  </script>
+
   <!-- Modular Engines Launcher -->
   <script type="module" src="js/app.js"></script>
 

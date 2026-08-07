@@ -1,4 +1,47 @@
-const CACHE_NAME = 'misti-divine-companion-v6';
+importScripts('https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js');
+importScripts('https://www.gstatic.com/firebasejs/10.14.1/firebase-messaging-compat.js');
+
+firebase.initializeApp({
+  apiKey: "AIzaSyAMX1Cflv2Bj4CYwLftMCJsk_3eQTOGZsg",
+  projectId: "mistidivine",
+  messagingSenderId: "575967429933",
+  appId: "1:575967429933:web:3e9a4864bc9ac569b4bfa4"
+});
+
+const messaging = firebase.messaging();
+
+messaging.onBackgroundMessage((payload) => {
+  console.log('[firebase-messaging-sw.js] Received background message ', payload);
+  const notificationTitle = payload.notification.title || 'Good Morning!';
+  const notificationOptions = {
+    body: payload.notification.body || 'Tap to open Misti Divine.',
+    icon: './misti.jpg',
+    data: { url: 'https://devcoder0909.github.io/misti/' }
+  };
+
+  self.registration.showNotification(notificationTitle, notificationOptions);
+});
+
+self.addEventListener('notificationclick', function(event) {
+  event.notification.close();
+  const urlToOpen = event.notification.data?.url || 'https://devcoder0909.github.io/misti/';
+  
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then((windowClients) => {
+      for (let i = 0; i < windowClients.length; i++) {
+        const client = windowClients[i];
+        if (client.url === urlToOpen && 'focus' in client) {
+          return client.focus();
+        }
+      }
+      if (clients.openWindow) {
+        return clients.openWindow(urlToOpen);
+      }
+    })
+  );
+});
+
+const CACHE_NAME = 'misti-divine-companion-v7';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

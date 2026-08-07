@@ -4,12 +4,43 @@
  */
 export class PWAEngine {
   init() {
+    this.registerServiceWorker();
+  }
+
+  registerServiceWorker() {
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('./service-worker.js')
-          .then(reg => console.log('ServiceWorker registered:', reg.scope))
-          .catch(err => console.error('ServiceWorker failed:', err));
+          .then(registration => {
+            console.log('[PWAEngine] ServiceWorker registered successfully');
+            this.setupPushNotifications(registration);
+          })
+          .catch(err => {
+            console.log('[PWAEngine] ServiceWorker registration failed: ', err);
+          });
       });
+    }
+  }
+
+  async setupPushNotifications(registration) {
+    try {
+      const permission = await Notification.requestPermission();
+      if (permission === 'granted' && window.firebaseMessaging) {
+        console.log('[PWAEngine] Notification permission granted.');
+        // Firebase Cloud Messaging Web Push needs a VAPID key pair for getting a token without an error.
+        // We will try without VAPID first, if it fails, the user will need to generate one.
+        const token = await window.firebaseGetToken(window.firebaseMessaging, {
+          serviceWorkerRegistration: registration,
+          // vapidKey: 'YOUR_VAPID_KEY_HERE' // Add this if token generation fails
+        });
+        
+        if (token) {
+          console.log('%c[FIREBASE TOKEN]', 'color: #00ff00; font-size: 16px; font-weight: bold;', token);
+          // In a real app, save this token to your database.
+        }
+      }
+    } catch (err) {
+      console.error('[PWAEngine] Push setup failed (you may need a VAPID key in Firebase Console -> Cloud Messaging):', err);
     }
   }
 }
