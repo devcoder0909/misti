@@ -12,9 +12,21 @@ const messaging = firebase.messaging();
 
 messaging.onBackgroundMessage((payload) => {
   console.log('[firebase-messaging-sw.js] Received background message ', payload);
-  const notificationTitle = payload.notification?.title || '🌅 Good Morning, Misti (ଶୁଭ ସକାଳ)';
+
+  const notifications = [
+    { title: '🙏 Jay Jagannath, Misti!', body: '🌅 ଆଜିର ଦିବ୍ୟ ସନ୍ଦେଶ ଦେଖନ୍ତୁ । ଶୁଭ ସକାଳ ! ✨' },
+    { title: '🌸 ଶୁଭ ସକାଳ, Misti!', body: '☀️ ଆପଣଙ୍କ ପାଇଁ ଏକ ସୁନ୍ଦର ଭାବନା । ଟ୍ୟାପ୍ କରନ୍ତୁ ! ✨' },
+    { title: '🌺 ମହାପ୍ରଭୁଙ୍କ କୃପା, Misti!', body: '🛕 ଆଜିର ଦିନ ଆପଣଙ୍କର ମଙ୍ଗଳମୟ ହେଉ! 🌸' },
+    { title: '🌅 Good Morning, Misti!', body: '✨ ଆଜିର ଖାସ୍ divine thought ପଢ଼ନ୍ତୁ । 🙏' }
+  ];
+
+  // Pick a random notification from the array
+  const randomMsg = notifications[Math.floor(Math.random() * notifications.length)];
+
+  // If Firebase sends a specific title in the payload, use it, otherwise use our smart rotator!
+  const notificationTitle = payload.notification?.title || randomMsg.title;
   const notificationOptions = {
-    body: payload.notification?.body || 'Your divine daily guidance is ready. Tap to start your day with peace. ✨',
+    body: payload.notification?.body || randomMsg.body,
     icon: './misti.jpg',
     data: { url: 'https://devcoder0909.github.io/misti/' }
   };
