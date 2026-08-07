@@ -31,7 +31,7 @@ export class PWAEngine {
         // We will try without VAPID first, if it fails, the user will need to generate one.
         const token = await window.firebaseGetToken(window.firebaseMessaging, {
           serviceWorkerRegistration: registration,
-          // vapidKey: 'YOUR_VAPID_KEY_HERE' // Add this if token generation fails
+          vapidKey: 'BCmFMynsC95HnYF8X9upy-WSA055XHZolQXJAjVAF8q62c6qBzTHwGWwP5AUv2Lcc-LnPFEX2FyIUW0I_bkru1k'
         });
         
         if (token) {
