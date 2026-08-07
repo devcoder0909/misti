@@ -1,4 +1,4 @@
-const CACHE_NAME = 'misti-divine-companion-v5';
+const CACHE_NAME = 'misti-divine-companion-v6';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -28,13 +28,13 @@ const ASSETS_TO_CACHE = [
 ];
 
 self.addEventListener('install', (event) => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       console.log('[ServiceWorker] Precaching offline assets');
       return cache.addAll(ASSETS_TO_CACHE);
     })
   );
-  self.skipWaiting();
 });
 
 self.addEventListener('activate', (event) => {
@@ -48,9 +48,8 @@ self.addEventListener('activate', (event) => {
           }
         })
       );
-    })
+    }).then(() => self.clients.claim())
   );
-  self.skipWaiting();
 });
 
 self.addEventListener('fetch', (event) => {
