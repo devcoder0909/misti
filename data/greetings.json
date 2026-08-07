@@ -1,9 +1,14 @@
 {
   "morning": [
     "Good Morning, Misti 🌸",
-    "Shubha Prabhat, Misti 🌅",
+    "ଶୁଭ ସକାଳ, Misti 🪔",
     "Good Morning, Misti ✨",
-    "Good Morning, Misti 🪔"
+    "ଶୁଭ ସକାଳ, Misti 🌸",
+    "Good Morning, Misti 🪔",
+    "ସୁପ୍ରଭାତ, Misti 🌅",
+    "ସୁପ୍ରଭାତ, Misti ✨",
+    "ସୁପ୍ରଭାତ, Misti 🌺",
+    "ଶୁଭ ସକାଳ, Misti ☀️"
   ],
   "festivalOverrides": {
     "Rath Yatra": "Jai Jagannath, Misti 🚩",
@@ -13,6 +18,30 @@
     "Diwali": "Shubh Deepavali, Misti 🪔",
     "Janmashtami": "Jai Shree Krishna, Misti 🪈",
     "New Year": "Happy New Year, Misti ✨",
-    "Women's Day": "Happy Women's Day, Misti 🌸"
+    "Women's Day": "Happy Women's Day, Misti 🌸",
+    "Raksha Bandhan": "ଶୁଭ ରାକ୍ଷୀ ପୂର୍ଣ୍ଣିମା, Misti 🧵",
+    "Bhai Dooj": "ଶୁଭ ଭାଇ ଦୂଜ, Misti 🌸",
+    "Karwa Chauth": "ଶୁଭ କରୱା ଚୌଥ, Misti 🌙",
+    "Makar Sankranti": "ଶୁଭ ମକର ସଂକ୍ରାନ୍ତି, Misti 🪁",
+    "Pana Sankranti": "ଶୁଭ ପଣା ସଂକ୍ରାନ୍ତି, Misti 🏺",
+    "Raja Festival": "ଶୁଭ ରଜ ପର୍ବ, Misti 🌸",
+    "Maha Shivaratri": "ହର ହର ମହାଦେବ, Misti 🔱",
+    "Ganesh Chaturthi": "ଜୟ ଗଣେଶ, Misti 🌺",
+    "Durga Puja": "ଶୁଭ ଦୁର୍ଗା ପୂଜା, Misti 🪔",
+    "Saraswati Puja": "ଜୟ ମା' ସରସ୍ୱତୀ, Misti 🌼",
+    "Bahuda Yatra": "ଜୟ ଜଗନ୍ନାଥ, Misti 🚩",
+    "Holi": "ଶୁଭ ହୋଲି, Misti 🎨",
+    "Dhanteras": "ଶୁଭ ଧନତେରସ, Misti 🪙",
+    "Kartik Purnima": "ଶୁଭ କାର୍ତ୍ତିକ ପୂର୍ଣ୍ଣିମା, Misti 🪔",
+    "Laxmi Puja": "ଶୁଭ ଗଜଲକ୍ଷ୍ମୀ ପୂଜା, Misti 🌸",
+    "Prathamastami": "ଶୁଭ ପ୍ରଥମାଷ୍ଟମୀ, Misti ✨",
+    "Akshaya Tritiya": "ଶୁଭ ଅକ୍ଷୟ ତୃତୀୟା, Misti 🪙",
+    "Dussehra": "ଶୁଭ ଦଶହରା, Misti 🏹",
+    "Guru Purnima": "ଶୁଭ ଗୁରୁ ପୂର୍ଣ୍ଣିମା, Misti 🪔",
+    "Nuakhai": "ଶୁଭ ନୂଆଖାଇ, Misti 🌾",
+    "Chhath Puja": "ଶୁଭ ଛଠ ପୂଜା, Misti ☀️",
+    "Navratri": "ଶୁଭ ନବରାତ୍ରି, Misti 🌸",
+    "Basant Panchami": "ଶୁଭ ବସନ୍ତ ପଞ୍ଚମୀ, Misti 🌼",
+    "Nag Panchami": "ଶୁଭ ନାଗ ପଞ୍ଚମୀ, Misti 🪔"
   }
 }

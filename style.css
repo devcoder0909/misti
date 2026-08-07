@@ -669,8 +669,8 @@ html, body {
 
 .corner-lotus-bottom-left {
   position: absolute;
-  bottom: 18px;
-  left: 0-18px;
+  bottom: 190px;
+  left: 180px;
   width: 48px;
   height: 48px;
   pointer-events: none;

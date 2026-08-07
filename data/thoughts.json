@@ -2,7 +2,7 @@
   {
     "id": "thought-001",
     "language": "hinglish",
-    "text": "Misti, sab kuch ek sath thik karna zaroori nahi hota. Aaj bas apne agle ek kadam par bharosa rakhna.",
+    "text": "Misti, ସବୁ କିଛି ଏକା ସାଙ୍ଗରେ ଠିକ୍ କରିବା ଜରୁରୀ ନୁହେଁ। ଆଜି ବସ୍ ନିଜର ଆଗାମୀ ଗୋଟିଏ ପାଦ ଉପରେ ଭରସା ରଖ।",
     "emotion": "peace",
     "theme": "divine",
     "category": "peace",
@@ -13,7 +13,7 @@
   {
     "id": "thought-002",
     "language": "hinglish",
-    "text": "Misti, tumhari mehnat aur tumhari neeyat dono sachhi hain. Apne raaste par bina kisi dar ke chalti raho.",
+    "text": "Misti, ତୁମର ପରିଶ୍ରମ ଓ ତୁମର ନୀୟତ ଦୁଇଟିଯାକ ସତ। ନିଜ ରାସ୍ତାରେ ବିନା କୌଣସି ଡରରେ ଚାଲିଥାଅ।",
     "emotion": "courage",
     "theme": "divine",
     "category": "confidence",
@@ -24,7 +24,7 @@
   {
     "id": "thought-003",
     "language": "hinglish",
-    "text": "Misti, har din naya nazariya lekar aata hai. Jo beet gaya use wahi chhod kar naye saveray ka swagat karo.",
+    "text": "Misti, ପ୍ରତ୍ୟେକ ଦିନ ନୂଆ ଦୃଷ୍ଟିକୋଣ ନେଇ ଆସିଥାଏ। ଯାହା ବିତିଗଲା ତାହାକୁ ସେହିଠାରେ ଛାଡ଼ି ନୂଆ ସକାଳକୁ ସ୍ୱାଗତ କର।",
     "emotion": "hope",
     "theme": "divine",
     "category": "new beginnings",
@@ -35,7 +35,7 @@
   {
     "id": "thought-004",
     "language": "hinglish",
-    "text": "Misti, thoda waqt lag sakta hai par sab kuch sahi mod par zaroor aayega. Sabr aur vishwas banaye rakhna.",
+    "text": "Misti, ଟିକେ ସମୟ ଲାଗିପାରେ କିନ୍ତୁ ସବୁ କିଛି ସଠିକ୍ ମୋଡ଼କୁ ନିଶ୍ଚୟ ଆସିବ। ସବୁର ଓ ବିଶ୍ୱାସ ରଖିଥାଅ।",
     "emotion": "patience",
     "theme": "divine",
     "category": "patience",
@@ -46,7 +46,7 @@
   {
     "id": "thought-005",
     "language": "hinglish",
-    "text": "Misti, jab dil me sachhi lagan ho toh raste apne aap banne lagte hain. Tum bas apna kaam poori imandari se karo.",
+    "text": "Misti, ଯେବେ ମନରେ ସଚ୍ଚା ନିଷ୍ଠା ଥାଏ, ତେବେ ରାସ୍ତା ଆପେ ଆପେ ତିଆରି ହୋଇଯାଏ। ତୁମେ ବସ୍ ନିଜ କାମ ପୂରା ଇମାନଦାରୀ ସହ କର।",
     "emotion": "faith",
     "theme": "divine",
     "category": "faith",
@@ -57,7 +57,7 @@
   {
     "id": "thought-006",
     "language": "hinglish",
-    "text": "Misti, zyada sochne se sirf thakan milti hai, hal nahi. Aaj apne dimag ko thoda aaram do aur shanti se aage badho.",
+    "text": "Misti, ଅଧିକ ଭାବିବା ଦ୍ୱାରା କେବଳ କ୍ଲାନ୍ତି ମିଳେ, ସମାଧାନ ନୁହେଁ। ଆଜି ନିଜ ମନକୁ ଟିକେ ବିଶ୍ରାମ ଦିଅ ଓ ଶାନ୍ତିରେ ଆଗକୁ ବଢ଼।",
     "emotion": "peace",
     "theme": "divine",
     "category": "overthinking",
@@ -68,7 +68,7 @@
   {
     "id": "thought-007",
     "language": "hinglish",
-    "text": "Misti, doosron se khud ko compare karke apni khushiyan mat khona. Tumhara safar unique aur khubsurat hai.",
+    "text": "Misti, ଅନ୍ୟମାନଙ୍କ ସହ ନିଜକୁ ତୁଳନା କରି ନିଜ ଖୁସି ହରାଅ ନାହିଁ। ତୁମର ଯାତ୍ରା ସ୍ୱତନ୍ତ୍ର ଓ ସୁନ୍ଦର।",
     "emotion": "self-love",
     "theme": "divine",
     "category": "self respect",
@@ -77,20 +77,9 @@
     "animationPreset": "Divine"
   },
   {
-    "id": "thought-008",
-    "language": "hinglish",
-    "text": "Misti, choti choti khushiyon ko mehsoos karna hi asli zindagi hai. Aaj apne aaspas ki acchi baton ko zaroor mehsoos karna.",
-    "emotion": "gratitude",
-    "theme": "divine",
-    "category": "gratitude",
-    "festival": "any",
-    "weekday": "any",
-    "animationPreset": "Divine"
-  },
-  {
     "id": "thought-009",
     "language": "hinglish",
-    "text": "Misti, agar raaste me kathinaiyan aayein toh samajh lena tum sahi direction me badh rahi ho. Apni himmat kam mat hone dena.",
+    "text": "Misti, ଯଦି ରାସ୍ତାରେ କଷ୍ଟ ଆସେ, ତେବେ ବୁଝିନିଅ ଯେ ତୁମେ ସଠିକ୍ ଦିଗରେ ଆଗେଇ ଚାଲିଛ। ନିଜ ସାହସ କମିବାକୁ ଦିଅ ନାହିଁ।",
     "emotion": "courage",
     "theme": "divine",
     "category": "courage",
@@ -101,7 +90,7 @@
   {
     "id": "thought-010",
     "language": "hinglish",
-    "text": "Misti, kabhi kabhi logon ko maaf kar dena unke liye nahi, apni shanti ke liye zaroori hota hai. Apne dil ko halka rakho.",
+    "text": "Misti, କେବେ କେବେ ଲୋକଙ୍କୁ କ୍ଷମା କରିଦେବା ସେମାନଙ୍କ ପାଇଁ ନୁହେଁ, ନିଜ ଶାନ୍ତି ପାଇଁ ଜରୁରୀ ହୋଇଥାଏ। ନିଜ ମନକୁ ହାଲୁକା ରଖ।",
     "emotion": "healing",
     "theme": "divine",
     "category": "forgiveness",
@@ -112,7 +101,7 @@
   {
     "id": "thought-011",
     "language": "hinglish",
-    "text": "Misti, mushkil samay sirf tumhari andar ki taakat dikhane aata hai. Tum utni hi mazboot ho jitni tumhe zaroorat hai.",
+    "text": "Misti, କଠିନ ସମୟ କେବଳ ତୁମ ଭିତରର ଶକ୍ତି ଦେଖାଇବାକୁ ଆସିଥାଏ। ତୁମେ ସେତିକି ଶକ୍ତିଶାଳୀ, ଯେତିକି ତୁମକୁ ଦରକାର।",
     "emotion": "strength",
     "theme": "divine",
     "category": "inner strength",
@@ -123,7 +112,7 @@
   {
     "id": "thought-012",
     "language": "hinglish",
-    "text": "Misti, jo sapne tumne dekhe hain unhe poora karne ki shamta bhi tumhare paas hai. Aaj bas thoda aur aage badhna.",
+    "text": "Misti, ଯେଉଁ ସ୍ୱପ୍ନ ତୁମେ ଦେଖିଛ, ତାହାକୁ ପୂରଣ କରିବାର କ୍ଷମତା ବି ତୁମ ପାଖରେ ଅଛି। ଆଜି ବସ୍ ଟିକେ ଆଉ ଆଗକୁ ବଢ଼।",
     "emotion": "hope",
     "theme": "divine",
     "category": "dreams",
@@ -134,7 +123,7 @@
   {
     "id": "thought-013",
     "language": "hinglish",
-    "text": "Misti, roz ka thoda sa discipline tumhe tumhari manzil ke bohot paas le jayega. Apne daily routine par tikka rehna.",
+    "text": "Misti, ପ୍ରତିଦିନର ଟିକିଏ ଶୃଙ୍ଖଳା ତୁମକୁ ତୁମ ଲକ୍ଷ୍ୟର ବହୁତ ପାଖକୁ ନେଇଯିବ। ନିଜ ଦୈନନ୍ଦିନ ନିୟମରେ ଅଟଳ ରହ।",
     "emotion": "discipline",
     "theme": "divine",
     "category": "discipline",
@@ -145,7 +134,7 @@
   {
     "id": "thought-014",
     "language": "hinglish",
-    "text": "Misti, tumhari meetha bolna aur dayalu hona tumhari sabse badi taakat hai. Kisi ki muskaan ki wajah zaroor banna.",
+    "text": "Misti, ତୁମର ମିଠା କଥା ଓ ଦୟାଳୁ ସ୍ୱଭାବ ତୁମର ସବୁଠାରୁ ବଡ଼ ଶକ୍ତି। କାହାର ହସର କାରଣ ନିଶ୍ଚୟ ହୁଅ।",
     "emotion": "kindness",
     "theme": "divine",
     "category": "kindness",
@@ -156,7 +145,7 @@
   {
     "id": "thought-015",
     "language": "hinglish",
-    "text": "Misti, darr se aage badhna hi sachha vishwas hai. Apne iradon ko har mushkil se bada rakhna.",
+    "text": "Misti, ଡରରୁ ଆଗକୁ ବଢ଼ିବା ହିଁ ପ୍ରକୃତ ବିଶ୍ୱାସ। ନିଜ ସଂକଳ୍ପକୁ ପ୍ରତ୍ୟେକ କଠିନତାଠାରୁ ବଡ଼ ରଖ।",
     "emotion": "faith",
     "theme": "divine",
     "category": "faith",
@@ -167,7 +156,7 @@
   {
     "id": "thought-016",
     "language": "hinglish",
-    "text": "Misti, career ki daud me apni sehat aur shanti ko mat bhoolna. Ek shant dimag hi sabse accha decision leta hai.",
+    "text": "Misti, କ୍ୟାରିୟର ଦୌଡ଼ରେ ନିଜ ସ୍ୱାସ୍ଥ୍ୟ ଓ ଶାନ୍ତିକୁ ଭୁଲିଯାଅ ନାହିଁ। ଗୋଟିଏ ଶାନ୍ତ ମନ ହିଁ ସବୁଠାରୁ ଭଲ ନିଷ୍ପତ୍ତି ନିଏ।",
     "emotion": "peace",
     "theme": "divine",
     "category": "career",
@@ -178,7 +167,7 @@
   {
     "id": "thought-017",
     "language": "hinglish",
-    "text": "Misti, apne parivaar ke sath bitaya chota sa pal bhi dil ko sukoon deta hai. Aaj unke liye thoda waqt zaroor nikalna.",
+    "text": "Misti, ନିଜ ପରିବାର ସହ ବିତାଇଥିବା ଛୋଟ ମୁହୂର୍ତ୍ତ ବି ମନକୁ ସୁକୂନ ଦିଏ। ଆଜି ସେମାନଙ୍କ ପାଇଁ ଟିକେ ସମୟ ନିଶ୍ଚୟ ବାହାର କର।",
     "emotion": "warmth",
     "theme": "divine",
     "category": "family",
@@ -189,7 +178,7 @@
   {
     "id": "thought-018",
     "language": "hinglish",
-    "text": "Misti, achhi dosti zindagi ki sabse badi daulat hoti hai. Jo log tumhara bhalai chahte hain unhe hamesha paas rakhna.",
+    "text": "Misti, ଭଲ ବନ୍ଧୁତା ଜୀବନର ସବୁଠାରୁ ବଡ଼ ସମ୍ପତ୍ତି। ଯେଉଁମାନେ ତୁମର ଭଲ ଚାହାନ୍ତି, ସେମାନଙ୍କୁ ସବୁବେଳେ ପାଖରେ ରଖ।",
     "emotion": "warmth",
     "theme": "divine",
     "category": "friendship",
@@ -200,7 +189,7 @@
   {
     "id": "thought-019",
     "language": "hinglish",
-    "text": "Misti, padhai ho ya koi bhi kaam, jab tum poore mann se karti ho toh safalta milti hi hai. Aaj apna best do.",
+    "text": "Misti, ପାଠପଢ଼ା ହେଉ କିମ୍ବା ଅନ୍ୟ କୌଣସି କାମ, ଯେବେ ତୁମେ ପୂରା ମନ ଲଗାଇ କର, ତେବେ ସଫଳତା ମିଳେ। ଆଜି ନିଜର ଶ୍ରେଷ୍ଠ ଯୋଗଦାନ ଦିଅ।",
     "emotion": "focus",
     "theme": "divine",
     "category": "study",
@@ -211,7 +200,7 @@
   {
     "id": "thought-020",
     "language": "hinglish",
-    "text": "Misti, jo zakhamb purane hain unhe waqt ke sath bharne do. Apne aap ko heal hone ka poora waqt do.",
+    "text": "Misti, ଯେଉଁ ପୁରୁଣା ଆଘାତ ଅଛି, ତାହାକୁ ସମୟ ସହ ଭରିବାକୁ ଦିଅ। ନିଜକୁ ସମ୍ପୂର୍ଣ୍ଣ ସୁସ୍ଥ ହେବା ପାଇଁ ପୂରା ସମୟ ଦିଅ।",
     "emotion": "healing",
     "theme": "divine",
     "category": "healing",
@@ -222,7 +211,7 @@
   {
     "id": "thought-021",
     "language": "hinglish",
-    "text": "Misti, asli khushi andar se aati hai jab tum khud se santusht hoti ho. Aaj apne aap par garv mehsoos karo.",
+    "text": "Misti, ପ୍ରକୃତ ଖୁସି ଭିତରୁ ଆସେ ଯେବେ ତୁମେ ନିଜ ପ୍ରତି ସନ୍ତୁଷ୍ଟ ହୁଅ। ଆଜି ନିଜ ଉପରେ ଗର୍ବ ଅନୁଭବ କର।",
     "emotion": "joy",
     "theme": "divine",
     "category": "happiness",
@@ -233,7 +222,7 @@
   {
     "id": "thought-022",
     "language": "hinglish",
-    "text": "Misti, badlav se mat daro kyunki badlav hi nayi shuruaat ki shuruaat hoti hai. Khule dil se ise swikar karo.",
+    "text": "Misti, ପରିବର୍ତ୍ତନକୁ ଡର ନାହିଁ, କାରଣ ପରିବର୍ତ୍ତନ ହିଁ ନୂଆ ଆରମ୍ଭର ଶୁଭାରମ୍ଭ। ଖୋଲା ମନରେ ଏହାକୁ ଗ୍ରହଣ କର।",
     "emotion": "hope",
     "theme": "divine",
     "category": "growth",
@@ -244,7 +233,7 @@
   {
     "id": "thought-023",
     "language": "hinglish",
-    "text": "Misti, har failure ek chota sa lesson hota hai, antim nateeja nahi. Seekho aur fir se naye josh me aage badho.",
+    "text": "Misti, ପ୍ରତ୍ୟେକ ବିଫଳତା ଗୋଟିଏ ଛୋଟ ଶିକ୍ଷା, ଶେଷ ପରିଣାମ ନୁହେଁ। ଶିଖ ଏବଂ ପୁଣି ଥରେ ନୂଆ ଉତ୍ସାହରେ ଆଗକୁ ବଢ଼।",
     "emotion": "resilience",
     "theme": "divine",
     "category": "growth",
@@ -255,7 +244,7 @@
   {
     "id": "thought-024",
     "language": "hinglish",
-    "text": "Misti, jo cheezein tumhare control me nahi hain unki chinta chhod do. Jo tum kar sakti ho us par focus karo.",
+    "text": "Misti, ଯେଉଁ ଜିନିଷଗୁଡ଼ିକ ତୁମ ନିୟନ୍ତ୍ରଣରେ ନାହିଁ, ସେଗୁଡ଼ିକର ଚିନ୍ତା ଛାଡ଼ିଦିଅ। ଯାହା ତୁମେ କରିପାରିବ, ସେଥିରେ ଧ୍ୟାନ ଦିଅ।",
     "emotion": "peace",
     "theme": "divine",
     "category": "overthinking",
@@ -266,7 +255,7 @@
   {
     "id": "thought-025",
     "language": "hinglish",
-    "text": "Misti, khud ki boundary bana kar rakhna bilkul sahi hai. Apne self-respect se kabhi compromise mat karna.",
+    "text": "Misti, ନିଜର ସୀମା ବନାଇ ରଖିବା ସମ୍ପୂର୍ଣ୍ଣ ସଠିକ୍। ନିଜ ଆତ୍ମସମ୍ମାନ ସହ କେବେ ହେଲେ ବୁଝାମଣା କର ନାହିଁ।",
     "emotion": "respect",
     "theme": "divine",
     "category": "self respect",
@@ -277,7 +266,7 @@
   {
     "id": "thought-026",
     "language": "hinglish",
-    "text": "Misti, har din ek tohfa hai jisme tumhe kuch naya seekhne ka mauka milta hai. Aaj ke din ko khushdili se jeeo.",
+    "text": "Misti, ପ୍ରତିଦିନ ଗୋଟିଏ ଉପହାର, ଯେଉଁଥିରେ ତୁମକୁ କିଛି ନୂଆ ଶିଖିବାର ସୁଯୋଗ ମିଳେ। ଆଜିର ଦିନକୁ ଖୁସିର ସହ ଜିଅ।",
     "emotion": "gratitude",
     "theme": "divine",
     "category": "gratitude",
@@ -288,7 +277,7 @@
   {
     "id": "thought-027",
     "language": "hinglish",
-    "text": "Misti, jab tum shant rehti ho toh har samsya choti lagne lagti hai. Apni andar ki shanti ko kabhi khone mat dena.",
+    "text": "Misti, ଯେବେ ତୁମେ ଶାନ୍ତ ରହୁଛ, ତେବେ ପ୍ରତ୍ୟେକ ସମସ୍ୟା ଛୋଟ ଲାଗିବାକୁ ଲାଗେ। ନିଜ ଭିତରର ଶାନ୍ତିକୁ କେବେ ହରାଅ ନାହିଁ।",
     "emotion": "peace",
     "theme": "divine",
     "category": "peace",
@@ -299,7 +288,7 @@
   {
     "id": "thought-028",
     "language": "hinglish",
-    "text": "Misti, tumhare irade sachhe hain toh koi bhi rukaawat tumhe rok nahi sakti. Apne andar ke vishwas ko jagaye rakho.",
+    "text": "Misti, ତୁମର ସଂକଳ୍ପ ଯଦି ସତ, ତେବେ କୌଣସି ପ୍ରତିବନ୍ଧକ ତୁମକୁ ଅଟକାଇ ପାରିବ ନାହିଁ। ନିଜ ଭିତରର ବିଶ୍ୱାସକୁ ବଜାୟ ରଖ।",
     "emotion": "courage",
     "theme": "divine",
     "category": "confidence",
@@ -310,7 +299,7 @@
   {
     "id": "thought-029",
     "language": "hinglish",
-    "text": "Misti, dhairya rakhna hi sabse badi samajhdaari hai. Sahir waqt aane par sab kuch sahi jagah fit ho jayega.",
+    "text": "Misti, ଧୈର୍ଯ୍ୟ ରଖିବା ହିଁ ସବୁଠାରୁ ବଡ଼ ବୁଦ୍ଧିମାନର କାମ। ସଠିକ୍ ସମୟ ଆସିଲେ ସବୁ କିଛି ନିଜ ନିଜ ସ୍ଥାନରେ ଠିକ୍ ହୋଇଯିବ।",
     "emotion": "patience",
     "theme": "divine",
     "category": "patience",
@@ -321,7 +310,7 @@
   {
     "id": "thought-030",
     "language": "hinglish",
-    "text": "Misti, bina kisi swarth ke ki gayi madad kabhi vyarth nahi jaati. Aaj kisi ki choti si madad zaroor karna.",
+    "text": "Misti, ବିନା କୌଣସି ସ୍ୱାର୍ଥରେ କରାଯାଇଥିବା ସାହାଯ୍ୟ କେବେ ବି ବ୍ୟର୍ଥ ଯାଏନାହିଁ। ଆଜି କାହାର ଟିକିଏ ସାହାଯ୍ୟ ନିଶ୍ଚୟ କର।",
     "emotion": "kindness",
     "theme": "divine",
     "category": "kindness",
@@ -332,7 +321,7 @@
   {
     "id": "thought-031",
     "language": "hinglish",
-    "text": "Misti, jab dil me sachha vishwas hota hai toh andhera bhi raasta dene lagta hai. Apne man me aasha ki kiran banaye rakhna.",
+    "text": "Misti, ଯେବେ ମନରେ ସଚ୍ଚା ବିଶ୍ୱାସ ଥାଏ, ତେବେ ଅନ୍ଧାର ବି ରାସ୍ତା ଛାଡ଼ିଦିଏ। ନିଜ ମନରେ ଆଶାର କିରଣ ବଜାୟ ରଖ।",
     "emotion": "hope",
     "theme": "divine",
     "category": "hope",
@@ -343,7 +332,7 @@
   {
     "id": "thought-032",
     "language": "hinglish",
-    "text": "Misti, apne sapnon ko bada rakho aur apni mehnat ko usse bhi bada. Har mushkil aasan lagne lagegi.",
+    "text": "Misti, ନିଜ ସ୍ୱପ୍ନକୁ ବଡ଼ ରଖ ଏବଂ ନିଜ ପରିଶ୍ରମକୁ ତା'ଠାରୁ ବି ବଡ଼। ପ୍ରତ୍ୟେକ ମୁସ୍କିଲ ସହଜ ଲାଗିବାକୁ ଲାଗିବ।",
     "emotion": "ambition",
     "theme": "divine",
     "category": "dreams",
@@ -354,7 +343,7 @@
   {
     "id": "thought-033",
     "language": "hinglish",
-    "text": "Misti, choti choti aadat se hi bade badlav aate hain. Aaj se ek achhi aadat ko shuru karke dekho.",
+    "text": "Misti, ଛୋଟ ଛୋଟ ଅଭ୍ୟାସରୁ ହିଁ ବଡ଼ ପରିବର୍ତ୍ତନ ଆସିଥାଏ। ଆଜିଠାରୁ ଗୋଟିଏ ଭଲ ଅଭ୍ୟାସ ଆରମ୍ଭ କରି ଦେଖ।",
     "emotion": "discipline",
     "theme": "divine",
     "category": "discipline",
@@ -365,7 +354,7 @@
   {
     "id": "thought-034",
     "language": "hinglish",
-    "text": "Misti, apne career me aage badhne ke liye nayi cheezein seekhte rehna zaroori hai. Har din kuch naya sikho.",
+    "text": "Misti, ନିଜ କ୍ୟାରିୟରରେ ଆଗକୁ ବଢ଼ିବା ପାଇଁ ନୂଆ ଜିନିଷ ଶିଖିଚାଲିବା ଜରୁରୀ। ପ୍ରତିଦିନ କିଛି ନୂଆ ଶିଖ।",
     "emotion": "growth",
     "theme": "divine",
     "category": "career",
@@ -376,7 +365,7 @@
   {
     "id": "thought-035",
     "language": "hinglish",
-    "text": "Misti, padhai ke waqt apna pura focus ek hi cheez par rakho. Consistent rehna hi safalta ki kunji hai.",
+    "text": "Misti, ପାଠପଢ଼ା ସମୟରେ ନିଜର ପୂରା ଧ୍ୟାନ ଗୋଟିଏ ଜିନିଷ ଉପରେ ରଖ। ନିରନ୍ତରତା ହିଁ ସଫଳତାର ଚାବିକାଠି।",
     "emotion": "focus",
     "theme": "divine",
     "category": "study",
@@ -387,7 +376,7 @@
   {
     "id": "thought-036",
     "language": "hinglish",
-    "text": "Misti, apne ghar ke logon se pyaare bol bolna pure din ko khushgawar bana deta hai. Aaj shuruat ghar se hi karo.",
+    "text": "Misti, ନିଜ ଘର ଲୋକଙ୍କ ସହ ମିଠା କଥା କହିବା ପୂରା ଦିନକୁ ଆନନ୍ଦଦାୟକ କରିଦିଏ। ଆଜି ଆରମ୍ଭ ଘରୁ ହିଁ କର।",
     "emotion": "warmth",
     "theme": "divine",
     "category": "family",
@@ -398,7 +387,7 @@
   {
     "id": "thought-037",
     "language": "hinglish",
-    "text": "Misti, sacche dost wahi hain jo bina kahe tumhari baat samajh jayein. Unke sath ke liye hamesha thankful raho.",
+    "text": "Misti, ସଚ୍ଚା ବନ୍ଧୁ ସେହିମାନେ ଯେଉଁମାନେ ବିନା କହି ତୁମ କଥା ବୁଝିଯାଆନ୍ତି। ସେମାନଙ୍କ ସାଥ୍ ପାଇଁ ହୃଦୟରୁ କୃତଜ୍ଞ ରହ।",
     "emotion": "gratitude",
     "theme": "divine",
     "category": "friendship",
@@ -409,7 +398,7 @@
   {
     "id": "thought-038",
     "language": "hinglish",
-    "text": "Misti, dil ke zakham waqt ke sath bhar jaate hain agar tum unhe baar baar khuredna band kar do. Khud ko sukoon do.",
+    "text": "Misti, ମନର ଆଘାତ ସମୟ ସହ ଭରିଯାଏ ଯଦି ତୁମେ ତାହାକୁ ବାରମ୍ବାର ଆଉଂସିବା ବନ୍ଦ କରିଦିଅ। ନିଜକୁ ଶାନ୍ତି ଦିଅ।",
     "emotion": "healing",
     "theme": "divine",
     "category": "healing",
@@ -420,7 +409,7 @@
   {
     "id": "thought-039",
     "language": "hinglish",
-    "text": "Misti, bina wajah ki baaton ko bhool jana hi sabse badi samajhdaari hai. Apne dil ko saaf aur halka rakho.",
+    "text": "Misti, ଅକାରଣ କଥାକୁ ଭୁଲିଯିବା ହିଁ ସବୁଠାରୁ ବଡ଼ ବୁଦ୍ଧିମାନର କାମ। ନିଜ ମନକୁ ସଫା ଓ ହାଲୁକା ରଖ।",
     "emotion": "peace",
     "theme": "divine",
     "category": "forgiveness",
@@ -431,7 +420,7 @@
   {
     "id": "thought-040",
     "language": "hinglish",
-    "text": "Misti, tumhare andar ki taakat har tarah ke dar se zyada mazboot hai. Bas ek baar khud par bharosa karke dekho.",
+    "text": "Misti, ତୁମ ଭିତରର ଶକ୍ତି ସବୁ ପ୍ରକାର ଡରଠାରୁ ଅଧିକ ମଜବୁତ୍। ବସ୍ ଥରେ ନିଜ ଉପରେ ଭରସା କରି ଦେଖ।",
     "emotion": "courage",
     "theme": "divine",
     "category": "inner strength",
@@ -442,7 +431,7 @@
   {
     "id": "thought-041",
     "language": "hinglish",
-    "text": "Misti, khush rehna ek choice hai jo tum har subah chun sakti ho. Aaj khushi ko hi chunna.",
+    "text": "Misti, ଖୁସି ରହିବା ଗୋଟିଏ ପସନ୍ଦ ଯାହା ତୁମେ ପ୍ରତି ସକାଳେ ବାଛିପାରିବ। ଆଜି ଖୁସିକୁ ହିଁ ବାଛ।",
     "emotion": "joy",
     "theme": "divine",
     "category": "happiness",
@@ -453,7 +442,7 @@
   {
     "id": "thought-042",
     "language": "hinglish",
-    "text": "Misti, nayi shuruaat karne ke liye koi khas din nahi chahiye hota. Aaj ka din hi sabse behter din hai.",
+    "text": "Misti, ନୂଆ ଆରମ୍ଭ କରିବା ପାଇଁ କୌଣସି ଖାସ୍ ଦିନ ଦରକାର ହୁଏନାହିଁ। ଆଜିର ଦିନ ହିଁ ସବୁଠାରୁ ଉତ୍ତମ ଦିନ।",
     "emotion": "hope",
     "theme": "divine",
     "category": "new beginnings",
@@ -464,7 +453,7 @@
   {
     "id": "thought-043",
     "language": "hinglish",
-    "text": "Misti, jab tum doosron ka accha chahti ho toh tumhare sath bhi accha hi hota hai. Apni neeyat saf rakho.",
+    "text": "Misti, ଯେବେ ତୁମେ ଅନ୍ୟମାନଙ୍କର ଭଲ ଚାହୁଁଛ, ତେବେ ତୁମ ସହ ବି ଭଲ ହିଁ ହୋଇଥାଏ। ନିଜ ମନୋଭାବ ସଫା ରଖ।",
     "emotion": "purity",
     "theme": "divine",
     "category": "kindness",
@@ -475,7 +464,7 @@
   {
     "id": "thought-044",
     "language": "hinglish",
-    "text": "Misti, overthinking sirf kal ki chinta badhati hai, aaj ki khushi chheen leti hai. Pura dhyan abhi par lagao.",
+    "text": "Misti, ଅଧିକ ଭାବିବା କେବଳ ଆଗାମୀ କାଲିର ଚିନ୍ତା ବଢ଼ାଏ, ଆଜିର ଖୁସି ଛଡ଼ାଇ ନିଏ। ପୂରା ଧ୍ୟାନ ବର୍ତ୍ତମାନ ଉପରେ ଲଗାଅ।",
     "emotion": "calm",
     "theme": "divine",
     "category": "overthinking",
@@ -486,7 +475,7 @@
   {
     "id": "thought-045",
     "language": "hinglish",
-    "text": "Misti, tumhare faisle tumhari pehchan banate hain. Apne values ke sath hamesha imandari se khadi rehna.",
+    "text": "Misti, ତୁମର ନିଷ୍ପତ୍ତି ହିଁ ତୁମର ପରିଚୟ ବନାଏ। ନିଜ ମୂଲ୍ୟବୋଧ ସହ ସବୁବେଳେ ସଚ୍ଚୋଟତାର ସହ ଠିଆ ହୁଅ।",
     "emotion": "integrity",
     "theme": "divine",
     "category": "self respect",
@@ -497,7 +486,7 @@
   {
     "id": "thought-046",
     "language": "hinglish",
-    "text": "Misti, har choti jeet ko celebrate karna seekho. Tumhari mehnat ka har ek pal keemti hai.",
+    "text": "Misti, ପ୍ରତ୍ୟେକ ଛୋଟ ବିଜୟକୁ ଉତ୍ସବ ପାଳନ କରିବା ଶିଖ। ତୁମ ପରିଶ୍ରମର ପ୍ରତ୍ୟେକ ମୁହୂର୍ତ୍ତ ମୂଲ୍ୟବାନ।",
     "emotion": "joy",
     "theme": "divine",
     "category": "confidence",
@@ -508,7 +497,7 @@
   {
     "id": "thought-047",
     "language": "hinglish",
-    "text": "Misti, shanti kahin bahar nahi, tumhare apne andar mojood hai. Bas kuch pal ke liye ankh band karke saans lo.",
+    "text": "Misti, ଶାନ୍ତି କେଉଁଠି ବାହାରେ ନାହିଁ, ତୁମ ନିଜ ଭିତରେ ହିଁ ଅଛି। ବସ୍ କିଛି ମୁହୂର୍ତ୍ତ ପାଇଁ ଆଖି ବନ୍ଦ କରି ନିଶ୍ୱାସ ନିଅ।",
     "emotion": "peace",
     "theme": "divine",
     "category": "peace",
@@ -519,7 +508,7 @@
   {
     "id": "thought-048",
     "language": "hinglish",
-    "text": "Misti, jo waqt chal raha hai use poori tarah se jeeyo. Har pal me ek nayi seekh chhupi hoti hai.",
+    "text": "Misti, ଯେଉଁ ସମୟ ଚାଲିଛି ତାହାକୁ ପୂରା ମନ ଦେଇ ଜିଅ। ପ୍ରତ୍ୟେକ ମୁହୂର୍ତ୍ତରେ ଗୋଟିଏ ନୂଆ ଶିକ୍ଷା ଲୁଚି ରହିଥାଏ।",
     "emotion": "awareness",
     "theme": "divine",
     "category": "growth",
@@ -530,7 +519,7 @@
   {
     "id": "thought-049",
     "language": "hinglish",
-    "text": "Misti, sabr ka matlab sirf rukna nahi, balki ruk kar sahi waqt ka intezar muskurahat se karna hota hai.",
+    "text": "Misti, ଧୈର୍ଯ୍ୟର ଅର୍ଥ କେବଳ ଅପେକ୍ଷା କରିବା ନୁହେଁ, ବରଂ ଅପେକ୍ଷା କରି ସଠିକ୍ ସମୟର ଅପେକ୍ଷା ହସଖୁସିରେ କରିବା।",
     "emotion": "patience",
     "theme": "divine",
     "category": "patience",
@@ -541,7 +530,7 @@
   {
     "id": "thought-050",
     "language": "hinglish",
-    "text": "Misti, jab tumhare andar vishwas ho toh mushkil se mushkil raasta bhi aasan ho jata hai. Hamesha bharosa rakho.",
+    "text": "Misti, ଯେବେ ତୁମ ଭିତରେ ବିଶ୍ୱାସ ଥାଏ, ତେବେ କଠିନରୁ କଠିନ ରାସ୍ତା ବି ସହଜ ହୋଇଯାଏ। ସବୁବେଳେ ਭରସା ରଖ।",
     "emotion": "faith",
     "theme": "divine",
     "category": "faith",
@@ -552,7 +541,7 @@
   {
     "id": "thought-051",
     "language": "hinglish",
-    "text": "Misti, apne sapnon ko poora karne me waqt toh lagta hai, par nateeja behad khubsurat hota hai. Lagaatar prayas karo.",
+    "text": "Misti, ନିଜ ସ୍ୱପ୍ନକୁ ପୂରଣ କରିବାରେ ସମୟ ତ ଲାଗେ, କିନ୍ତୁ ପରିଣାମ ଅତ୍ୟନ୍ତ ସୁନ୍ଦର ହୋଇଥାଏ। କ୍ରମାଗତ ଚେଷ୍ଟା କର।",
     "emotion": "hope",
     "theme": "divine",
     "category": "dreams",
@@ -563,7 +552,7 @@
   {
     "id": "thought-052",
     "language": "hinglish",
-    "text": "Misti, regular mehnat hi tumhe bheed se alag banati hai. Apne kaam me niyamit raho aur aage badho.",
+    "text": "Misti, ନିୟମିତ ପରିଶ୍ରମ ହିଁ ତୁମକୁ ଗହଳିରୁ ଅଲଗା ବନାଏ। ନିଜ କାମରେ ନିୟମିତ ରହ ଏବଂ ଆଗକୁ ବଢ଼।",
     "emotion": "discipline",
     "theme": "divine",
     "category": "discipline",
@@ -574,7 +563,7 @@
   {
     "id": "thought-053",
     "language": "hinglish",
-    "text": "Misti, apne profession me apna 100% do lekin natije ki chinta chhod do. Kaam me hi asli anand hai.",
+    "text": "Misti, ନିଜ ପେଷାରେ ନିଜର ୧୦୦% ଦିଅ କିନ୍ତୁ ଫଳାଫଳର ଚିନ୍ତା ଛାଡ଼ିଦିଅ। କାମରେ ହିଁ ପ୍ରକୃତ ଆନନ୍ଦ ଅଛି।",
     "emotion": "focus",
     "theme": "divine",
     "category": "career",
@@ -585,7 +574,7 @@
   {
     "id": "thought-054",
     "language": "hinglish",
-    "text": "Misti, padhai me agar mushkil aaye toh thoda aaram kar lo par haar mat mano. Naye tarike se shuruat karo.",
+    "text": "Misti, ପାଠପଢ଼ାରେ ଯଦି କଠିନତା ଆସେ ତେବେ ଟିକେ ବିଶ୍ରାମ ନିଅ, କିନ୍ତୁ ହାର୍ ମାନ ନାହିଁ। ନୂଆ ଉପାୟରେ ଆରମ୍ଭ କର।",
     "emotion": "resilience",
     "theme": "divine",
     "category": "study",
@@ -596,7 +585,7 @@
   {
     "id": "thought-055",
     "language": "hinglish",
-    "text": "Misti, apne ghar ke buzurgon ki baaton me bohot anubhav hota hai. Aaj unke paas baith kar thodi guftagu karo.",
+    "text": "Misti, ନିଜ ଘରର ବୟସ୍କମାନଙ୍କ କଥାରେ ବହୁତ ଅନୁଭବ ଥାଏ। ଆଜି ସେମାନଙ୍କ ପାଖରେ ବସି ଟିକେ କଥାବାର୍ତ୍ତା କର।",
     "emotion": "warmth",
     "theme": "divine",
     "category": "family",
@@ -607,7 +596,7 @@
   {
     "id": "thought-056",
     "language": "hinglish",
-    "text": "Misti, sacche dost mushkil waqt me bina maange saath khade hote hain. Unki kadr hamesha karna.",
+    "text": "Misti, ସଚ୍ଚା ବନ୍ଧୁ କଠିନ ସମୟରେ ବିନା ମାଗିବାରେ ପାଖରେ ଠିଆ ହୁଅନ୍ତି। ସେମାନଙ୍କର ଆଦର ସବୁବେଳେ କରିବ।",
     "emotion": "warmth",
     "theme": "divine",
     "category": "friendship",
@@ -618,7 +607,7 @@
   {
     "id": "thought-057",
     "language": "hinglish",
-    "text": "Misti, jo dard kal tha use aaj ke din par haavi mat hone do. Naye din ke sath naya saas lo.",
+    "text": "Misti, ଯେଉଁ କଷ୍ଟ ଗତକାଲି ଥିଲା ତାହାକୁ ଆଜିର ଦିନ ଉପରେ ଭାରି ହେବାକୁ ଦିଅ ନାହିଁ। ନୂଆ ଦିନ ସହ ନୂଆ ନିଶ୍ୱାସ ନିଅ।",
     "emotion": "healing",
     "theme": "divine",
     "category": "healing",
@@ -629,7 +618,7 @@
   {
     "id": "thought-058",
     "language": "hinglish",
-    "text": "Misti, jo beet gaya use badla nahi ja sakta par jo aage hai use behter banaya ja sakta hai. Naye siray se shuru karo.",
+    "text": "Misti, ଯାହା ବିତିଗଲା ତାହାକୁ ବଦଳାଯାଇ ପାରିବ ନାହିଁ, କିନ୍ତୁ ଯାହା ଆଗକୁ ଅଛି ତାହାକୁ ଉତ୍ତମ ବନାଯାଇପାରିବ। ନୂଆ ଭାବେ ଆରମ୍ଭ କର।",
     "emotion": "hope",
     "theme": "divine",
     "category": "new beginnings",
@@ -640,7 +629,7 @@
   {
     "id": "thought-059",
     "language": "hinglish",
-    "text": "Misti, apni galtiyon se seekhna hi sachha vikas hai. Khud ko kosna band karo aur aage badho.",
+    "text": "Misti, ନିଜ ଭୁଲରୁ ଶିଖିବା ହିଁ ପ୍ରକୃତ ବିକାଶ। ନିଜକୁ ଦୋଷ ଦେବା ବନ୍ଦ କର ଏବଂ ଆଗକୁ ବଢ଼।",
     "emotion": "growth",
     "theme": "divine",
     "category": "growth",
@@ -651,7 +640,7 @@
   {
     "id": "thought-060",
     "language": "hinglish",
-    "text": "Misti, tumhare paas jo kuch bhi hai uske liye hamesha shukraguzar raho. Gratitude se zindagi me aur acchayi aati hai.",
+    "text": "Misti, ତୁମ ପାଖରେ ଯାହା କିଛି ବି ଅଛି, ସେଥିପାଇଁ ସବୁବେଳେ କୃତଜ୍ଞ ରହ। କୃତଜ୍ଞତାରୁ ଜୀବନରେ ଆହୁରି ଭଲ ପରିଣାମ ଆସିଥାଏ।",
     "emotion": "gratitude",
     "theme": "divine",
     "category": "gratitude",
@@ -662,7 +651,7 @@
   {
     "id": "thought-061",
     "language": "hinglish",
-    "text": "Misti, jab tum andar se shant hoti ho toh bahar ka koi bhi tufan tumhe hila nahi sakta. Apni calmness banaaye rakho.",
+    "text": "Misti, ଯେବେ ତୁମେ ଭିତରୁ ଶାନ୍ତ ଥାଅ, ତେବେ ବାହାରର କୌଣସି ବି ଝଡ଼ ତୁମକୁ ହଲାଇ ପାରିବ ନାହିଁ। ନିଜର ଶାନ୍ତ ଭାବ ବଜାୟ ରଖ।",
     "emotion": "peace",
     "theme": "divine",
     "category": "peace",
@@ -673,7 +662,7 @@
   {
     "id": "thought-062",
     "language": "hinglish",
-    "text": "Misti, mushkil faisle lene me hi asal courage pata chalta hai. Apne dil ki suno aur aage badho.",
+    "text": "Misti, କଠିନ ନିଷ୍ପତ୍ତି ନେବାରେ ହିଁ ପ୍ରକୃତ ସାହସ ଜଣାପଡ଼େ। ନିଜ ମନର କଥା ଶୁଣ ଏବଂ ଆଗକୁ ବଢ଼।",
     "emotion": "courage",
     "theme": "divine",
     "category": "courage",
@@ -684,7 +673,7 @@
   {
     "id": "thought-063",
     "language": "hinglish",
-    "text": "Misti, galat baaton par maaf kar dena tumhara badappan hai. Apne man ko saaf rakh kar aage badhte raho.",
+    "text": "Misti, ଭୁଲ କଥାଗୁଡ଼ିକୁ କ୍ଷମା କରିଦେବା ତୁମର ମହାନତା। ନିଜ ମନକୁ ସଫା ରଖି ଆଗକୁ ବଢ଼ିଚାଲ।",
     "emotion": "peace",
     "theme": "divine",
     "category": "forgiveness",
@@ -695,7 +684,7 @@
   {
     "id": "thought-064",
     "language": "hinglish",
-    "text": "Misti, apni inner strength ko kabhi kam mat samajhna. Tumne pehle bhi mushkilein paar ki hain aur ab bhi kar logi.",
+    "text": "Misti, ନିଜର ଆନ୍ତରିକ ଶକ୍ତିକୁ କେବେ ବି କମ୍ ଭାବନାହିଁ। ତୁମେ ପୂର୍ବରୁ ବି କଠିନ ପରିସ୍ଥିତି ପାର୍ କରିଛ ଏବଂ ଏବେ ବି କରିନେବ।",
     "emotion": "strength",
     "theme": "divine",
     "category": "inner strength",
@@ -706,7 +695,7 @@
   {
     "id": "thought-065",
     "language": "hinglish",
-    "text": "Misti, aaj ki choti si khushi ko bhi poore dil se mehsoos karo. Zindagi chhoti chhoti baton me hi basi hai.",
+    "text": "Misti, ଆଜିର ଛୋଟ ଖୁସିକୁ ବି ପୂର୍ଣ୍ଣ ହୃଦୟରୁ ଅନୁଭବ କର। ଜୀବନ ଛୋଟ ଛୋଟ କଥାରେ ହିଁ ଲୁଚି ରହିଛି।",
     "emotion": "joy",
     "theme": "divine",
     "category": "happiness",
@@ -717,7 +706,7 @@
   {
     "id": "thought-066",
     "language": "hinglish",
-    "text": "Misti, bina rukey thoda thoda aage badhna bhi ek badi kaamyabi hai. Apni speed se mat ghabrao.",
+    "text": "Misti, ଅଟକି ନ ଯାଇ ଟିକେ ଟିକେ ଆଗକୁ ବଢ଼ିବା ବି ଗୋଟିଏ ବଡ଼ ସଫଳତା। ନିଜର ଗତିକୁ ନେଇ ଭୟଭୀତ ହୁଅନାହିଁ।",
     "emotion": "patience",
     "theme": "divine",
     "category": "patience",
@@ -728,7 +717,7 @@
   {
     "id": "thought-067",
     "language": "hinglish",
-    "text": "Misti, overthinking se bas man me uljhan badhati hai. Sab kuch waqt par chhod do aur shant raho.",
+    "text": "Misti, ଅଧିକ ଭାବିବା ଦ୍ୱାରା କେବଳ ମନରେ ଦ୍ୱନ୍ଦ୍ୱ ବଢ଼ିଥାଏ। ସବୁ କିଛି ସମୟ ଉପରେ ଛାଡ଼ିଦିଅ ଏବଂ ଶାନ୍ତ ରହ।",
     "emotion": "calm",
     "theme": "divine",
     "category": "overthinking",
@@ -739,7 +728,7 @@
   {
     "id": "thought-068",
     "language": "hinglish",
-    "text": "Misti, kisi doosre ki wajah se apni aatm-samman se kabhi samjhauta mat karna. Tum behad anmol ho.",
+    "text": "Misti, ଅନ୍ୟ କାହା ପାଇଁ ନିଜ ଆତ୍ମସମ୍ମାନ ସହ କେବେ ବି ବୁଝାମଣା କରନାହିଁ। ତୁମେ ଅତ୍ୟନ୍ତ ଅମୂଲ୍ୟ।",
     "emotion": "respect",
     "theme": "divine",
     "category": "self respect",
@@ -750,7 +739,7 @@
   {
     "id": "thought-069",
     "language": "hinglish",
-    "text": "Misti, tumhara confidence hi tumki sabse khubsurat aabhushan hai. Ise hamesha pehan kar rakho.",
+    "text": "Misti, ତୁମର ଆତ୍ମବିଶ୍ୱାସ ହିଁ ତୁମର ସବୁଠାରୁ ସୁନ୍ଦର ଅଳଙ୍କାର। ଏହାକୁ ସବୁବେଳେ ପିନ୍ଧି ରଖ।",
     "emotion": "confidence",
     "theme": "divine",
     "category": "confidence",
@@ -761,7 +750,7 @@
   {
     "id": "thought-070",
     "language": "hinglish",
-    "text": "Misti, kindness ek aisa sur hai jo har dil ko chhu leta hai. Aaj logon se meethay bol bolo.",
+    "text": "Misti, ଦୟାଳୁତା ଗୋଟିଏ ଏପରି ସୁର ଯାହା ପ୍ରତ୍ୟେକ ହୃଦୟକୁ ଛୁଇଁଯାଏ। ଆଜି ଲୋକଙ୍କ ସହ ମିଠା କଥା କୁହ।",
     "emotion": "kindness",
     "theme": "divine",
     "category": "kindness",
@@ -772,7 +761,7 @@
   {
     "id": "thought-071",
     "language": "hinglish",
-    "text": "Misti, jab tak tumhara faith mazboot hai, har mushkil rasta aasan ban jayega. Bharosa mat khona.",
+    "text": "Misti, ଯେପର୍ଯ୍ୟନ୍ତ ତୁମର ବିଶ୍ୱାସ ମଜବୁତ୍ ଅଛି, ପ୍ରତ୍ୟେକ କଠିନ ରାସ୍ତା ସହଜ ହୋଇଯିବ। ଭରସା ହରାଅ ନାହିଁ।",
     "emotion": "faith",
     "theme": "divine",
     "category": "faith",
@@ -783,7 +772,7 @@
   {
     "id": "thought-072",
     "language": "hinglish",
-    "text": "Misti, apne lakshya par dhyan kendrit rakho aur faltu baaton se door raho. Safalta tumhare paas aayegi.",
+    "text": "Misti, ନିଜ ଲକ୍ଷ୍ୟ ଉପରେ ଧ୍ୟାନ କେନ୍ଦ୍ରୀଭୂତ ରଖ ଏବଂ ଅନାବଶ୍ୟକ କଥାରୁ ଦୂରରେ ରହ। ସଫଳତା ତୁମ ନିକଟକୁ ଆସିବ।",
     "emotion": "focus",
     "theme": "divine",
     "category": "dreams",
@@ -794,7 +783,7 @@
   {
     "id": "thought-073",
     "language": "hinglish",
-    "text": "Misti, discipline hi safalta ki sachhi buniyad hai. Apne daily goals ko poora karne me koi kanjoosi mat karo.",
+    "text": "Misti, ଶୃଙ୍ଖଳା ହିଁ ସଫଳତାର ପ୍ରକୃତ ଭିତ୍ତିଭୂମି। ନିଜର ଦୈନନ୍ଦିନ ଲକ୍ଷ୍ୟ ପୂରଣ କରିବାରେ କୌଣସି ଅବହେଳା କରନାହିଁ।",
     "emotion": "discipline",
     "theme": "divine",
     "category": "discipline",
@@ -805,7 +794,7 @@
   {
     "id": "thought-074",
     "language": "hinglish",
-    "text": "Misti, tumhare career ki har choti prapti tumhe ek bade sthan par le jayegi. Mehnat karte raho.",
+    "text": "Misti, ତୁମ କ୍ୟାରିୟରର ପ୍ରତ୍ୟେକ ଛୋଟ ଅର୍ଜନ ତୁମକୁ ଗୋଟିଏ ବଡ଼ ସ୍ଥାନକୁ ନେଇଯିବ। ପରିଶ୍ରମ କରିଚାଲ।",
     "emotion": "growth",
     "theme": "divine",
     "category": "career",
@@ -816,7 +805,7 @@
   {
     "id": "thought-075",
     "language": "hinglish",
-    "text": "Misti, study me dhyan lagane ke liye ek accha environment banao. Tumhara focus aur accha hoga.",
+    "text": "Misti, ପାଠପଢ଼ାରେ ମନ ଲଗାଇବା ପାଇଁ ଗୋଟିଏ ଭଲ ପରିବେଶ ତିଆରି କର। ତୁମର ଧ୍ୟାନ ଆହୁରି ଭଲ ହେବ।",
     "emotion": "focus",
     "theme": "divine",
     "category": "study",
@@ -827,7 +816,7 @@
   {
     "id": "thought-076",
     "language": "hinglish",
-    "text": "Misti, parivaar ke logon ka sath hi asli taakat hota hai. Unke sath bitaya har pal khaas hai.",
+    "text": "Misti, ପରିବାର ଲୋକଙ୍କ ସାଥ୍ ହିଁ ପ୍ରକୃତ ଶକ୍ତି। ସେମାନଙ୍କ ସହ ବିତାଇଥିବା ପ୍ରତ୍ୟେକ ମୁହୂର୍ତ୍ତ ଖାସ୍।",
     "emotion": "warmth",
     "theme": "divine",
     "category": "family",
@@ -838,7 +827,7 @@
   {
     "id": "thought-077",
     "language": "hinglish",
-    "text": "Misti, sache doston ki rai hamesha keemti hoti hai. Unse apni dil ki baat share karne me mat jhijkho.",
+    "text": "Misti, ସଚ୍ଚା ବନ୍ଧୁଙ୍କ ପରାମର୍ଶ ସବୁବେଳେ ମୂଲ୍ୟବାନ। ସେମାନଙ୍କ ସହ ନିଜ ମନର କଥା ବାଣ୍ଟିବାରେ ସଙ୍କୋଚ କରନାହିଁ।",
     "emotion": "warmth",
     "theme": "divine",
     "category": "friendship",
@@ -849,7 +838,7 @@
   {
     "id": "thought-078",
     "language": "hinglish",
-    "text": "Misti, apne aap ko purane zakhm se aazad karo. Nayi subah tumhare liye nayi khushiyan laayi hai.",
+    "text": "Misti, ନିଜକୁ ପୁରୁଣା ଆଘାତରୁ ମୁକ୍ତ କର। ନୂଆ ସକାଳ ତୁମ ପାଇଁ ନୂଆ ଖୁସି ନେଇ ଆସିଛି।",
     "emotion": "healing",
     "theme": "divine",
     "category": "healing",
@@ -860,7 +849,7 @@
   {
     "id": "thought-079",
     "language": "hinglish",
-    "text": "Misti, aaj ka din ek naya panna hai tumhari zindagi ki kitab ka. Ise bohot khubsurati se likho.",
+    "text": "Misti, ଆଜିର ଦିନ ତୁମ ଜୀବନ ବହିର ଗୋଟିଏ ନୂଆ ପୃଷ୍ଠା। ଏହାକୁ ଅତ୍ୟନ୍ତ ସୁନ୍ଦର ଭାବେ ଲେଖ।",
     "emotion": "hope",
     "theme": "divine",
     "category": "new beginnings",
@@ -871,7 +860,7 @@
   {
     "id": "thought-080",
     "language": "hinglish",
-    "text": "Misti, har din thoda aage badhna hi asli vikas hai. Apni choti choti progress par khush ho.",
+    "text": "Misti, ପ୍ରତିଦିନ ଟିକିଏ ଆଗକୁ ବଢ଼ିବା ହିଁ ପ୍ରକୃତ ବିକାଶ। ନିଜର ଛୋଟ ଛୋଟ ଅଗ୍ରଗତିରେ ଖୁସି ହୁଅ।",
     "emotion": "growth",
     "theme": "divine",
     "category": "growth",
@@ -882,7 +871,7 @@
   {
     "id": "thought-081",
     "language": "hinglish",
-    "text": "Misti, jo cheezein tumhare paas hain unke liye har din dhanyawad do. Shukraguzari se hi sukoon milta hai.",
+    "text": "Misti, ଯେଉଁ ଜିନିଷଗୁଡ଼ିକ ତୁମ ପାଖରେ ଅଛି, ସେଗୁଡ଼ିକ ପାଇଁ ପ୍ରତିଦିନ ଧନ୍ୟବାଦ ଦିଅ। କୃତଜ୍ଞତାରୁ ହିଁ ଶାନ୍ତି ମିଳିଥାଏ।",
     "emotion": "gratitude",
     "theme": "divine",
     "category": "gratitude",
@@ -893,7 +882,7 @@
   {
     "id": "thought-082",
     "language": "hinglish",
-    "text": "Misti, apne andar shanti banaye rakhna sabse bada kaam hai. Aaj kisi bhi baat ko apni shanti mat chheen ne do.",
+    "text": "Misti, ନିଜ ଭିତରେ ଶାନ୍ତି ବଜାୟ ରଖିବା ସବୁଠାରୁ ବଡ଼ କାମ। ଆଜି କୌଣସି କଥାକୁ ନିଜର ଶାନ୍ତି ଛଡ଼ାଇ ନେବାକୁ ଦିଅ ନାହିଁ।",
     "emotion": "peace",
     "theme": "divine",
     "category": "peace",
@@ -904,7 +893,7 @@
   {
     "id": "thought-083",
     "language": "hinglish",
-    "text": "Misti, bina darr ke naye raste par chalna hi sachha courage hai. Tumhara har kadam sahi disha me hai.",
+    "text": "Misti, ବିନା ଭୟରେ ନୂଆ ରାସ୍ତାରେ ଚାଲିବା ହିଁ ପ୍ରକୃତ ସାହସ। ତୁମର ପ୍ରତ୍ୟେକ ପାଦ ସଠିକ୍ ଦିଗରେ ଅଛି।",
     "emotion": "courage",
     "theme": "divine",
     "category": "courage",
@@ -915,7 +904,7 @@
   {
     "id": "thought-084",
     "language": "hinglish",
-    "text": "Misti, dvesh aur narazgi ko dil se nikal do. Forgiveness se tumhara apna man shant hoga.",
+    "text": "Misti, ଘୃଣା ଓ ଅଭିମାନକୁ ମନରୁ ବାହାର କରିଦିଅ। କ୍ଷମା କରିବା ଦ୍ୱାରା ତୁମର ନିଜ ମନ ଶାନ୍ତ ହେବ।",
     "emotion": "peace",
     "theme": "divine",
     "category": "forgiveness",
@@ -926,7 +915,7 @@
   {
     "id": "thought-085",
     "language": "hinglish",
-    "text": "Misti, tumhari andar ki taakat har kathin situation ko sambhal sakti hai. Apni shamta par aashanka mat karo.",
+    "text": "Misti, ତୁମ ଭିତରର ଶକ୍ତି ପ୍ରତ୍ୟେକ କଠିନ ପରିସ୍ଥିତିକୁ ସମ୍ଭାଳି ପାରିବ। ନିଜ ସାମର୍ଥ୍ୟ ଉପରେ ସନ୍ଦେହ କରନାହିଁ।",
     "emotion": "strength",
     "theme": "divine",
     "category": "inner strength",
@@ -937,7 +926,7 @@
   {
     "id": "thought-086",
     "language": "hinglish",
-    "text": "Misti, bina wajah ki muskaan se tumhara aur doosron ka din accha ho sakta hai. Aaj bas muskurati raho.",
+    "text": "Misti, ବିନା କାରଣର ହସ ଦ୍ୱାରା ତୁମର ଏବଂ ଅନ୍ୟମାନଙ୍କର ଦିନ ଭଲ ହୋଇପାରିବ। ଆଜି ବସ୍ ହସୁଥାଅ।",
     "emotion": "joy",
     "theme": "divine",
     "category": "happiness",
@@ -948,7 +937,7 @@
   {
     "id": "thought-087",
     "language": "hinglish",
-    "text": "Misti, sahi waqt par sab milega, bas apna patience banaye rakho. jaldbazi me koi faisla mat lena.",
+    "text": "Misti, ସଠିକ୍ ସମୟରେ ସବୁ ମିଳିବ, ବସ୍ ନିଜର ଧୈର୍ଯ୍ୟ ବଜାୟ ରଖ। ବ୍ୟସ୍ତବିବ୍ରତ ହୋଇ କୌଣସି ନିଷ୍ପତ୍ତି ନିଅ ନାହିଁ।",
     "emotion": "patience",
     "theme": "divine",
     "category": "patience",
@@ -959,7 +948,7 @@
   {
     "id": "thought-088",
     "language": "hinglish",
-    "text": "Misti, dimag ko zyada uljha kar rakhna thaka deta hai. Apne vicharon ko saaf aur saral rakho.",
+    "text": "Misti, ମନକୁ ଅଧିକ ଜଟିଳ କରି ରଖିବା ଦ୍ୱାରା କ୍ଲାନ୍ତି ଆସିଥାଏ। ନିଜ ଭାବନାକୁ ସ୍ପଷ୍ଟ ଓ ସରଳ ରଖ।",
     "emotion": "calm",
     "theme": "divine",
     "category": "overthinking",
@@ -970,7 +959,7 @@
   {
     "id": "thought-089",
     "language": "hinglish",
-    "text": "Misti, apne self-respect ke sath hamesha khadi raho. Khud ki nazron me uthna sabse zaroori hai.",
+    "text": "Misti, ନିଜ ଆତ୍ମସମ୍ମାନ ସହ ସବୁବେଳେ ଠିଆ ହୁଅ। ନିଜ ନଜରରେ ଉପରକୁ ଉଠିବା ସବୁଠାରୁ ଜରୁରୀ।",
     "emotion": "respect",
     "theme": "divine",
     "category": "self respect",
@@ -981,7 +970,7 @@
   {
     "id": "thought-090",
     "language": "hinglish",
-    "text": "Misti, tum jo bhi karti ho usme apni poori aatma laga do. Safalta zaroor tumhare kadam choomegi.",
+    "text": "Misti, ତୁମେ ଯାହା ବି କରୁଛ ସେଥିରେ ନିଜର ପୂରା ମନ ଲଗାଇଦିଅ। ସଫଳତା ନିଶ୍ଚୟ ତୁମ ପାଖକୁ ଆସିବ।",
     "emotion": "confidence",
     "theme": "divine",
     "category": "confidence",
@@ -992,7 +981,7 @@
   {
     "id": "thought-091",
     "language": "hinglish",
-    "text": "Misti, choti choti madad aur meethe bol hi logon ke dil me jagah banate hain. Aaj kindness dikhane ka mauka mat chhodna.",
+    "text": "Misti, ଛୋଟ ଛୋଟ ସାହାଯ୍ୟ ଓ ମିଠା କଥା ହିଁ ଲୋକଙ୍କ ହୃଦୟରେ ସ୍ଥାନ ତିଆରି କରେ। ଆଜି ଦୟାଳୁତା ଦେଖାଇବାର ସୁଯୋଗ ଛାଡ଼ ନାହିଁ।",
     "emotion": "kindness",
     "theme": "divine",
     "category": "kindness",
@@ -1003,7 +992,7 @@
   {
     "id": "thought-092",
     "language": "hinglish",
-    "text": "Misti, jab dil me sachha vishwas hota hai toh raaste me aane wali har rukaawat dur ho jaati hai. Apne faith ko sambhal kar rakho.",
+    "text": "Misti, ଯେବେ ମନରେ ସଚ୍ଚା ବିଶ୍ୱାସ ଥାଏ, ତେବେ ରାସ୍ତାରେ ଆସୁଥିବା ପ୍ରତ୍ୟେକ ବାଧା ଦୂର ହୋଇଯାଏ। ନିଜ ବିଶ୍ୱାସକୁ ସାମ୍ଭାଳି ରଖ।",
     "emotion": "faith",
     "theme": "divine",
     "category": "faith",
@@ -1014,7 +1003,7 @@
   {
     "id": "thought-093",
     "language": "hinglish",
-    "text": "Misti, apne sapnon ko poora karne ke liye din raat ek karna padta hai. Tumhari mehnat ek din rang layegi.",
+    "text": "Misti, ନିଜ ସ୍ୱପ୍ନକୁ ପୂରଣ କରିବା ପାଇଁ ଦିନରାତି ଏକ କରିବାକୁ ପଡ଼ିଥାଏ। ତୁମର ପରିଶ୍ରମ ଦିନେ ନା ଦିନେ ଫଳ ଦେବ।",
     "emotion": "ambition",
     "theme": "divine",
     "category": "dreams",
@@ -1025,7 +1014,7 @@
   {
     "id": "thought-094",
     "language": "hinglish",
-    "text": "Misti, discipline sirf aadat nahi, jeevan ka dhang hai. Apne daily habits ko behter banate raho.",
+    "text": "Misti, ଶୃଙ୍ଖଳା କେବଳ ଗୋଟିଏ ଅଭ୍ୟାସ ନୁହେଁ, ଜୀବନ ଜିଇଁବାର ଶୈଳୀ। ନିଜର ଦୈନନ୍ଦିନ ଅଭ୍ୟାସକୁ ଅଧିକ ଉତ୍ତମ ବନାଅ।",
     "emotion": "discipline",
     "theme": "divine",
     "category": "discipline",
@@ -1036,7 +1025,7 @@
   {
     "id": "thought-095",
     "language": "hinglish",
-    "text": "Misti, career me nayi uchaiyon ko chhune ke liye roz naya sikhte rehna behad zaroori hai. Aage badhti raho.",
+    "text": "Misti, କ୍ୟାରିୟରରେ ନୂଆ ଉଚ୍ଚତା ଛୁଇଁବା ପାଇଁ ପ୍ରତିଦିନ ନୂଆ ଶିଖିଚାଲିବା ଅତ୍ୟନ୍ତ ଜରୁରୀ। ଆଗକୁ ବଢ଼ିଚାଲ।",
     "emotion": "growth",
     "theme": "divine",
     "category": "career",
@@ -1047,7 +1036,7 @@
   {
     "id": "thought-096",
     "language": "hinglish",
-    "text": "Misti, padhai ke waqt apna pura focus banaaye rakhna hi tumhe tumhare goals ke paas le jayega.",
+    "text": "Misti, ପାଠପଢ଼ା ସମୟରେ ନିଜର ପୂରା ଧ୍ୟାନ ବଜାୟ ରଖିବା ହିଁ ତୁମକୁ ତୁମ ଲକ୍ଷ୍ୟ ନିକଟକୁ ନେଇଯିବ।",
     "emotion": "focus",
     "theme": "divine",
     "category": "study",
@@ -1058,7 +1047,7 @@
   {
     "id": "thought-097",
     "language": "hinglish",
-    "text": "Misti, apne parivaar ki khushi me hi sachhi khushi hoti hai. Aaj unke sath milkar thoda muskurana.",
+    "text": "Misti, ନିଜ ପରିବାରର ଖୁସିରେ ହିଁ ପ୍ରକୃତ ଖୁସି ଥାଏ। ଆଜି ସେମାନଙ୍କ ସହ ମିଶି ଟିକେ ହସିଦିଅ।",
     "emotion": "warmth",
     "theme": "divine",
     "category": "family",
@@ -1069,7 +1058,7 @@
   {
     "id": "thought-098",
     "language": "hinglish",
-    "text": "Misti, sache dost zindagi ko aasan aur khubsurat banate hain. Unki dosti par garv karo.",
+    "text": "Misti, ସଚ୍ଚା ବନ୍ଧୁ ଜୀବନକୁ ସହଜ ଓ ସୁନ୍ଦର ବନାନ୍ତି। ସେମାନଙ୍କ ବନ୍ଧୁତା ଉପରେ ଗର୍ବ କର।",
     "emotion": "warmth",
     "theme": "divine",
     "category": "friendship",
@@ -1080,7 +1069,7 @@
   {
     "id": "thought-099",
     "language": "hinglish",
-    "text": "Misti, purani baaton se seekho aur unhe wahin chhod do. Aaj ke din ko ek naya mauka maan kar jeeyo.",
+    "text": "Misti, ପୁରୁଣା କଥାରୁ ଶିଖ ଏବଂ ସେଗୁଡ଼ିକୁ ସେହିଠାରେ ଛାଡ଼ିଦିଅ। ଆଜିର ଦିନକୁ ଗୋଟିଏ ନୂଆ ସୁଯୋଗ ଭାବି ଜିଅ।",
     "emotion": "healing",
     "theme": "divine",
     "category": "healing",
@@ -1091,7 +1080,7 @@
   {
     "id": "thought-100",
     "language": "hinglish",
-    "text": "Misti, har nayi subah ek nayi ummeed lekar aati hai. Aaj ke din ko khule dil aur nayi energy se swagat karo.",
+    "text": "Misti, ପ୍ରତ୍ୟେକ ନୂଆ ସକାଳ ଗୋଟିଏ ନୂଆ ଆଶା ନେଇ ଆସିଥାଏ। ଆଜିର ଦିନକୁ ଖୋଲା ମନ ଓ ନୂଆ ଶକ୍ତି ସହ ସ୍ୱାଗତ କର।",
     "emotion": "hope",
     "theme": "divine",
     "category": "new beginnings",
