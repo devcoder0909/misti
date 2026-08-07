@@ -248,23 +248,13 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const music = document.getElementById('bgMusic');
-      music.volume = 0.3; // 30% volume
-
-      const startMusic = () => {
-        music.play().then(() => {
-          console.log("Music playing!");
-        }).catch(err => {
-          console.log("Audio blocked: ", err);
-        });
-      };
-
-      // Try autoplaying right away
-      startMusic();
-
-      // The browser WILL block the above auto-start. 
-      // So we wait for the very first time the user touches the screen.
-      window.addEventListener('click', startMusic, { once: true });
-      window.addEventListener('touchstart', startMusic, { once: true });
+      music.volume = 0.3;
+      
+      const start = () => music.play().catch(() => {});
+      start();
+      
+      window.addEventListener('click', start, { once: true });
+      window.addEventListener('touchstart', start, { once: true });
     });
   </script>
 </body>
