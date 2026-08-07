@@ -12,9 +12,9 @@ const messaging = firebase.messaging();
 
 messaging.onBackgroundMessage((payload) => {
   console.log('[firebase-messaging-sw.js] Received background message ', payload);
-  const notificationTitle = payload.notification.title || 'Good Morning!';
+  const notificationTitle = payload.notification?.title || 'A Message for Your Soul ✨';
   const notificationOptions = {
-    body: payload.notification.body || 'Tap to open Misti Divine.',
+    body: payload.notification?.body || 'Take a deep breath and unlock your thought for today.',
     icon: './misti.jpg',
     data: { url: 'https://devcoder0909.github.io/misti/' }
   };
