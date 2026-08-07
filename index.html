@@ -244,12 +244,21 @@
   <script type="module" src="js/app.js"></script>
 
   <!-- Background Music (No UI, Low Volume) -->
-  <audio id="bgMusic" src="music.mpeg" autoplay loop></audio>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const music = document.getElementById('bgMusic');
+      const music = new Audio('music.mp3');
+      music.loop = true;
       music.volume = 0.05; // Very low normal background sound
-      music.play().catch(e => console.log("Autoplay forced: ", e));
+      
+      const playMusic = () => {
+        music.play().catch(e => console.log("Autoplay blocked:", e));
+      };
+      
+      playMusic();
+      
+      // Invisible fallback
+      document.body.addEventListener('click', playMusic, { once: true });
+      document.body.addEventListener('touchstart', playMusic, { once: true });
     });
   </script>
 </body>
