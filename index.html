@@ -243,27 +243,28 @@
   <!-- Modular Engines Launcher -->
   <script type="module" src="js/app.js"></script>
 
-  <!-- Background Music (No UI) -->
+  <!-- Background Music -->
+  <audio id="bgMusic" src="music.mp3" loop preload="auto"></audio>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const music = new Audio('music.mp3');
-      window.bgMusic = music; // Prevent garbage collection
-      music.loop = true;
-      music.volume = 0.3; // Increased to 30% so it's clearly audible
-      
-      const playMusic = () => {
+      const music = document.getElementById('bgMusic');
+      music.volume = 0.3; // 30% volume
+
+      const startMusic = () => {
         music.play().then(() => {
-          console.log("Music playing successfully!");
-        }).catch(e => {
-          console.log("Autoplay blocked, waiting for click:", e);
+          console.log("Music playing!");
+        }).catch(err => {
+          console.log("Audio blocked: ", err);
         });
       };
-      
-      playMusic();
-      
-      // Invisible fallback
-      document.body.addEventListener('click', playMusic, { once: true });
-      document.body.addEventListener('touchstart', playMusic, { once: true });
+
+      // Try autoplaying right away
+      startMusic();
+
+      // The browser WILL block the above auto-start. 
+      // So we wait for the very first time the user touches the screen.
+      window.addEventListener('click', startMusic, { once: true });
+      window.addEventListener('touchstart', startMusic, { once: true });
     });
   </script>
 </body>
