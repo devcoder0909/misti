@@ -670,7 +670,7 @@ html, body {
 .corner-lotus-bottom-left {
   position: absolute;
   bottom: 150px;
-  left: 180px;
+  left: 10px;
   width: 48px;
   height: 48px;
   pointer-events: none;
