@@ -594,6 +594,9 @@ html, body {
   display: flex;
   align-items: stretch;
   gap: 0.65rem;
+  margin-top: -0.6rem;
+  position: relative;
+  z-index: 5;
   padding-bottom: clamp(0.75rem, 2.5vh, 1.25rem);
 }
 
