@@ -244,11 +244,11 @@
   <script type="module" src="js/app.js"></script>
 
   <!-- Music Control Button -->
-  <button id="musicToggleBtn" style="position: absolute; top: max(15px, env(safe-area-inset-top, 15px)); right: 15px; z-index: 999999; background: rgba(0,0,0,0.4); border: 1px solid rgba(255,215,0,0.5); border-radius: 50%; width: 42px; height: 42px; display: flex; justify-content: center; align-items: center; cursor: pointer; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); box-shadow: 0 4px 15px rgba(0,0,0,0.5); outline: none; transition: transform 0.2s;">
-    <svg id="musicIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffd700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-      <line x1="23" y1="9" x2="17" y2="15"></line>
-      <line x1="17" y1="9" x2="23" y2="15"></line>
+  <button id="musicToggleBtn" style="position: absolute; top: max(15px, env(safe-area-inset-top, 15px)); right: 15px; z-index: 999999; background: rgba(0,0,0,0.4); border: 1px solid rgba(255,215,0,0.5); border-radius: 50%; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; cursor: pointer; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); box-shadow: 0 4px 15px rgba(0,0,0,0.5); outline: none; transition: transform 0.2s;">
+    <svg id="musicIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffd700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18V5l12-2v13"></path>
+      <circle cx="6" cy="18" r="3"></circle>
+      <circle cx="18" cy="16" r="3"></circle>
     </svg>
   </button>
 
@@ -266,9 +266,9 @@
       const setPlayingState = (playing) => {
         isPlaying = playing;
         if (playing) {
-          icon.innerHTML = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>';
+          icon.innerHTML = '<path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle>';
         } else {
-          icon.innerHTML = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line>';
+          icon.innerHTML = '<path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle><line x1="2" y1="2" x2="22" y2="22"></line>';
         }
       };
       
